@@ -380,6 +380,7 @@ namespace DeCompactPlugIn
             this.drop_facies.Name = "drop_facies";
             this.drop_facies.Size = new System.Drawing.Size(26, 23);
             this.drop_facies.TabIndex = 9;
+            this.drop_facies.DragDrop += new System.Windows.Forms.DragEventHandler(this.drop_facies_DragDrop);
             // 
             // label4
             // 
