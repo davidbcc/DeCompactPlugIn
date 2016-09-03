@@ -8,6 +8,7 @@ using Slb.Ocean.Petrel.DomainObject.PillarGrid;
 using Slb.Ocean.Petrel;
 using Slb.Ocean.Petrel.UI;
 using DeCompactionPlugIn.Helpers;
+using DeCompactPlugIn.model;
 
 namespace DeCompactPlugIn
 {
@@ -117,11 +118,20 @@ namespace DeCompactPlugIn
         }
         private void runButton_Click(object sender, EventArgs e)
         {
+            var args = new WorkStepArgument();
+            args.Facies = Convert.ToDouble(presentationBox_facies.Text);
+            args.Coal = Convert.ToDouble(presentationBox_coal.Text);
+            args.Silt = Convert.ToDouble(presentationBox_silt.Text);
+            args.SandStone = Convert.ToDouble(presentationBox_sandstone.Text);
+            args.MudStone = Convert.ToDouble(presentationBox_mudstone.Text);
+            args.DirtySS = Convert.ToDouble(presentationBox_dirtyss.Text);
+            args.CarbMud = Convert.ToDouble(presentationBox_carbmud.Text);
+
             Grid grid = presGrid.Tag as Grid;
             if (grid != null)
             {
-                Grid gridCopy = CannedWorkflowHelper.Instance.RunWorkflow(grid) as Grid;
-                PetrelLogger.InfoOutputWindow(gridCopy.Name + " created");
+                CannedWorkflowHelper.Instance.RunWorkflow(args);
+               
             }
             else
             {

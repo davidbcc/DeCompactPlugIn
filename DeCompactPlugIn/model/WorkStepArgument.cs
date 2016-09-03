@@ -1,4 +1,5 @@
-﻿using Slb.Ocean.Petrel.DomainObject.PillarGrid;
+﻿using Slb.Ocean.Core;
+using Slb.Ocean.Petrel.DomainObject.PillarGrid;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace DeCompactPlugIn.model
     /// <summary>
     /// Work Step Model, parameters object. Passing in to Workflow.
     /// </summary>
-    public class WorkStepModel
+    public class WorkStepArgument 
     {
         /// <summary>
         /// Grid Property. Identifiable object.
@@ -23,7 +24,7 @@ namespace DeCompactPlugIn.model
         /// <summary>
         /// Facies
         /// </summary>
-        public string Facies { get; set; }
+        public double Facies { get; set; }
         /// <summary>
         /// Silt
         /// </summary>

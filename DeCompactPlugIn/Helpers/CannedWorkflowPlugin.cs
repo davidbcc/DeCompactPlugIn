@@ -6,6 +6,7 @@ using Slb.Ocean.Core;
 using Slb.Ocean.Petrel;
 using Slb.Ocean.Petrel.Workflow;
 using DeCompactPlugIn;
+using DeCompactPlugIn.model;
 
 namespace DeCompactionPlugIn.Helpers
 {
@@ -79,15 +80,24 @@ namespace DeCompactionPlugIn.Helpers
         /// </summary>
         /// <param name="objectToCopy">Input grid to copy. This will be copied to the input reference variable in the workflow.</param>
         /// <returns>Copied grid received from the output reference variable in the workflow.</returns>
-        public object RunWorkflow(IIdentifiable objectToCopy)
+        public object RunWorkflow(WorkStepArgument args)
         {
+            if(args == null)
+            {
+                PetrelLogger.InfoOutputWindow("Arguments cannot be NULL");
+            }
             ReferenceVariable input = null;
             ReferenceVariable output = null;
             IIdentifiable copiedObject = null;
             var cannedWf = FindPredefinedWorkflow("decompaction", "DB");
             var runner = new WorkflowRunner(cannedWf);
-            runner.SetInputVariableBinding("$facies", 2);
-
+            runner.SetInputVariableBinding("$facies", args.Facies);
+            runner.SetInputVariableBinding("$coal", args.Coal);
+            runner.SetInputVariableBinding("$silt", args.Silt);
+            runner.SetInputVariableBinding("$sandstone", args.SandStone);
+            runner.SetInputVariableBinding("$mudstone", args.MudStone);
+            runner.SetInputVariableBinding("$dirtyss", args.DirtySS);
+            runner.SetInputVariableBinding("$carbmud", args.CarbMud);
             try
             {
                 runner.Run();

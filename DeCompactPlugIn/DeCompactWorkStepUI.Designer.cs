@@ -31,6 +31,7 @@ namespace DeCompactPlugIn
             this.components = new System.ComponentModel.Container();
             this.tab1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txtnolayers = new System.Windows.Forms.TextBox();
             this.toolTipHotspot10 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
             this.toolTipHotspot9 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
             this.toolTipHotspot8 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
@@ -49,7 +50,7 @@ namespace DeCompactPlugIn
             this.drop_mudstone = new Slb.Ocean.Petrel.UI.DropTarget();
             this.presentationBox_coal = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
             this.drop_coal = new Slb.Ocean.Petrel.UI.DropTarget();
-            this.presentationBox2 = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
+            this.presentationBox_sandstone = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
             this.dropTarget1 = new Slb.Ocean.Petrel.UI.DropTarget();
             this.presentationBox_silt = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
             this.drop_silt = new Slb.Ocean.Petrel.UI.DropTarget();
@@ -75,7 +76,6 @@ namespace DeCompactPlugIn
             this.cancelButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
             this.OKButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
             this.applyButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
-            this.txtnolayers = new System.Windows.Forms.TextBox();
             this.tab1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -111,7 +111,7 @@ namespace DeCompactPlugIn
             this.tabPage1.Controls.Add(this.drop_mudstone);
             this.tabPage1.Controls.Add(this.presentationBox_coal);
             this.tabPage1.Controls.Add(this.drop_coal);
-            this.tabPage1.Controls.Add(this.presentationBox2);
+            this.tabPage1.Controls.Add(this.presentationBox_sandstone);
             this.tabPage1.Controls.Add(this.dropTarget1);
             this.tabPage1.Controls.Add(this.presentationBox_silt);
             this.tabPage1.Controls.Add(this.drop_silt);
@@ -138,6 +138,13 @@ namespace DeCompactPlugIn
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Settings";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // txtnolayers
+            // 
+            this.txtnolayers.Location = new System.Drawing.Point(157, 91);
+            this.txtnolayers.Name = "txtnolayers";
+            this.txtnolayers.Size = new System.Drawing.Size(206, 20);
+            this.txtnolayers.TabIndex = 39;
             // 
             // toolTipHotspot10
             // 
@@ -269,12 +276,12 @@ namespace DeCompactPlugIn
             this.drop_coal.Size = new System.Drawing.Size(26, 23);
             this.drop_coal.TabIndex = 21;
             // 
-            // presentationBox2
+            // presentationBox_sandstone
             // 
-            this.presentationBox2.Location = new System.Drawing.Point(157, 173);
-            this.presentationBox2.Name = "presentationBox2";
-            this.presentationBox2.Size = new System.Drawing.Size(206, 22);
-            this.presentationBox2.TabIndex = 20;
+            this.presentationBox_sandstone.Location = new System.Drawing.Point(157, 173);
+            this.presentationBox_sandstone.Name = "presentationBox_sandstone";
+            this.presentationBox_sandstone.Size = new System.Drawing.Size(206, 22);
+            this.presentationBox_sandstone.TabIndex = 20;
             // 
             // dropTarget1
             // 
@@ -510,13 +517,6 @@ namespace DeCompactPlugIn
             this.applyButton.UseVisualStyleBackColor = false;
             this.applyButton.Click += new System.EventHandler(this.applyButton_Click);
             // 
-            // txtnolayers
-            // 
-            this.txtnolayers.Location = new System.Drawing.Point(157, 91);
-            this.txtnolayers.Name = "txtnolayers";
-            this.txtnolayers.Size = new System.Drawing.Size(206, 20);
-            this.txtnolayers.TabIndex = 39;
-            // 
             // DeCompactWorkStepUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -556,7 +556,7 @@ namespace DeCompactPlugIn
         private Slb.Ocean.Petrel.UI.Controls.BasicButton cancelButton;
         private Slb.Ocean.Petrel.UI.Controls.BasicButton OKButton;
         private Slb.Ocean.Petrel.UI.Controls.BasicButton applyButton;
-        private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox2;
+        private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox_sandstone;
         private Slb.Ocean.Petrel.UI.DropTarget dropTarget1;
         private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox_silt;
         private Slb.Ocean.Petrel.UI.DropTarget drop_silt;
