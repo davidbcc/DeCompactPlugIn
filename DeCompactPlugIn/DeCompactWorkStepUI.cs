@@ -122,7 +122,6 @@ namespace DeCompactPlugIn
             {
                 Grid gridCopy = CannedWorkflowHelper.Instance.RunWorkflow(grid) as Grid;
                 PetrelLogger.InfoOutputWindow(gridCopy.Name + " created");
-                //GridHelper.Instance.FaultEdgeProperty(gridCopy, false);
             }
             else
             {
