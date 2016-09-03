@@ -86,8 +86,8 @@ namespace DeCompactionPlugIn.Helpers
             IIdentifiable copiedObject = null;
             var cannedWf = FindPredefinedWorkflow("decompaction", "DB");
             var runner = new WorkflowRunner(cannedWf);
-            //input = cannedWf.InputReferenceVariables.ElementAt(0);
-            //runner.SetInputVariableBinding(input, objectToCopy);
+            runner.SetInputVariableBinding("$facies", 2);
+
             try
             {
                 runner.Run();
