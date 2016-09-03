@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration Type="Configuration.ConfigurationState" Version="1.0.0.12" Caption="Ocean - Tree Extension Ribbon">
+  <Sections Type="Extesibility.ConfigurationSectionCollection">
+    <Commands.CommandSection Version="1.0.0.7">
+      <Commands Type="Commands.CommandCollection">
+        <CommandInfo Id="DeCompactPlugIn.DeCompactPlugInCommand" Type="Commands.SimpleCommand">
+          <Extensions Type="Extensibility.ExtensionCollection">
+            <Attributes.AttributesExtension>
+              <Attributes Type="Attributes.AttributeCollection">
+                <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="DeCompactPlugIn" />
+                <Attributes.AttributeValue AttributeId="Appearance.Image.32" ValueType="Appearance.ImageData" Value="{Uri:pack://application:,,,/Slb.Ocean.Petrel.Resources;component/images/modules_32.png}" />
+                <Attributes.AttributeValue AttributeId="Appearance.Image.16" ValueType="Appearance.ImageData" Value="{Uri:pack://application:,,,/Slb.Ocean.Petrel.Resources;component/images/modules_16.png}" />
+              </Attributes>
+            </Attributes.AttributesExtension>
+          </Extensions>
+        </CommandInfo>
+      </Commands>
+      <CommandGroups Type="Commands.CommandGroupCollection">
+        <CommandGroup Id="Platform.CommandGroups.InsertObjects">
+          <CommandItems Type="Commands.CommandItemCollection">
+            <Commands.CommandItem CommandId="DeCompactPlugIn.DeCompactPlugInCommand" />
+          </CommandItems>
+          <Extensions Type="Extensibility.ExtensionCollection">
+            <Attributes.AttributesExtension />
+          </Extensions>
+        </CommandGroup>
+        <CommandGroup Id="Platform.CommandGroups.InsertFolders">
+          <CommandItems Type="Commands.CommandItemCollection"></CommandItems>
+          <Extensions Type="Extensibility.ExtensionCollection">
+            <Attributes.AttributesExtension />
+          </Extensions>
+        </CommandGroup>
+      </CommandGroups>
+    </Commands.CommandSection>
+  </Sections>
+</Configuration>

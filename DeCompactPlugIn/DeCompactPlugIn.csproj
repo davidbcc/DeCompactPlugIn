@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <!--ProjectType:Plugin-->
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E98A16F1-A212-48F8-9F0C-05B25BCC788C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DeCompactPlugIn</RootNamespace>
+    <AssemblyName>DeCompactPlugIn</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Slb.Ocean.Catalogs, Version=2015.3.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Coordinates, Version=2015.3.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Data, Version=2015.3.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Petrel.Configuration, Version=15.1.0.0, Culture=neutral, PublicKeyToken=d42cec326f61051f, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Petrel.Data.Persistence, Version=15.1.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Petrel.DomainObject.FrameworkModeling, Version=15.1.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Petrel.DomainObjectExtensions, Version=15.1.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Petrel.DomainObjectExtensions.Prestack, Version=15.1.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Petrel.Geology, Version=15.1.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Petrel.Microseismic, Version=15.1.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Petrel.Modeling, Version=15.1.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Petrel.ReservoirEngineering, Version=15.1.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Petrel.Seismic, Version=15.1.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Petrel.Simulation.EclipseKeywords, Version=15.1.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Petrel.Testing, Version=15.1.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Petrel.UI.Controls, Version=15.1.0.0, Culture=neutral, PublicKeyToken=da9605198f529641, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Petrel.UI.Visualization3D, Version=15.1.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Petrel.UI.WellSection, Version=15.1.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Petrel.Well, Version=15.1.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Petrel.Well.Treatment, Version=15.1.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Units, Version=2015.3.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="system.drawing" />
+    <Reference Include="system.windows.forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="Slb.Ocean.Core">
+      <Name>Slb.Ocean.Core</Name>
+      <HintPath>c:\program files\schlumberger\petrel 2015\Public\slb.ocean.core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Petrel">
+      <Name>Slb.Ocean.Petrel</Name>
+      <HintPath>c:\program files\schlumberger\petrel 2015\Public\slb.ocean.petrel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Basics">
+      <Name>Slb.Ocean.Basics</Name>
+      <HintPath>c:\program files\schlumberger\petrel 2015\Public\Slb.Ocean.Basics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Slb.Ocean.Geometry">
+      <Name>Slb.Ocean.Geometry</Name>
+      <HintPath>c:\program files\schlumberger\petrel 2015\Public\Slb.Ocean.Geometry.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeCompactModule.cs" />
+    <Compile Include="DeCompactPlugIn.cs" />
+    <Compile Include="DeCompactPlugInCommandHandler.cs" />
+    <Compile Include="DeCompactPlugInFactory.cs" />
+    <Compile Include="DeCompactPlugInImageInfo.cs" />
+    <Compile Include="DeCompactPlugInNameInfo.cs" />
+    <Compile Include="DeCompactWorkStep.cs" />
+    <Compile Include="DeCompactWorkStepUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeCompactWorkStepUI.designer.cs">
+      <DependentUpon>DeCompactWorkStepUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\CannedWorkflowPlugin.cs" />
+    <Compile Include="Helpers\GridHelper.cs" />
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="MainWindowImageInfo.cs" />
+    <Compile Include="MainWindowNameInfo.cs" />
+    <Compile Include="MainWindowUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainWindowUI.designer.cs">
+      <DependentUpon>MainWindowUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="model\WorkStepModel.cs" />
+    <Compile Include="Plugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CannedWorkflowSampleConfig.xml" />
+    <Content Include="OceanResources\OceanRibbon.xml" />
+    <Content Include="OceanResources\OceanRibbonConfiguration1.xml" />
+    <Content Include="OceanResources\Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CannedWorkflowSampleResources.resx" />
+    <EmbeddedResource Include="DeCompactWorkStepUI.resx">
+      <DependentUpon>DeCompactWorkStepUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>del "$(ProjectDir)\plugin.xml"
+"%25OCEAN2015HOME%25\PluginPackager.exe" /g "$(TargetPath)" "$(ProjectDir)\plugin.xml" "%25OCEAN2015HOME_x64%25\petrel.exe"
+"%25OCEAN2015HOME%25\PluginPackager.exe" /m "$(ProjectDir)\plugin.xml" "%25OCEAN2015HOME_x64%25\petrel.exe" "$(TargetDir)"
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+		Other similar extension points exist, see Microsoft.Common.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+</Project>
