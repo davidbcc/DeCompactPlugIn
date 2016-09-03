@@ -49,5 +49,14 @@ namespace DeCompactPlugIn.model
         /// Carb Mud
         /// </summary>
         public double CarbMud { get; set; }
+
+        /// <summary>
+        /// Iteration Looping
+        /// </summary>
+        public int iteration { get; set; }
+        /// <summary>
+        /// Name , Output value
+        /// </summary>
+        public string Name { get; set; }
     }
 }

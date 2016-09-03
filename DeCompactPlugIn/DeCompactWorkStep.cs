@@ -92,13 +92,15 @@ namespace DeCompactPlugIn
             private int _iteration;
             private Grid _grid;
             private string _calName;
-            private string _facies;
+            private double _facies;
             private double _coal;
             private double _silt;
             private double _sandstone;
             private double _mudstone;
             private double _dirtyss;
             private double _carbmud;
+            private string _name;
+           
             #endregion
             public Arguments()
                 : this(DataManager.DataSourceManager)
@@ -174,7 +176,7 @@ namespace DeCompactPlugIn
             /// <summary>
             /// Facies
             /// </summary>
-            public string Facies { 
+            public double Facies { 
                  internal get
                 {
                     return _facies;
@@ -264,6 +266,21 @@ namespace DeCompactPlugIn
                 set
                 {
                     _carbmud = value;
+                }
+            }
+
+            /// <summary>
+            /// Output variable Name
+            /// </summary>
+            public string Name
+            {
+                 get
+                {
+                    return _name;
+                }
+                internal set
+                {
+                    _name = value;
                 }
             }
             #endregion

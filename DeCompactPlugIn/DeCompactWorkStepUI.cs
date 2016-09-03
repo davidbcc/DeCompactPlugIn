@@ -23,7 +23,7 @@ namespace DeCompactPlugIn
         /// <summary>
         /// The argument package instance being edited by the UI.
         /// </summary>
-        private DeCompactWorkStep.Arguments args;
+        private DeCompactWorkStep.Arguments _args;
         /// <summary>
         /// Contains the actual underlaying context.
         /// </summary>
@@ -48,7 +48,7 @@ namespace DeCompactPlugIn
             InitializeComponent();
 
             this.workstep = workstep;
-            this.args = args;
+            this._args = args;
             this.context = context;
             UiRendering();
         }
@@ -119,13 +119,14 @@ namespace DeCompactPlugIn
         private void runButton_Click(object sender, EventArgs e)
         {
             var args = new WorkStepArgument();
-            args.Facies = Convert.ToDouble(presentationBox_facies.Text);
-            args.Coal = Convert.ToDouble(presentationBox_coal.Text);
-            args.Silt = Convert.ToDouble(presentationBox_silt.Text);
-            args.SandStone = Convert.ToDouble(presentationBox_sandstone.Text);
-            args.MudStone = Convert.ToDouble(presentationBox_mudstone.Text);
-            args.DirtySS = Convert.ToDouble(presentationBox_dirtyss.Text);
-            args.CarbMud = Convert.ToDouble(presentationBox_carbmud.Text);
+            _args.Facies = Convert.ToDouble(presentationBox_facies.Text);
+            _args.Coal = Convert.ToDouble(presentationBox_coal.Text);
+            _args.Silt = Convert.ToDouble(presentationBox_silt.Text);
+            _args.SandStone = Convert.ToDouble(presentationBox_sandstone.Text);
+            _args.MudStone = Convert.ToDouble(presentationBox_mudstone.Text);
+            _args.DirtySS = Convert.ToDouble(presentationBox_dirtyss.Text);
+            _args.CarbMud = Convert.ToDouble(presentationBox_carbmud.Text);
+          
 
             Grid grid = presGrid.Tag as Grid;
             if (grid != null)

@@ -98,6 +98,7 @@ namespace DeCompactionPlugIn.Helpers
             runner.SetInputVariableBinding("$mudstone", args.MudStone);
             runner.SetInputVariableBinding("$dirtyss", args.DirtySS);
             runner.SetInputVariableBinding("$carbmud", args.CarbMud);
+            runner.SetInputVariableBinding("$carbmud", args.iteration);
             try
             {
                 runner.Run();
