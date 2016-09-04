@@ -42,18 +42,6 @@ namespace DeCompactPlugIn
             this.toolTipHotspot3 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
             this.toolTipHotspot2 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
             this.toolTipHotspot1 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
-            this.presentationBox_carbmud = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
-            this.drop_carbmud = new Slb.Ocean.Petrel.UI.DropTarget();
-            this.presentationBox_dirtyss = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
-            this.drop_dirtyss = new Slb.Ocean.Petrel.UI.DropTarget();
-            this.presentationBox_mudstone = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
-            this.drop_mudstone = new Slb.Ocean.Petrel.UI.DropTarget();
-            this.presentationBox_coal = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
-            this.drop_coal = new Slb.Ocean.Petrel.UI.DropTarget();
-            this.presentationBox_sandstone = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
-            this.dropTarget1 = new Slb.Ocean.Petrel.UI.DropTarget();
-            this.presentationBox_silt = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
-            this.drop_silt = new Slb.Ocean.Petrel.UI.DropTarget();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -76,6 +64,13 @@ namespace DeCompactPlugIn
             this.cancelButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
             this.OKButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
             this.applyButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
+            this.txtSilt = new System.Windows.Forms.TextBox();
+            this.txtSandStone = new System.Windows.Forms.TextBox();
+            this.txtCoal = new System.Windows.Forms.TextBox();
+            this.txtMudStone = new System.Windows.Forms.TextBox();
+            this.txtDirtySS = new System.Windows.Forms.TextBox();
+            this.txtCarbMud = new System.Windows.Forms.TextBox();
+            this.faciescombox = new Slb.Ocean.Petrel.UI.Controls.ComboBox();
             this.tab1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -92,6 +87,13 @@ namespace DeCompactPlugIn
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.faciescombox);
+            this.tabPage1.Controls.Add(this.txtCarbMud);
+            this.tabPage1.Controls.Add(this.txtDirtySS);
+            this.tabPage1.Controls.Add(this.txtMudStone);
+            this.tabPage1.Controls.Add(this.txtCoal);
+            this.tabPage1.Controls.Add(this.txtSandStone);
+            this.tabPage1.Controls.Add(this.txtSilt);
             this.tabPage1.Controls.Add(this.txtnolayers);
             this.tabPage1.Controls.Add(this.toolTipHotspot10);
             this.tabPage1.Controls.Add(this.toolTipHotspot9);
@@ -103,18 +105,6 @@ namespace DeCompactPlugIn
             this.tabPage1.Controls.Add(this.toolTipHotspot3);
             this.tabPage1.Controls.Add(this.toolTipHotspot2);
             this.tabPage1.Controls.Add(this.toolTipHotspot1);
-            this.tabPage1.Controls.Add(this.presentationBox_carbmud);
-            this.tabPage1.Controls.Add(this.drop_carbmud);
-            this.tabPage1.Controls.Add(this.presentationBox_dirtyss);
-            this.tabPage1.Controls.Add(this.drop_dirtyss);
-            this.tabPage1.Controls.Add(this.presentationBox_mudstone);
-            this.tabPage1.Controls.Add(this.drop_mudstone);
-            this.tabPage1.Controls.Add(this.presentationBox_coal);
-            this.tabPage1.Controls.Add(this.drop_coal);
-            this.tabPage1.Controls.Add(this.presentationBox_sandstone);
-            this.tabPage1.Controls.Add(this.dropTarget1);
-            this.tabPage1.Controls.Add(this.presentationBox_silt);
-            this.tabPage1.Controls.Add(this.drop_silt);
             this.tabPage1.Controls.Add(this.label10);
             this.tabPage1.Controls.Add(this.label9);
             this.tabPage1.Controls.Add(this.label8);
@@ -145,6 +135,7 @@ namespace DeCompactPlugIn
             this.txtnolayers.Name = "txtnolayers";
             this.txtnolayers.Size = new System.Drawing.Size(206, 20);
             this.txtnolayers.TabIndex = 39;
+            this.txtnolayers.Text = "0";
             // 
             // toolTipHotspot10
             // 
@@ -190,7 +181,7 @@ namespace DeCompactPlugIn
             // 
             // toolTipHotspot4
             // 
-            this.toolTipHotspot4.Location = new System.Drawing.Point(369, 116);
+            this.toolTipHotspot4.Location = new System.Drawing.Point(497, 117);
             this.toolTipHotspot4.Name = "toolTipHotspot4";
             this.toolTipHotspot4.Size = new System.Drawing.Size(20, 20);
             this.toolTipHotspot4.TabIndex = 32;
@@ -215,96 +206,6 @@ namespace DeCompactPlugIn
             this.toolTipHotspot1.Name = "toolTipHotspot1";
             this.toolTipHotspot1.Size = new System.Drawing.Size(20, 20);
             this.toolTipHotspot1.TabIndex = 29;
-            // 
-            // presentationBox_carbmud
-            // 
-            this.presentationBox_carbmud.Location = new System.Drawing.Point(159, 289);
-            this.presentationBox_carbmud.Name = "presentationBox_carbmud";
-            this.presentationBox_carbmud.Size = new System.Drawing.Size(204, 22);
-            this.presentationBox_carbmud.TabIndex = 28;
-            // 
-            // drop_carbmud
-            // 
-            this.drop_carbmud.AllowDrop = true;
-            this.drop_carbmud.Location = new System.Drawing.Point(124, 286);
-            this.drop_carbmud.Name = "drop_carbmud";
-            this.drop_carbmud.Size = new System.Drawing.Size(26, 23);
-            this.drop_carbmud.TabIndex = 27;
-            // 
-            // presentationBox_dirtyss
-            // 
-            this.presentationBox_dirtyss.Location = new System.Drawing.Point(159, 260);
-            this.presentationBox_dirtyss.Name = "presentationBox_dirtyss";
-            this.presentationBox_dirtyss.Size = new System.Drawing.Size(204, 22);
-            this.presentationBox_dirtyss.TabIndex = 26;
-            // 
-            // drop_dirtyss
-            // 
-            this.drop_dirtyss.AllowDrop = true;
-            this.drop_dirtyss.Location = new System.Drawing.Point(124, 261);
-            this.drop_dirtyss.Name = "drop_dirtyss";
-            this.drop_dirtyss.Size = new System.Drawing.Size(26, 23);
-            this.drop_dirtyss.TabIndex = 25;
-            // 
-            // presentationBox_mudstone
-            // 
-            this.presentationBox_mudstone.Location = new System.Drawing.Point(159, 231);
-            this.presentationBox_mudstone.Name = "presentationBox_mudstone";
-            this.presentationBox_mudstone.Size = new System.Drawing.Size(204, 22);
-            this.presentationBox_mudstone.TabIndex = 24;
-            // 
-            // drop_mudstone
-            // 
-            this.drop_mudstone.AllowDrop = true;
-            this.drop_mudstone.Location = new System.Drawing.Point(124, 228);
-            this.drop_mudstone.Name = "drop_mudstone";
-            this.drop_mudstone.Size = new System.Drawing.Size(26, 23);
-            this.drop_mudstone.TabIndex = 23;
-            // 
-            // presentationBox_coal
-            // 
-            this.presentationBox_coal.Location = new System.Drawing.Point(159, 202);
-            this.presentationBox_coal.Name = "presentationBox_coal";
-            this.presentationBox_coal.Size = new System.Drawing.Size(204, 22);
-            this.presentationBox_coal.TabIndex = 22;
-            // 
-            // drop_coal
-            // 
-            this.drop_coal.AllowDrop = true;
-            this.drop_coal.Location = new System.Drawing.Point(124, 199);
-            this.drop_coal.Name = "drop_coal";
-            this.drop_coal.Size = new System.Drawing.Size(26, 23);
-            this.drop_coal.TabIndex = 21;
-            // 
-            // presentationBox_sandstone
-            // 
-            this.presentationBox_sandstone.Location = new System.Drawing.Point(157, 173);
-            this.presentationBox_sandstone.Name = "presentationBox_sandstone";
-            this.presentationBox_sandstone.Size = new System.Drawing.Size(206, 22);
-            this.presentationBox_sandstone.TabIndex = 20;
-            // 
-            // dropTarget1
-            // 
-            this.dropTarget1.AllowDrop = true;
-            this.dropTarget1.Location = new System.Drawing.Point(124, 170);
-            this.dropTarget1.Name = "dropTarget1";
-            this.dropTarget1.Size = new System.Drawing.Size(26, 23);
-            this.dropTarget1.TabIndex = 19;
-            // 
-            // presentationBox_silt
-            // 
-            this.presentationBox_silt.Location = new System.Drawing.Point(158, 145);
-            this.presentationBox_silt.Name = "presentationBox_silt";
-            this.presentationBox_silt.Size = new System.Drawing.Size(205, 22);
-            this.presentationBox_silt.TabIndex = 18;
-            // 
-            // drop_silt
-            // 
-            this.drop_silt.AllowDrop = true;
-            this.drop_silt.Location = new System.Drawing.Point(124, 144);
-            this.drop_silt.Name = "drop_silt";
-            this.drop_silt.Size = new System.Drawing.Size(26, 23);
-            this.drop_silt.TabIndex = 17;
             // 
             // label10
             // 
@@ -518,6 +419,61 @@ namespace DeCompactPlugIn
             this.applyButton.UseVisualStyleBackColor = false;
             this.applyButton.Click += new System.EventHandler(this.applyButton_Click);
             // 
+            // txtSilt
+            // 
+            this.txtSilt.Location = new System.Drawing.Point(157, 145);
+            this.txtSilt.Name = "txtSilt";
+            this.txtSilt.Size = new System.Drawing.Size(206, 20);
+            this.txtSilt.TabIndex = 40;
+            this.txtSilt.Text = "0.0";
+            // 
+            // txtSandStone
+            // 
+            this.txtSandStone.Location = new System.Drawing.Point(157, 171);
+            this.txtSandStone.Name = "txtSandStone";
+            this.txtSandStone.Size = new System.Drawing.Size(206, 20);
+            this.txtSandStone.TabIndex = 41;
+            this.txtSandStone.Text = "0.0";
+            // 
+            // txtCoal
+            // 
+            this.txtCoal.Location = new System.Drawing.Point(156, 197);
+            this.txtCoal.Name = "txtCoal";
+            this.txtCoal.Size = new System.Drawing.Size(206, 20);
+            this.txtCoal.TabIndex = 42;
+            this.txtCoal.Text = "0.0";
+            // 
+            // txtMudStone
+            // 
+            this.txtMudStone.Location = new System.Drawing.Point(156, 227);
+            this.txtMudStone.Name = "txtMudStone";
+            this.txtMudStone.Size = new System.Drawing.Size(206, 20);
+            this.txtMudStone.TabIndex = 43;
+            this.txtMudStone.Text = "0.0";
+            // 
+            // txtDirtySS
+            // 
+            this.txtDirtySS.Location = new System.Drawing.Point(156, 258);
+            this.txtDirtySS.Name = "txtDirtySS";
+            this.txtDirtySS.Size = new System.Drawing.Size(206, 20);
+            this.txtDirtySS.TabIndex = 44;
+            this.txtDirtySS.Text = "0.0";
+            // 
+            // txtCarbMud
+            // 
+            this.txtCarbMud.Location = new System.Drawing.Point(156, 289);
+            this.txtCarbMud.Name = "txtCarbMud";
+            this.txtCarbMud.Size = new System.Drawing.Size(206, 20);
+            this.txtCarbMud.TabIndex = 45;
+            this.txtCarbMud.Text = "0.0";
+            // 
+            // faciescombox
+            // 
+            this.faciescombox.Location = new System.Drawing.Point(370, 117);
+            this.faciescombox.Name = "faciescombox";
+            this.faciescombox.Size = new System.Drawing.Size(121, 22);
+            this.faciescombox.TabIndex = 46;
+            // 
             // DeCompactWorkStepUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -557,24 +513,12 @@ namespace DeCompactPlugIn
         private Slb.Ocean.Petrel.UI.Controls.BasicButton cancelButton;
         private Slb.Ocean.Petrel.UI.Controls.BasicButton OKButton;
         private Slb.Ocean.Petrel.UI.Controls.BasicButton applyButton;
-        private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox_sandstone;
-        private Slb.Ocean.Petrel.UI.DropTarget dropTarget1;
-        private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox_silt;
-        private Slb.Ocean.Petrel.UI.DropTarget drop_silt;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox_carbmud;
-        private Slb.Ocean.Petrel.UI.DropTarget drop_carbmud;
-        private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox_dirtyss;
-        private Slb.Ocean.Petrel.UI.DropTarget drop_dirtyss;
-        private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox_mudstone;
-        private Slb.Ocean.Petrel.UI.DropTarget drop_mudstone;
-        private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox_coal;
-        private Slb.Ocean.Petrel.UI.DropTarget drop_coal;
         private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot10;
         private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot9;
         private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot8;
@@ -586,5 +530,12 @@ namespace DeCompactPlugIn
         private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot2;
         private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot1;
         private System.Windows.Forms.TextBox txtnolayers;
+        private System.Windows.Forms.TextBox txtCoal;
+        private System.Windows.Forms.TextBox txtSandStone;
+        private System.Windows.Forms.TextBox txtSilt;
+        private System.Windows.Forms.TextBox txtCarbMud;
+        private System.Windows.Forms.TextBox txtDirtySS;
+        private System.Windows.Forms.TextBox txtMudStone;
+        private Slb.Ocean.Petrel.UI.Controls.ComboBox faciescombox;
     }
 }

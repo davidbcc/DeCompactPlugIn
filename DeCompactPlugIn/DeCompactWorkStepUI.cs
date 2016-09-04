@@ -104,6 +104,7 @@ namespace DeCompactPlugIn
 
         #endregion
 
+        
         #region buttons events handling
         private void cancelButton_Click(object sender, EventArgs e)
         {
@@ -113,7 +114,8 @@ namespace DeCompactPlugIn
         
         private void OKButton_Click(object sender, EventArgs e)
         {
-            OKButton_Click(sender, e);
+            var findForm = FindForm();
+            if (findForm != null) findForm.Close();
         }
         private void applyButton_Click(object sender, EventArgs e)
         {
