@@ -1,4 +1,5 @@
 ﻿using Slb.Ocean.Core;
+using Slb.Ocean.Petrel;
 using Slb.Ocean.Petrel.DomainObject.PillarGrid;
 using System;
 using System.Collections.Generic;
@@ -11,8 +12,13 @@ namespace DeCompactPlugIn.model
     /// <summary>
     /// Work Step Model, parameters object. Passing in to Workflow.
     /// </summary>
-    public class WorkStepArgument 
+     [Serializable]
+    public class WorkStepArgument
     {
+        #region private variables
+         private Droid m_droid = Droid.Empty;
+        #endregion
+
         /// <summary>
         /// Grid Property. Identifiable object.
         /// </summary>
@@ -58,5 +64,13 @@ namespace DeCompactPlugIn.model
         /// Name , Output value
         /// </summary>
         public string Name { get; set; }
+
+
+        #region Constructor
+        public WorkStepArgument()
+        {
+            PetrelLogger.InfoOutputWindow("*** WorkStepArgument Initialized ***");
+        }
+        #endregion
     }
 }
