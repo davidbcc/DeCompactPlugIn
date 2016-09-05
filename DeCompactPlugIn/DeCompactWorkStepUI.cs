@@ -66,34 +66,34 @@ namespace DeCompactPlugIn
         private void drop_grid_DragDrop(object sender, DragEventArgs e)
         {
 
-            Grid grid = e.Data.GetData(typeof(object)) as Grid;
-            if (grid == null)
+            _grid = e.Data.GetData(typeof(object)) as Grid;
+            if (_grid == null)
             {
                 PetrelLogger.WarnBox("Please select a proper grid");
                 PetrelLogger.InfoOutputWindow("Please select a proper grid");
                 return;
             }
-            presGrid.Text = grid.Name;
-            IImageInfoFactory fact = CoreSystem.GetService<IImageInfoFactory>(grid);
-            presGrid.Image = fact.GetImageInfo(grid).GetDisplayImage(new ImageInfoContext());
-            presGrid.Tag = grid;
+            presGrid.Text = _grid.Name;
+            IImageInfoFactory fact = CoreSystem.GetService<IImageInfoFactory>(_grid);
+            presGrid.Image = fact.GetImageInfo(_grid).GetDisplayImage(new ImageInfoContext());
+            presGrid.Tag = _grid;
         }
 
 
         private void drop_horizon_DragDrop(object sender, DragEventArgs e)
         {
 
-            Horizon horizon = e.Data.GetData(typeof(object)) as Horizon;
-            if (horizon == null)
+            _horizon = e.Data.GetData(typeof(object)) as Horizon;
+            if (_horizon == null)
             {
                 PetrelLogger.WarnBox("Please select a proper Horizon");
                 PetrelLogger.InfoOutputWindow("Please select a proper Horizon");
                 return;
             }
-            presHorizon.Text = horizon.Name;
-            IImageInfoFactory fact = CoreSystem.GetService<IImageInfoFactory>(horizon);
-            presHorizon.Image = fact.GetImageInfo(horizon).GetDisplayImage(new ImageInfoContext());
-            presHorizon.Tag = horizon;
+            presHorizon.Text = _horizon.Name;
+            IImageInfoFactory fact = CoreSystem.GetService<IImageInfoFactory>(_horizon);
+            presHorizon.Image = fact.GetImageInfo(_horizon).GetDisplayImage(new ImageInfoContext());
+            presHorizon.Tag = _horizon;
         }
 
         private void drop_facies_DragDrop(object sender, DragEventArgs e)
@@ -121,6 +121,7 @@ namespace DeCompactPlugIn
         {
 
         }
+
         private void runButton_Click(object sender, EventArgs e)
         {
             var args = new WorkStepArgument();
@@ -135,6 +136,8 @@ namespace DeCompactPlugIn
             //args.MudStone = Convert.ToDouble(presentationBox_mudstone.Text);
             //args.DirtySS = Convert.ToDouble(presentationBox_dirtyss.Text);
             //args.CarbMud = Convert.ToDouble(presentationBox_carbmud.Text);
+            args.Grid = _grid;
+            args.Horizon = _horizon;
             args.iteration = Int32.Parse(txtnolayers.Text);
 
             Grid grid = presGrid.Tag as Grid;

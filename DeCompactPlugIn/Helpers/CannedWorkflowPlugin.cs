@@ -15,6 +15,20 @@ namespace DeCompactionPlugIn.Helpers
     /// </summary>
     public class CannedWorkflowHelper
     {
+
+        #region constant values
+        private const int FACIES = 0;
+        private const int COAL = 1;
+        private const int SILT = 2;
+        private const int SANDSTONE = 3;
+        private const int MUDSTONE = 4;
+        private const int DIRTYSS = 5;
+        private const int CARBMUD = 6;
+        private const int GRID = 7;
+        private const int HORIZON = 8;
+        
+        #endregion
+
         private static CannedWorkflowHelper _instance;
 
         public static CannedWorkflowHelper Instance
@@ -86,11 +100,23 @@ namespace DeCompactionPlugIn.Helpers
             {
                 PetrelLogger.InfoOutputWindow("Arguments cannot be NULL");
             }
-            ReferenceVariable input = null;
-            ReferenceVariable output = null;
+        
+            ReferenceVariable inputGrid = null;
+            ReferenceVariable inputHorizon = null;
+            ReferenceVariable inputFacies= null;
             IIdentifiable copiedObject = null;
             var cannedWf = FindPredefinedWorkflow("decompaction", "DB");
             var runner = new WorkflowRunner(cannedWf);
+
+
+            inputGrid = cannedWf.InputReferenceVariables.ElementAt(GRID);
+            inputHorizon = cannedWf.InputReferenceVariables.ElementAt(HORIZON);
+            inputFacies = cannedWf.InputReferenceVariables.ElementAt(FACIES);
+
+
+            runner.SetInputVariableBinding(inputGrid, args.Grid);
+            runner.SetInputVariableBinding(inputHorizon, args.Horizon);
+            runner.SetInputVariableBinding(inputFacies, args.Facies);
             runner.SetInputVariableBinding("$facies", args.Facies);
             runner.SetInputVariableBinding("$coal", args.Coal);
             runner.SetInputVariableBinding("$silt", args.Silt);
@@ -99,6 +125,7 @@ namespace DeCompactionPlugIn.Helpers
             runner.SetInputVariableBinding("$dirtyss", args.DirtySS);
             runner.SetInputVariableBinding("$carbmud", args.CarbMud);
             runner.SetInputVariableBinding("$carbmud", args.iteration);
+         
             try
             {
                 runner.Run();

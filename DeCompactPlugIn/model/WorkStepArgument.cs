@@ -26,7 +26,7 @@ namespace DeCompactPlugIn.model
         /// <summary>
         /// Horizontal Property. Identifiable object.
         /// </summary>
-        public Horizon Horizontal { get; set; }
+        public Horizon Horizon { get; set; }
         /// <summary>
         /// Facies
         /// </summary>
