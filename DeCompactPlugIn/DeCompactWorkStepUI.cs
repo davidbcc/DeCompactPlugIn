@@ -30,6 +30,7 @@ namespace DeCompactPlugIn
         private WorkflowContext context;
         private Grid _grid;
         private Horizon _horizon;
+        private DictionaryProperty _facies;
         private int _Layers;
         #endregion
 
@@ -98,10 +99,23 @@ namespace DeCompactPlugIn
 
         private void drop_facies_DragDrop(object sender, DragEventArgs e)
         {
-         
+            var drop = e.Data.GetData(typeof(object));
+            _facies = drop as DictionaryProperty;
+            if (_facies != null)
+            {
+
+                var nif = CoreSystem.GetService<INameInfoFactory>(_facies);
+                this.presentationBox_facies.Text = nif.GetNameInfo(_facies).Name;
+                var imgF = CoreSystem.GetService<IImageInfoFactory>(_facies);
+                presentationBox_facies.Image = imgF.GetImageInfo(_facies).GetDisplayImage(new ImageInfoContext());
+                presentationBox_facies.Tag = _facies;
+            }
+            else
+                PetrelLogger.WarnBox("Please select facet");
+            PetrelLogger.InfoOutputWindow("Please select facet");
         }
 
-
+   
         #endregion
 
         
@@ -125,21 +139,17 @@ namespace DeCompactPlugIn
         private void runButton_Click(object sender, EventArgs e)
         {
             var args = new WorkStepArgument();
-            if(presentationBox_facies.Text == "")
-            {
-                presentationBox_facies.Text = "-1";
-            }
-            args.Facies = Convert.ToDouble(presentationBox_facies.Text);
+
+            args.Facies = _facies;
+            args.Grid = _grid;
+            args.Horizon = _horizon;
+            args.iteration = Convert.ToInt16(txtnolayers.Text);
             //args.Coal = Convert.ToDouble(presentationBox_coal.Text);
             //args.Silt = Convert.ToDouble(presentationBox_silt.Text);
             //args.SandStone = Convert.ToDouble(presentationBox_sandstone.Text);
             //args.MudStone = Convert.ToDouble(presentationBox_mudstone.Text);
             //args.DirtySS = Convert.ToDouble(presentationBox_dirtyss.Text);
             //args.CarbMud = Convert.ToDouble(presentationBox_carbmud.Text);
-            args.Grid = _grid;
-            args.Horizon = _horizon;
-            args.iteration = Int32.Parse(txtnolayers.Text);
-
             Grid grid = presGrid.Tag as Grid;
             if (grid != null)
             {
@@ -153,6 +163,8 @@ namespace DeCompactPlugIn
             }
         }
         #endregion
+
+      
 
  
 

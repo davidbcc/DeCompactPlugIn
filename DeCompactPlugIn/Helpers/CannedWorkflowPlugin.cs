@@ -26,7 +26,7 @@ namespace DeCompactionPlugIn.Helpers
         private const int CARBMUD = 6;
         private const int GRID = 7;
         private const int HORIZON = 8;
-        
+        private const int ITERATION= 9;
         #endregion
 
         private static CannedWorkflowHelper _instance;
@@ -104,6 +104,7 @@ namespace DeCompactionPlugIn.Helpers
             ReferenceVariable inputGrid = null;
             ReferenceVariable inputHorizon = null;
             ReferenceVariable inputFacies= null;
+            ReferenceVariable inputIteration = null;
             IIdentifiable copiedObject = null;
             var cannedWf = FindPredefinedWorkflow("decompaction", "DB");
             var runner = new WorkflowRunner(cannedWf);
@@ -112,20 +113,24 @@ namespace DeCompactionPlugIn.Helpers
             inputGrid = cannedWf.InputReferenceVariables.ElementAt(GRID);
             inputHorizon = cannedWf.InputReferenceVariables.ElementAt(HORIZON);
             inputFacies = cannedWf.InputReferenceVariables.ElementAt(FACIES);
-
+            //inputIteration = cannedWf.InputReferenceVariables.ElementAt(ITERATION);
 
             runner.SetInputVariableBinding(inputGrid, args.Grid);
             runner.SetInputVariableBinding(inputHorizon, args.Horizon);
             runner.SetInputVariableBinding(inputFacies, args.Facies);
-            runner.SetInputVariableBinding("$facies", args.Facies);
+            //runner.SetInputVariableBinding(inputIteration, args.iteration);
+
+            runner.SetInputVariableBinding("$iteration", args.iteration);
             runner.SetInputVariableBinding("$coal", args.Coal);
             runner.SetInputVariableBinding("$silt", args.Silt);
             runner.SetInputVariableBinding("$sandstone", args.SandStone);
             runner.SetInputVariableBinding("$mudstone", args.MudStone);
             runner.SetInputVariableBinding("$dirtyss", args.DirtySS);
             runner.SetInputVariableBinding("$carbmud", args.CarbMud);
-            runner.SetInputVariableBinding("$carbmud", args.iteration);
+     
          
+
+
             try
             {
                 runner.Run();
@@ -136,8 +141,8 @@ namespace DeCompactionPlugIn.Helpers
            
             catch(Exception ex)
             {
-                PetrelLogger.InfoOutputWindow(string.Format("Workflow Run error occured:{0}", ex.Message));
-                PetrelLogger.InfoOutputWindow(string.Format("Workflow Run error occured:{0}", ex.Message));
+                PetrelLogger.InfoOutputWindow(string.Format(" Decompaction Workflow Run error occured:{0}", ex.Message));
+                PetrelLogger.InfoOutputWindow(string.Format(" Decompaction Workflow Run error occured:{0}", ex.Message));
             }
             finally
             {

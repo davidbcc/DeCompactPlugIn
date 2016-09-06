@@ -30,7 +30,7 @@ namespace DeCompactPlugIn.model
         /// <summary>
         /// Facies
         /// </summary>
-        public double Facies { get; set; }
+        public DictionaryProperty Facies { get; set; }
         /// <summary>
         /// Silt
         /// </summary>
@@ -69,6 +69,7 @@ namespace DeCompactPlugIn.model
         #region Constructor
         public WorkStepArgument()
         {
+          
             PetrelLogger.InfoOutputWindow("*** WorkStepArgument Initialized ***");
         }
         #endregion
