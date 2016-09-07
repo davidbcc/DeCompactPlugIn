@@ -113,12 +113,12 @@ namespace DeCompactionPlugIn.Helpers
             inputGrid = cannedWf.InputReferenceVariables.ElementAt(GRID);
             inputHorizon = cannedWf.InputReferenceVariables.ElementAt(HORIZON);
             inputFacies = cannedWf.InputReferenceVariables.ElementAt(FACIES);
-            //inputIteration = cannedWf.InputReferenceVariables.ElementAt(ITERATION);
+            inputIteration = cannedWf.InputReferenceVariables.ElementAt(ITERATION);
 
             runner.SetInputVariableBinding(inputGrid, args.Grid);
             runner.SetInputVariableBinding(inputHorizon, args.Horizon);
             runner.SetInputVariableBinding(inputFacies, args.Facies);
-            //runner.SetInputVariableBinding(inputIteration, args.iteration);
+            runner.SetInputVariableBinding(inputIteration, args.iteration);
 
             runner.SetInputVariableBinding("$iteration", args.iteration);
             runner.SetInputVariableBinding("$coal", args.Coal);
@@ -129,8 +129,6 @@ namespace DeCompactionPlugIn.Helpers
             runner.SetInputVariableBinding("$carbmud", args.CarbMud);
      
          
-
-
             try
             {
                 runner.Run();

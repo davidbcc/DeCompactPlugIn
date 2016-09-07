@@ -32,6 +32,7 @@ namespace DeCompactPlugIn
         private Horizon _horizon;
         private DictionaryProperty _facies;
         private int _Layers;
+        private Object _silt;
         #endregion
 
         /// <summary>
@@ -115,7 +116,23 @@ namespace DeCompactPlugIn
             PetrelLogger.InfoOutputWindow("Please select facet");
         }
 
-   
+        private void dropTarget_silt_DragDrop(object sender, DragEventArgs e)
+        {
+            var drop = e.Data.GetData(typeof(object));
+            _silt = drop as Object;
+            if (_silt != null)
+            {
+
+                var nif = CoreSystem.GetService<INameInfoFactory>(_silt);
+                this.presentationBox_facies.Text = nif.GetNameInfo(_silt).Name;
+                var imgF = CoreSystem.GetService<IImageInfoFactory>(_silt);
+                presentationBox_silt.Image = imgF.GetImageInfo(_silt).GetDisplayImage(new ImageInfoContext());
+                presentationBox_silt.Tag = _silt;
+            }
+            else
+                PetrelLogger.WarnBox("Please select facet");
+            PetrelLogger.InfoOutputWindow("Please select facet");
+        }
         #endregion
 
         
@@ -143,7 +160,7 @@ namespace DeCompactPlugIn
             args.Facies = _facies;
             args.Grid = _grid;
             args.Horizon = _horizon;
-            args.iteration = Convert.ToInt16(txtnolayers.Text);
+            args.iteration = txtnolayers.Text;
             //args.Coal = Convert.ToDouble(presentationBox_coal.Text);
             //args.Silt = Convert.ToDouble(presentationBox_silt.Text);
             //args.SandStone = Convert.ToDouble(presentationBox_sandstone.Text);
@@ -163,6 +180,8 @@ namespace DeCompactPlugIn
             }
         }
         #endregion
+
+    
 
       
 

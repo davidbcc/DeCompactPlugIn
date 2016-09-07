@@ -36,7 +36,6 @@ namespace DeCompactPlugIn
             this.txtMudStone = new System.Windows.Forms.TextBox();
             this.txtCoal = new System.Windows.Forms.TextBox();
             this.txtSandStone = new System.Windows.Forms.TextBox();
-            this.txtSilt = new System.Windows.Forms.TextBox();
             this.txtnolayers = new System.Windows.Forms.TextBox();
             this.toolTipHotspot10 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
             this.toolTipHotspot9 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
@@ -70,6 +69,8 @@ namespace DeCompactPlugIn
             this.cancelButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
             this.OKButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
             this.applyButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
+            this.dropTarget_silt = new Slb.Ocean.Petrel.UI.DropTarget();
+            this.presentationBox_silt = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
             this.tab1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -86,12 +87,13 @@ namespace DeCompactPlugIn
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.presentationBox_silt);
+            this.tabPage1.Controls.Add(this.dropTarget_silt);
             this.tabPage1.Controls.Add(this.txtCarbMud);
             this.tabPage1.Controls.Add(this.txtDirtySS);
             this.tabPage1.Controls.Add(this.txtMudStone);
             this.tabPage1.Controls.Add(this.txtCoal);
             this.tabPage1.Controls.Add(this.txtSandStone);
-            this.tabPage1.Controls.Add(this.txtSilt);
             this.tabPage1.Controls.Add(this.txtnolayers);
             this.tabPage1.Controls.Add(this.toolTipHotspot10);
             this.tabPage1.Controls.Add(this.toolTipHotspot9);
@@ -166,14 +168,6 @@ namespace DeCompactPlugIn
             this.txtSandStone.Size = new System.Drawing.Size(206, 20);
             this.txtSandStone.TabIndex = 41;
             this.txtSandStone.Text = "0.0";
-            // 
-            // txtSilt
-            // 
-            this.txtSilt.Location = new System.Drawing.Point(157, 145);
-            this.txtSilt.Name = "txtSilt";
-            this.txtSilt.Size = new System.Drawing.Size(206, 20);
-            this.txtSilt.TabIndex = 40;
-            this.txtSilt.Text = "0.0";
             // 
             // txtnolayers
             // 
@@ -319,7 +313,6 @@ namespace DeCompactPlugIn
             this.presentationBox_facies.Name = "presentationBox_facies";
             this.presentationBox_facies.Size = new System.Drawing.Size(206, 22);
             this.presentationBox_facies.TabIndex = 10;
-      
             // 
             // drop_facies
             // 
@@ -466,6 +459,22 @@ namespace DeCompactPlugIn
             this.applyButton.UseVisualStyleBackColor = false;
             this.applyButton.Click += new System.EventHandler(this.applyButton_Click);
             // 
+            // dropTarget_silt
+            // 
+            this.dropTarget_silt.AllowDrop = true;
+            this.dropTarget_silt.Location = new System.Drawing.Point(124, 145);
+            this.dropTarget_silt.Name = "dropTarget_silt";
+            this.dropTarget_silt.Size = new System.Drawing.Size(26, 23);
+            this.dropTarget_silt.TabIndex = 46;
+            this.dropTarget_silt.DragDrop += new System.Windows.Forms.DragEventHandler(this.dropTarget_silt_DragDrop);
+            // 
+            // presentationBox_silt
+            // 
+            this.presentationBox_silt.Location = new System.Drawing.Point(156, 145);
+            this.presentationBox_silt.Name = "presentationBox_silt";
+            this.presentationBox_silt.Size = new System.Drawing.Size(206, 22);
+            this.presentationBox_silt.TabIndex = 47;
+            // 
             // DeCompactWorkStepUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -524,9 +533,10 @@ namespace DeCompactPlugIn
         private System.Windows.Forms.TextBox txtnolayers;
         private System.Windows.Forms.TextBox txtCoal;
         private System.Windows.Forms.TextBox txtSandStone;
-        private System.Windows.Forms.TextBox txtSilt;
         private System.Windows.Forms.TextBox txtCarbMud;
         private System.Windows.Forms.TextBox txtDirtySS;
         private System.Windows.Forms.TextBox txtMudStone;
+        private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox_silt;
+        private Slb.Ocean.Petrel.UI.DropTarget dropTarget_silt;
     }
 }
