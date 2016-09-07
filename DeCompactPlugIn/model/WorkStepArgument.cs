@@ -1,5 +1,6 @@
 ﻿using Slb.Ocean.Core;
 using Slb.Ocean.Petrel;
+using Slb.Ocean.Petrel.DomainObject.Analysis;
 using Slb.Ocean.Petrel.DomainObject.PillarGrid;
 using System;
 using System.Collections.Generic;
@@ -34,27 +35,27 @@ namespace DeCompactPlugIn.model
         /// <summary>
         /// Silt
         /// </summary>
-        public double Silt { get; set; }
+        public Function Silt { get; set; }
         /// <summary>
         /// Coal
         /// </summary>
-        public double Coal { get; set; }
+        public Function Coal { get; set; }
         /// <summary>
         /// Sand Stone
         /// </summary>
-        public double SandStone { get; set; }
+        public Function SandStone { get; set; }
         /// <summary>
         /// Mud Stone
         /// </summary>
-        public double MudStone { get; set; }
+        public Function MudStone { get; set; }
         /// <summary>
         /// Dirty SS
         /// </summary>
-        public double DirtySS { get; set; }
+        public Function DirtySS { get; set; }
         /// <summary>
         /// Carb Mud
         /// </summary>
-        public double CarbMud { get; set; }
+        public Function CarbMud { get; set; }
 
         /// <summary>
         /// Iteration Looping

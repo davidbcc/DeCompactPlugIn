@@ -34,6 +34,11 @@ namespace DeCompactPlugIn
         private DictionaryProperty _facies;
         private int _Layers;
         private Function _silt;
+        private Function _sandstone;
+        private Function _mudstone;
+        private Function _coal;
+        private Function _dirtyss;
+        private Function _carbmud;
         #endregion
 
         /// <summary>
@@ -131,9 +136,103 @@ namespace DeCompactPlugIn
                 presentationBox_silt.Tag = _silt;
             }
             else
-                PetrelLogger.WarnBox("Please select facet");
-                PetrelLogger.InfoOutputWindow("Please select facet");
+                PetrelLogger.WarnBox("Please select silt function");
+            PetrelLogger.InfoOutputWindow("Please select silt function");
         }
+
+        private void dropTarget_sandstone_DragDrop(object sender, DragEventArgs e)
+        {
+            var drop = e.Data.GetData(typeof(object));
+            _sandstone = drop as Function;
+            if (_sandstone != null)
+            {
+
+                var nif = CoreSystem.GetService<INameInfoFactory>(_sandstone);
+                this.presentationBox_sandstone.Text = nif.GetNameInfo(_sandstone).Name;
+                var imgS = CoreSystem.GetService<IImageInfoFactory>(_sandstone);
+                presentationBox_sandstone.Image = imgS.GetImageInfo(_sandstone).GetDisplayImage(new ImageInfoContext());
+                presentationBox_sandstone.Tag = _sandstone;
+            }
+            else
+                PetrelLogger.WarnBox("Please select sandstone");
+            PetrelLogger.InfoOutputWindow("Please select sandstone");
+        }
+
+        private void dropTarget_mudstone_DragDrop(object sender, DragEventArgs e)
+        {
+            var drop = e.Data.GetData(typeof(object));
+            _mudstone = drop as Function;
+            if (_mudstone != null)
+            {
+
+                var nif = CoreSystem.GetService<INameInfoFactory>(_mudstone);
+                this.presentationBox_mudstone.Text = nif.GetNameInfo(_mudstone).Name;
+                var imgS = CoreSystem.GetService<IImageInfoFactory>(_mudstone);
+                presentationBox_mudstone.Image = imgS.GetImageInfo(_mudstone).GetDisplayImage(new ImageInfoContext());
+                presentationBox_mudstone.Tag = _mudstone;
+            }
+            else
+                PetrelLogger.WarnBox("Please select sandstone");
+            PetrelLogger.InfoOutputWindow("Please select sandstone");
+        }
+        private void dropTarget_coal_DragDrop(object sender, DragEventArgs e)
+        {
+            var drop = e.Data.GetData(typeof(object));
+            _coal = drop as Function;
+            if (_coal != null)
+            {
+
+                var nif = CoreSystem.GetService<INameInfoFactory>(_coal);
+                this.presentationBox_coal.Text = nif.GetNameInfo(_coal).Name;
+                var imgS = CoreSystem.GetService<IImageInfoFactory>(_coal);
+                presentationBox_coal.Image = imgS.GetImageInfo(_coal).GetDisplayImage(new ImageInfoContext());
+                presentationBox_coal.Tag = _coal;
+            }
+            else
+                PetrelLogger.WarnBox("Please select coal");
+            PetrelLogger.InfoOutputWindow("Please select coal");
+        }
+
+
+        private void dropTarget_dirtyss_DragDrop(object sender, DragEventArgs e)
+        {
+            var drop = e.Data.GetData(typeof(object));
+            _dirtyss= drop as Function;
+            if (_dirtyss != null)
+            {
+
+                var nif = CoreSystem.GetService<INameInfoFactory>(_dirtyss);
+                this.presentationBox_coal.Text = nif.GetNameInfo(_dirtyss).Name;
+                var imgS = CoreSystem.GetService<IImageInfoFactory>(_dirtyss);
+                presentationBox_dirtyss.Image = imgS.GetImageInfo(_dirtyss).GetDisplayImage(new ImageInfoContext());
+                presentationBox_dirtyss.Tag = _dirtyss;
+            }
+            else
+                PetrelLogger.WarnBox("Please select dirtyss");
+            PetrelLogger.InfoOutputWindow("Please select dirtyss");
+        }
+
+        private void dropTarget_carbmud_DragDrop(object sender, DragEventArgs e)
+        {
+            var drop = e.Data.GetData(typeof(object));
+            _carbmud = drop as Function;
+            if (_dirtyss != null)
+            {
+
+                var nif = CoreSystem.GetService<INameInfoFactory>(_carbmud);
+                this.presentationBox_carbmud.Text = nif.GetNameInfo(_carbmud).Name;
+                var imgS = CoreSystem.GetService<IImageInfoFactory>(_carbmud);
+                presentationBox_carbmud.Image = imgS.GetImageInfo(_carbmud).GetDisplayImage(new ImageInfoContext());
+                presentationBox_carbmud.Tag = _carbmud;
+            }
+            else
+                PetrelLogger.WarnBox("Please select carbmud");
+            PetrelLogger.InfoOutputWindow("Please select carbmud");
+        }
+
+       
+      
+
         #endregion
 
         
@@ -162,12 +261,12 @@ namespace DeCompactPlugIn
             args.Grid = _grid;
             args.Horizon = _horizon;
             args.iteration = txtnolayers.Text;
-            //args.Coal = Convert.ToDouble(presentationBox_coal.Text);
-            //args.Silt = Convert.ToDouble(presentationBox_silt.Text);
-            //args.SandStone = Convert.ToDouble(presentationBox_sandstone.Text);
-            //args.MudStone = Convert.ToDouble(presentationBox_mudstone.Text);
-            //args.DirtySS = Convert.ToDouble(presentationBox_dirtyss.Text);
-            //args.CarbMud = Convert.ToDouble(presentationBox_carbmud.Text);
+            args.Coal = this._coal;
+            args.Silt = this._silt;
+            args.SandStone = this._sandstone;
+            args.MudStone = this._mudstone;
+            args.DirtySS = this._dirtyss;
+            args.CarbMud = this._carbmud;
             Grid grid = presGrid.Tag as Grid;
             if (grid != null)
             {
@@ -181,6 +280,12 @@ namespace DeCompactPlugIn
             }
         }
         #endregion
+
+    
+
+     
+
+   
 
     
 

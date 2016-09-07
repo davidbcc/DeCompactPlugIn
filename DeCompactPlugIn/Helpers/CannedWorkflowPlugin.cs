@@ -105,6 +105,12 @@ namespace DeCompactionPlugIn.Helpers
             ReferenceVariable inputHorizon = null;
             ReferenceVariable inputFacies= null;
             ReferenceVariable inputIteration = null;
+            ReferenceVariable inputSilt = null;
+            ReferenceVariable inputCoal = null;
+            ReferenceVariable inputSandStone = null;
+            ReferenceVariable inputMudStone = null;
+            ReferenceVariable inputDirtySS = null;
+            ReferenceVariable inputCarbMud = null;
             IIdentifiable copiedObject = null;
             var cannedWf = FindPredefinedWorkflow("decompaction", "DB");
             var runner = new WorkflowRunner(cannedWf);
@@ -114,21 +120,24 @@ namespace DeCompactionPlugIn.Helpers
             inputHorizon = cannedWf.InputReferenceVariables.ElementAt(HORIZON);
             inputFacies = cannedWf.InputReferenceVariables.ElementAt(FACIES);
             inputIteration = cannedWf.InputReferenceVariables.ElementAt(ITERATION);
+            inputSilt = cannedWf.InputReferenceVariables.ElementAt(SILT);
+            inputCoal = cannedWf.InputReferenceVariables.ElementAt(COAL);
+            inputSandStone = cannedWf.InputReferenceVariables.ElementAt(SANDSTONE);
+            inputMudStone = cannedWf.InputReferenceVariables.ElementAt(MUDSTONE);
+            inputDirtySS = cannedWf.InputReferenceVariables.ElementAt(DIRTYSS);
+            inputCarbMud = cannedWf.InputReferenceVariables.ElementAt(CARBMUD);
 
             runner.SetInputVariableBinding(inputGrid, args.Grid);
             runner.SetInputVariableBinding(inputHorizon, args.Horizon);
             runner.SetInputVariableBinding(inputFacies, args.Facies);
             runner.SetInputVariableBinding(inputIteration, args.iteration);
+            runner.SetInputVariableBinding(inputSilt, args.Silt);
+            runner.SetInputVariableBinding(inputCoal, args.Coal);
+            runner.SetInputVariableBinding(inputSandStone, args.SandStone);
+            runner.SetInputVariableBinding(inputMudStone, args.MudStone);
+            runner.SetInputVariableBinding(inputDirtySS, args.DirtySS);
+            runner.SetInputVariableBinding(inputCarbMud, args.CarbMud);
 
-            runner.SetInputVariableBinding("$iteration", args.iteration);
-            runner.SetInputVariableBinding("$coal", args.Coal);
-            runner.SetInputVariableBinding("$silt", args.Silt);
-            runner.SetInputVariableBinding("$sandstone", args.SandStone);
-            runner.SetInputVariableBinding("$mudstone", args.MudStone);
-            runner.SetInputVariableBinding("$dirtyss", args.DirtySS);
-            runner.SetInputVariableBinding("$carbmud", args.CarbMud);
-     
-         
             try
             {
                 runner.Run();

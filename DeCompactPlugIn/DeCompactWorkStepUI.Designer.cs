@@ -31,11 +31,18 @@ namespace DeCompactPlugIn
             this.components = new System.ComponentModel.Container();
             this.tab1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.txtCarbMud = new System.Windows.Forms.TextBox();
-            this.txtDirtySS = new System.Windows.Forms.TextBox();
-            this.txtMudStone = new System.Windows.Forms.TextBox();
-            this.txtCoal = new System.Windows.Forms.TextBox();
-            this.txtSandStone = new System.Windows.Forms.TextBox();
+            this.presentationBox_carbmud = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
+            this.dropTarget_carbmud = new Slb.Ocean.Petrel.UI.DropTarget();
+            this.presentationBox_dirtyss = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
+            this.dropTarget_dirtyss = new Slb.Ocean.Petrel.UI.DropTarget();
+            this.presentationBox_mudstone = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
+            this.dropTarget_mudstone = new Slb.Ocean.Petrel.UI.DropTarget();
+            this.presentationBox_coal = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
+            this.dropTarget_coal = new Slb.Ocean.Petrel.UI.DropTarget();
+            this.presentationBox_sandstone = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
+            this.dropTarget_sandstone = new Slb.Ocean.Petrel.UI.DropTarget();
+            this.presentationBox_silt = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
+            this.dropTarget_silt = new Slb.Ocean.Petrel.UI.DropTarget();
             this.txtnolayers = new System.Windows.Forms.TextBox();
             this.toolTipHotspot10 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
             this.toolTipHotspot9 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
@@ -69,8 +76,6 @@ namespace DeCompactPlugIn
             this.cancelButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
             this.OKButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
             this.applyButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
-            this.dropTarget_silt = new Slb.Ocean.Petrel.UI.DropTarget();
-            this.presentationBox_silt = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
             this.tab1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -87,13 +92,18 @@ namespace DeCompactPlugIn
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.presentationBox_carbmud);
+            this.tabPage1.Controls.Add(this.dropTarget_carbmud);
+            this.tabPage1.Controls.Add(this.presentationBox_dirtyss);
+            this.tabPage1.Controls.Add(this.dropTarget_dirtyss);
+            this.tabPage1.Controls.Add(this.presentationBox_mudstone);
+            this.tabPage1.Controls.Add(this.dropTarget_mudstone);
+            this.tabPage1.Controls.Add(this.presentationBox_coal);
+            this.tabPage1.Controls.Add(this.dropTarget_coal);
+            this.tabPage1.Controls.Add(this.presentationBox_sandstone);
+            this.tabPage1.Controls.Add(this.dropTarget_sandstone);
             this.tabPage1.Controls.Add(this.presentationBox_silt);
             this.tabPage1.Controls.Add(this.dropTarget_silt);
-            this.tabPage1.Controls.Add(this.txtCarbMud);
-            this.tabPage1.Controls.Add(this.txtDirtySS);
-            this.tabPage1.Controls.Add(this.txtMudStone);
-            this.tabPage1.Controls.Add(this.txtCoal);
-            this.tabPage1.Controls.Add(this.txtSandStone);
             this.tabPage1.Controls.Add(this.txtnolayers);
             this.tabPage1.Controls.Add(this.toolTipHotspot10);
             this.tabPage1.Controls.Add(this.toolTipHotspot9);
@@ -129,45 +139,101 @@ namespace DeCompactPlugIn
             this.tabPage1.Text = "Settings";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // txtCarbMud
+            // presentationBox_carbmud
             // 
-            this.txtCarbMud.Location = new System.Drawing.Point(156, 289);
-            this.txtCarbMud.Name = "txtCarbMud";
-            this.txtCarbMud.Size = new System.Drawing.Size(206, 20);
-            this.txtCarbMud.TabIndex = 45;
-            this.txtCarbMud.Text = "0.0";
+            this.presentationBox_carbmud.Location = new System.Drawing.Point(156, 286);
+            this.presentationBox_carbmud.Name = "presentationBox_carbmud";
+            this.presentationBox_carbmud.Size = new System.Drawing.Size(206, 22);
+            this.presentationBox_carbmud.TabIndex = 57;
             // 
-            // txtDirtySS
+            // dropTarget_carbmud
             // 
-            this.txtDirtySS.Location = new System.Drawing.Point(156, 258);
-            this.txtDirtySS.Name = "txtDirtySS";
-            this.txtDirtySS.Size = new System.Drawing.Size(206, 20);
-            this.txtDirtySS.TabIndex = 44;
-            this.txtDirtySS.Text = "0.0";
+            this.dropTarget_carbmud.AllowDrop = true;
+            this.dropTarget_carbmud.Location = new System.Drawing.Point(123, 286);
+            this.dropTarget_carbmud.Name = "dropTarget_carbmud";
+            this.dropTarget_carbmud.Size = new System.Drawing.Size(26, 23);
+            this.dropTarget_carbmud.TabIndex = 56;
+            this.dropTarget_carbmud.DragDrop += new System.Windows.Forms.DragEventHandler(this.dropTarget_carbmud_DragDrop);
             // 
-            // txtMudStone
+            // presentationBox_dirtyss
             // 
-            this.txtMudStone.Location = new System.Drawing.Point(156, 227);
-            this.txtMudStone.Name = "txtMudStone";
-            this.txtMudStone.Size = new System.Drawing.Size(206, 20);
-            this.txtMudStone.TabIndex = 43;
-            this.txtMudStone.Text = "0.0";
+            this.presentationBox_dirtyss.Location = new System.Drawing.Point(156, 255);
+            this.presentationBox_dirtyss.Name = "presentationBox_dirtyss";
+            this.presentationBox_dirtyss.Size = new System.Drawing.Size(206, 22);
+            this.presentationBox_dirtyss.TabIndex = 55;
             // 
-            // txtCoal
+            // dropTarget_dirtyss
             // 
-            this.txtCoal.Location = new System.Drawing.Point(156, 197);
-            this.txtCoal.Name = "txtCoal";
-            this.txtCoal.Size = new System.Drawing.Size(206, 20);
-            this.txtCoal.TabIndex = 42;
-            this.txtCoal.Text = "0.0";
+            this.dropTarget_dirtyss.AllowDrop = true;
+            this.dropTarget_dirtyss.Location = new System.Drawing.Point(124, 256);
+            this.dropTarget_dirtyss.Name = "dropTarget_dirtyss";
+            this.dropTarget_dirtyss.Size = new System.Drawing.Size(26, 23);
+            this.dropTarget_dirtyss.TabIndex = 54;
+            this.dropTarget_dirtyss.DragDrop += new System.Windows.Forms.DragEventHandler(this.dropTarget_dirtyss_DragDrop);
             // 
-            // txtSandStone
+            // presentationBox_mudstone
             // 
-            this.txtSandStone.Location = new System.Drawing.Point(157, 171);
-            this.txtSandStone.Name = "txtSandStone";
-            this.txtSandStone.Size = new System.Drawing.Size(206, 20);
-            this.txtSandStone.TabIndex = 41;
-            this.txtSandStone.Text = "0.0";
+            this.presentationBox_mudstone.Location = new System.Drawing.Point(156, 227);
+            this.presentationBox_mudstone.Name = "presentationBox_mudstone";
+            this.presentationBox_mudstone.Size = new System.Drawing.Size(206, 22);
+            this.presentationBox_mudstone.TabIndex = 53;
+            // 
+            // dropTarget_mudstone
+            // 
+            this.dropTarget_mudstone.AllowDrop = true;
+            this.dropTarget_mudstone.Location = new System.Drawing.Point(124, 227);
+            this.dropTarget_mudstone.Name = "dropTarget_mudstone";
+            this.dropTarget_mudstone.Size = new System.Drawing.Size(26, 23);
+            this.dropTarget_mudstone.TabIndex = 52;
+            this.dropTarget_mudstone.DragDrop += new System.Windows.Forms.DragEventHandler(this.dropTarget_mudstone_DragDrop);
+            // 
+            // presentationBox_coal
+            // 
+            this.presentationBox_coal.Location = new System.Drawing.Point(157, 199);
+            this.presentationBox_coal.Name = "presentationBox_coal";
+            this.presentationBox_coal.Size = new System.Drawing.Size(206, 22);
+            this.presentationBox_coal.TabIndex = 51;
+            // 
+            // dropTarget_coal
+            // 
+            this.dropTarget_coal.AllowDrop = true;
+            this.dropTarget_coal.Location = new System.Drawing.Point(125, 200);
+            this.dropTarget_coal.Name = "dropTarget_coal";
+            this.dropTarget_coal.Size = new System.Drawing.Size(26, 23);
+            this.dropTarget_coal.TabIndex = 50;
+            this.dropTarget_coal.DragDrop += new System.Windows.Forms.DragEventHandler(this.dropTarget_coal_DragDrop);
+            // 
+            // presentationBox_sandstone
+            // 
+            this.presentationBox_sandstone.Location = new System.Drawing.Point(156, 173);
+            this.presentationBox_sandstone.Name = "presentationBox_sandstone";
+            this.presentationBox_sandstone.Size = new System.Drawing.Size(206, 22);
+            this.presentationBox_sandstone.TabIndex = 49;
+            // 
+            // dropTarget_sandstone
+            // 
+            this.dropTarget_sandstone.AllowDrop = true;
+            this.dropTarget_sandstone.Location = new System.Drawing.Point(124, 174);
+            this.dropTarget_sandstone.Name = "dropTarget_sandstone";
+            this.dropTarget_sandstone.Size = new System.Drawing.Size(26, 23);
+            this.dropTarget_sandstone.TabIndex = 48;
+            this.dropTarget_sandstone.DragDrop += new System.Windows.Forms.DragEventHandler(this.dropTarget_sandstone_DragDrop);
+            // 
+            // presentationBox_silt
+            // 
+            this.presentationBox_silt.Location = new System.Drawing.Point(156, 145);
+            this.presentationBox_silt.Name = "presentationBox_silt";
+            this.presentationBox_silt.Size = new System.Drawing.Size(206, 22);
+            this.presentationBox_silt.TabIndex = 47;
+            // 
+            // dropTarget_silt
+            // 
+            this.dropTarget_silt.AllowDrop = true;
+            this.dropTarget_silt.Location = new System.Drawing.Point(124, 145);
+            this.dropTarget_silt.Name = "dropTarget_silt";
+            this.dropTarget_silt.Size = new System.Drawing.Size(26, 23);
+            this.dropTarget_silt.TabIndex = 46;
+            this.dropTarget_silt.DragDrop += new System.Windows.Forms.DragEventHandler(this.dropTarget_silt_DragDrop);
             // 
             // txtnolayers
             // 
@@ -291,7 +357,7 @@ namespace DeCompactPlugIn
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(27, 170);
+            this.label6.Location = new System.Drawing.Point(25, 176);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(92, 17);
             this.label6.TabIndex = 12;
@@ -459,22 +525,6 @@ namespace DeCompactPlugIn
             this.applyButton.UseVisualStyleBackColor = false;
             this.applyButton.Click += new System.EventHandler(this.applyButton_Click);
             // 
-            // dropTarget_silt
-            // 
-            this.dropTarget_silt.AllowDrop = true;
-            this.dropTarget_silt.Location = new System.Drawing.Point(124, 145);
-            this.dropTarget_silt.Name = "dropTarget_silt";
-            this.dropTarget_silt.Size = new System.Drawing.Size(26, 23);
-            this.dropTarget_silt.TabIndex = 46;
-            this.dropTarget_silt.DragDrop += new System.Windows.Forms.DragEventHandler(this.dropTarget_silt_DragDrop);
-            // 
-            // presentationBox_silt
-            // 
-            this.presentationBox_silt.Location = new System.Drawing.Point(156, 145);
-            this.presentationBox_silt.Name = "presentationBox_silt";
-            this.presentationBox_silt.Size = new System.Drawing.Size(206, 22);
-            this.presentationBox_silt.TabIndex = 47;
-            // 
             // DeCompactWorkStepUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -531,12 +581,17 @@ namespace DeCompactPlugIn
         private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot2;
         private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot1;
         private System.Windows.Forms.TextBox txtnolayers;
-        private System.Windows.Forms.TextBox txtCoal;
-        private System.Windows.Forms.TextBox txtSandStone;
-        private System.Windows.Forms.TextBox txtCarbMud;
-        private System.Windows.Forms.TextBox txtDirtySS;
-        private System.Windows.Forms.TextBox txtMudStone;
         private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox_silt;
         private Slb.Ocean.Petrel.UI.DropTarget dropTarget_silt;
+        private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox_sandstone;
+        private Slb.Ocean.Petrel.UI.DropTarget dropTarget_sandstone;
+        private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox_coal;
+        private Slb.Ocean.Petrel.UI.DropTarget dropTarget_coal;
+        private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox_mudstone;
+        private Slb.Ocean.Petrel.UI.DropTarget dropTarget_mudstone;
+        private Slb.Ocean.Petrel.UI.DropTarget dropTarget_dirtyss;
+        private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox_carbmud;
+        private Slb.Ocean.Petrel.UI.DropTarget dropTarget_carbmud;
+        private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox_dirtyss;
     }
 }
