@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using Slb.Ocean.Petrel.Workflow;
 using Slb.Ocean.Core;
 using Slb.Ocean.Petrel.DomainObject.PillarGrid;
+using Slb.Ocean.Petrel.DomainObject.Analysis;
 using Slb.Ocean.Petrel;
 using Slb.Ocean.Petrel.UI;
 using DeCompactionPlugIn.Helpers;
@@ -32,7 +33,7 @@ namespace DeCompactPlugIn
         private Horizon _horizon;
         private DictionaryProperty _facies;
         private int _Layers;
-        private Object _silt;
+        private Function _silt;
         #endregion
 
         /// <summary>
@@ -119,19 +120,19 @@ namespace DeCompactPlugIn
         private void dropTarget_silt_DragDrop(object sender, DragEventArgs e)
         {
             var drop = e.Data.GetData(typeof(object));
-            _silt = drop as Object;
+            _silt = drop as Function;
             if (_silt != null)
             {
 
                 var nif = CoreSystem.GetService<INameInfoFactory>(_silt);
-                this.presentationBox_facies.Text = nif.GetNameInfo(_silt).Name;
-                var imgF = CoreSystem.GetService<IImageInfoFactory>(_silt);
-                presentationBox_silt.Image = imgF.GetImageInfo(_silt).GetDisplayImage(new ImageInfoContext());
+                this.presentationBox_silt.Text = nif.GetNameInfo(_silt).Name;
+                var imgS = CoreSystem.GetService<IImageInfoFactory>(_silt);
+                presentationBox_silt.Image = imgS.GetImageInfo(_silt).GetDisplayImage(new ImageInfoContext());
                 presentationBox_silt.Tag = _silt;
             }
             else
                 PetrelLogger.WarnBox("Please select facet");
-            PetrelLogger.InfoOutputWindow("Please select facet");
+                PetrelLogger.InfoOutputWindow("Please select facet");
         }
         #endregion
 
