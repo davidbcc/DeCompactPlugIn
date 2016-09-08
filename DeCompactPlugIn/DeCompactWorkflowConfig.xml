@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Configuration Type="Configuration.ConfigurationState" Version="1.0.0.10" Caption="DeCompactWorkflow">
   <Extensions Type="Extensibility.ExtensionCollection">
-    <Workspaces.WorkspaceExtension EntityId="dda1557d-7c92-441c-93e5-d3c9bb744108" />
+    <Workspaces.WorkspaceExtension EntityId="dda1557d-7c92-441c-93e5-d3c9bb744101" />
   </Extensions>
   <Sections Type="Extesibility.ConfigurationSectionCollection">
     <Commands.CommandSection Version="1.0.0.4">
       <Extensions Type="Extensibility.ExtensionCollection">
-        <Workspaces.WorkspaceExtension EntityId="3e68fe00-ce4d-420f-bdec-de34ebf4b764" />
+        <Workspaces.WorkspaceExtension EntityId="3e68fe00-ce4d-420f-bdec-de34ebf4b761" />
       </Extensions>
       <Commands Type="Commands.CommandCollection">
         <Commands.SimpleCommand Id="DeCompactPlugIn.DeCompactCommandHandler">
@@ -38,7 +38,7 @@
             </Attributes.AttributesExtension>
           </Extensions>
           <Tabs Type="ToolContainers.RibbonTabCollection">
-            <ToolContainers.RibbonTab Id="26375963-5121-4fbb-b7a3-156f31d06e20">
+            <ToolContainers.RibbonTab Id="26375963-5121-4fbb-b7a3-156f31d06e21">
               <Extensions Type="Extensibility.ExtensionCollection">
                 <Attributes.AttributesExtension>
                   <Attributes Type="Attributes.AttributeCollection">
@@ -47,7 +47,7 @@
                 </Attributes.AttributesExtension>
               </Extensions>
               <TabGroups Type="ToolContainers.RibbonTabGroupCollection">
-                <ToolContainers.RibbonTabGroup Id="80c15a91-1d88-41bd-ac96-d7b5124f1c76">
+                <ToolContainers.RibbonTabGroup Id="80c15a91-1d88-41bd-ac96-d7b5124f1c71">
                   <Extensions Type="Extensibility.ExtensionCollection">
                     <Attributes.AttributesExtension>
                       <Attributes Type="Attributes.AttributeCollection">
@@ -56,7 +56,7 @@
                     </Attributes.AttributesExtension>
                   </Extensions>
                   <Tools Type="Tools.ToolCollection">
-                    <Tools.ButtonTool CommandId="Slb.OceanTraining.CannedWorkflow.OceanCopyCommandHandler">
+                    <Tools.ButtonTool CommandId="DeCompactPlugIn.DeCompactPlugInCommand">
                       <Extensions Type="Extensibility.ExtensionCollection">
                         <Attributes.AttributesExtension />
                       </Extensions>
@@ -85,25 +85,25 @@
     </ToolContainers.RibbonSection>
     <ToolContainers.PaletteSection Version="1.0.0.3">
       <Extensions Type="Extensibility.ExtensionCollection">
-        <Workspaces.WorkspaceExtension EntityId="f968126f-5c23-4ab2-ad75-0cbe24aa8690" />
+        <Workspaces.WorkspaceExtension EntityId="f968126f-5c23-4ab2-ad75-0cbe24aa8691" />
       </Extensions>
       <Palettes Type="ToolContainers.PaletteCollection" />
     </ToolContainers.PaletteSection>
     <ToolContainers.MiniToolbarSection Version="1.0.0.3">
       <Extensions Type="Extensibility.ExtensionCollection">
-        <Workspaces.WorkspaceExtension EntityId="9d783b7a-b186-4246-8bb6-e362f3bf59c4" />
+        <Workspaces.WorkspaceExtension EntityId="9d783b7a-b186-4246-8bb6-e362f3bf59c1" />
       </Extensions>
       <MiniToolbars Type="ToolContainers.MiniToolbarCollection" />
     </ToolContainers.MiniToolbarSection>
     <Configuration.ResourceSection Version="1.0.0.7">
       <Extensions Type="Extensibility.ExtensionCollection">
-        <Workspaces.WorkspaceExtension EntityId="09fdd7ee-1573-4439-a9a0-91b4126552d4" />
+        <Workspaces.WorkspaceExtension EntityId="09fdd7ee-1573-4439-a9a0-91b4126552d1" />
       </Extensions>
       <Resources Type="Configuration.ResourceCollection" />
     </Configuration.ResourceSection>
     <Rules.RuleSection Version="1.0.0.3">
       <Extensions Type="Extensibility.ExtensionCollection">
-        <Workspaces.WorkspaceExtension EntityId="98b36681-9059-4e73-84f3-73dd60fb0dba" />
+        <Workspaces.WorkspaceExtension EntityId="98b36681-9059-4e73-84f3-73dd60fb0db1" />
       </Extensions>
       <Rules Type="Rules.RuleCollection" />
     </Rules.RuleSection>
