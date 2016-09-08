@@ -31,6 +31,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>bitnumbers.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Slb.Ocean.Catalogs, Version=2015.3.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
       <Private>False</Private>
@@ -181,6 +187,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\logo.PNG" />
+    <None Include="bitnumbers.pfx" />
     <None Include="DeCompactWorkflowConfig.xml" />
     <Content Include="OceanResources\OceanRibbon.xml" />
     <Content Include="OceanResources\OceanRibbonConfiguration1.xml" />

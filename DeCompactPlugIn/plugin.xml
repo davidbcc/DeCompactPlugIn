@@ -4,7 +4,7 @@
     <Name>DeCompactionPlugin-BitNumbers</Name>
     <Description>The DeCompaction WorkSteps PlugIns</Description>
     <Contact>davidb@bit-numbers.com</Contact>
-    <PluginTypeName>DeCompactPlugIn.Plugin, DeCompactPlugIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</PluginTypeName>
+    <PluginTypeName>DeCompactPlugIn.Plugin, DeCompactPlugIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0875ec62433e0b01</PluginTypeName>
     <PluginUri>http://www.pluginuri.info/</PluginUri>
     <PluginId>://DeCompactPlugIn.Plugin/1.0.0.0</PluginId>
     <Trust PublicKeyToken="">Default</Trust>
@@ -12,10 +12,10 @@
     <Author>daren</Author>
     <AppVersion>2015.1</AppVersion>
     <Modules>
-      <Module TypeName="DeCompactPlugIn.DeCompactModule, DeCompactPlugIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+      <Module TypeName="DeCompactPlugIn.DeCompactModule, DeCompactPlugIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0875ec62433e0b01" />
     </Modules>
     <Assemblies>
-      <Assembly Name="DeCompactPlugIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+      <Assembly Name="DeCompactPlugIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0875ec62433e0b01" />
     </Assemblies>
     <assemblyBinding />
     <StartMode>Startup</StartMode>

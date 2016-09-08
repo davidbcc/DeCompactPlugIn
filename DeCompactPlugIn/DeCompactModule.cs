@@ -6,6 +6,7 @@ using Slb.Ocean.Petrel.Workflow;
 using DeCompactionPlugIn.Helpers;
 using Slb.Ocean.Petrel.UI.Tools;
 using Slb.Ocean.Petrel.Commands;
+using System.Drawing;
 
 namespace DeCompactPlugIn
 {
@@ -69,18 +70,23 @@ namespace DeCompactPlugIn
         {
 
             // TODO:  Add DeCompactModule.IntegratePresentation implementation
-            
-            // Add Ribbon Configuration file
-            // add a new toolbar
-            string tbkey = "DeCompactPlugIn.Toolbar";
-            PetrelToolbar toolBar = new PetrelToolbar(tbkey, "DeCompactPlugIn Toolbar");
-            //toolBar.AddTool(new PetrelCommandTool(new CommandItem(CherryClickCommandHandler.Id)));
-            PetrelSystem.ToolService.AddToolbar(toolBar);
-            PetrelMenuItem sweetsMenu = new PetrelMenuItem("$Open");
-            PetrelSystem.ToolService.AddTopLevelMenu(sweetsMenu);
+
+
+            Bitmap bitmap = null;
+            PetrelMenuItem bitMenu = new PetrelMenuItem("BitNumbers");
+            PetrelSystem.ToolService.AddTopLevelMenu(bitMenu);
+            bitMenu.AddTool(new PetrelButtonTool("DeCompactWorkFlow Plug-in", bitmap,CallWindow));
 
         }
+        /// <summary>
+        /// Call DeCompact Window
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="args"></param>
+        private void CallWindow(object sender,EventArgs args)
+        {
 
+        }
         /// <summary>
         /// This method is not part of the IModule interface.
         /// It is an eventhandler method, which is subscribed in the Initialize() method above,
