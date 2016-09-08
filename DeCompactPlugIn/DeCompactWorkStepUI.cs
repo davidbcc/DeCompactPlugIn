@@ -71,6 +71,7 @@ namespace DeCompactPlugIn
             
         }
         #region Drag Drop events handling
+        // Grid
         private void drop_grid_DragDrop(object sender, DragEventArgs e)
         {
 
@@ -87,10 +88,11 @@ namespace DeCompactPlugIn
             presGrid.Tag = _grid;
         }
 
+        // Horizon
 
         private void drop_horizon_DragDrop(object sender, DragEventArgs e)
         {
-
+            var drop = e.Data.GetData(typeof(object));
             _horizon = e.Data.GetData(typeof(object)) as Horizon;
             if (_horizon == null)
             {

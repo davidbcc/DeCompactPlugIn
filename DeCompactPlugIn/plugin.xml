@@ -2,13 +2,13 @@
 <InstalledPlugins xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Plugin>
     <Name>Plugin</Name>
-    <Description>The DeCompactPlugIn</Description>
-    <Contact>contact@company.info</Contact>
+    <Description>The DeCompaction WorkSteps PlugIns</Description>
+    <Contact>davidb@bit-numbers.com</Contact>
     <PluginTypeName>DeCompactPlugIn.Plugin, DeCompactPlugIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</PluginTypeName>
     <PluginUri>http://www.pluginuri.info/</PluginUri>
     <PluginId>://DeCompactPlugIn.Plugin/1.0.0.0</PluginId>
     <Trust PublicKeyToken="">Default</Trust>
-    <ReleaseDate>2016-09-07</ReleaseDate>
+    <ReleaseDate>2016-09-08</ReleaseDate>
     <Author>daren</Author>
     <AppVersion>2015.1</AppVersion>
     <Modules>

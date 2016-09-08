@@ -19,7 +19,7 @@ namespace DeCompactPlugIn
 
         public override string Contact
         {
-            get { return "contact@company.info"; }
+            get { return "davidb@bit-numbers.com"; }
         }
 
         public override IEnumerable<PluginIdentifier> Dependencies
@@ -29,7 +29,7 @@ namespace DeCompactPlugIn
 
         public override string Description
         {
-            get { return "The DeCompactPlugIn"; }
+            get { return "The DeCompaction WorkSteps PlugIns"; }
         }
 
         public override string ImageResourceName

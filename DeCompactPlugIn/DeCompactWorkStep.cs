@@ -357,21 +357,21 @@ namespace DeCompactPlugIn
             /// </summary>
             public string Name
             {
-                get { return "DeCompactWorkStepDB"; }
+                get { return "DeCompactionWorkSteps"; }
             }
             /// <summary>
             /// Gets the short description of DeCompactWorkStep
             /// </summary>
             public string ShortDescription
             {
-                get { return ""; }
+                get { return "This is the Canned Workflow to perform decompaction."; }
             }
             /// <summary>
             /// Gets the detailed description of DeCompactWorkStep
             /// </summary>
             public string Description
             {
-                get { return ""; }
+                get { return "This is the Canned Workflow to perform decompaction"; }
             }
 
             #endregion

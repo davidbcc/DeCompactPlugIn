@@ -12,11 +12,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deployment", "Deployment\De
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "DeCompactionPlugInInstaller", "DeCompactionPlugInInstaller\DeCompactionPlugInInstaller.wixproj", "{FEDBA949-26CE-4A31-BAE6-378F177899FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeCompactPIPInstaller", "DeCompactPIPInstaller\DeCompactPIPInstaller.csproj", "{974DB55D-7713-4E67-9BE8-4C82AF65EA62}"
-	ProjectSection(ProjectDependencies) = postProject
-		{E98A16F1-A212-48F8-9F0C-05B25BCC788C} = {E98A16F1-A212-48F8-9F0C-05B25BCC788C}
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,16 +52,6 @@ Global
 		{FEDBA949-26CE-4A31-BAE6-378F177899FA}.Release|Mixed Platforms.Build.0 = Release|x86
 		{FEDBA949-26CE-4A31-BAE6-378F177899FA}.Release|x86.ActiveCfg = Release|x86
 		{FEDBA949-26CE-4A31-BAE6-378F177899FA}.Release|x86.Build.0 = Release|x86
-		{974DB55D-7713-4E67-9BE8-4C82AF65EA62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{974DB55D-7713-4E67-9BE8-4C82AF65EA62}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{974DB55D-7713-4E67-9BE8-4C82AF65EA62}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{974DB55D-7713-4E67-9BE8-4C82AF65EA62}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{974DB55D-7713-4E67-9BE8-4C82AF65EA62}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{974DB55D-7713-4E67-9BE8-4C82AF65EA62}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{974DB55D-7713-4E67-9BE8-4C82AF65EA62}.Release|Any CPU.Build.0 = Release|Any CPU
-		{974DB55D-7713-4E67-9BE8-4C82AF65EA62}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{974DB55D-7713-4E67-9BE8-4C82AF65EA62}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{974DB55D-7713-4E67-9BE8-4C82AF65EA62}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

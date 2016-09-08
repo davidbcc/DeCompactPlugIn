@@ -54,7 +54,8 @@ namespace DeCompactPlugIn
             PetrelSystem.WorkflowEditor.AddUIFactory<DeCompactWorkStep.Arguments>(new DeCompactWorkStep.UIFactory());
             PetrelSystem.WorkflowEditor.Add(decompactworkstepInstance);
             m_decompactworkstepInstance = new Slb.Ocean.Petrel.Workflow.WorkstepProcessWrapper(decompactworkstepInstance);
-            PetrelSystem.ProcessDiagram.Add(m_decompactworkstepInstance, "Plug-ins");
+            //PetrelSystem.ProcessDiagram.Add(m_decompactworkstepInstance, "Plug-ins");
+            PetrelSystem.ProcessDiagram.Add(m_decompactworkstepInstance, "BitNumbers Plug-ins");
         }
 
         /// <summary>
@@ -162,11 +163,14 @@ namespace DeCompactPlugIn
         /// <summary>
         /// Returns the name of a image resource.
         /// </summary>
+        //public string ImageResourceName
+        //{
+        //    get { return null; }
+        //}
         public string ImageResourceName
         {
-            get { return null; }
+            get { return "DeCompactPlugIn.Resources.logo.PNG"; }
         }
-
         /// <summary>
         /// A link to the publisher or null.
         /// </summary>
