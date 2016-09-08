@@ -72,7 +72,6 @@ namespace DeCompactPlugIn
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.runButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
-            this.testButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
             this.cancelButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
             this.OKButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
             this.applyButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
@@ -482,16 +481,6 @@ namespace DeCompactPlugIn
             this.runButton.UseVisualStyleBackColor = false;
             this.runButton.Click += new System.EventHandler(this.runButton_Click);
             // 
-            // testButton
-            // 
-            this.testButton.BackColor = System.Drawing.Color.White;
-            this.testButton.Location = new System.Drawing.Point(101, 369);
-            this.testButton.Name = "testButton";
-            this.testButton.Size = new System.Drawing.Size(75, 23);
-            this.testButton.TabIndex = 7;
-            this.testButton.Text = "Test";
-            this.testButton.UseVisualStyleBackColor = false;
-            // 
             // cancelButton
             // 
             this.cancelButton.BackColor = System.Drawing.Color.White;
@@ -532,7 +521,6 @@ namespace DeCompactPlugIn
             this.Controls.Add(this.applyButton);
             this.Controls.Add(this.OKButton);
             this.Controls.Add(this.cancelButton);
-            this.Controls.Add(this.testButton);
             this.Controls.Add(this.runButton);
             this.Controls.Add(this.tab1);
             this.Name = "DeCompactWorkStepUI";
@@ -560,7 +548,6 @@ namespace DeCompactPlugIn
         private System.Windows.Forms.Label label2;
         private Slb.Ocean.Petrel.UI.Controls.PresentationBox presGrid;
         private Slb.Ocean.Petrel.UI.DropTarget drop_grid;
-        private Slb.Ocean.Petrel.UI.Controls.BasicButton testButton;
         private Slb.Ocean.Petrel.UI.Controls.BasicButton cancelButton;
         private Slb.Ocean.Petrel.UI.Controls.BasicButton OKButton;
         private Slb.Ocean.Petrel.UI.Controls.BasicButton applyButton;

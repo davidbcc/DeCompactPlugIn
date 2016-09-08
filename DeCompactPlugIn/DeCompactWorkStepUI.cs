@@ -70,8 +70,8 @@ namespace DeCompactPlugIn
             OKButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             runButton.Image = PetrelImages.DownArrow;
             runButton.TextImageRelation = TextImageRelation.ImageBeforeText;
-            testButton.Image = PetrelImages.OK;
-            testButton.TextImageRelation = TextImageRelation.ImageBeforeText;
+            //testButton.Image = PetrelImages.OK;
+            //testButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             
         }
         #region Drag Drop events handling
