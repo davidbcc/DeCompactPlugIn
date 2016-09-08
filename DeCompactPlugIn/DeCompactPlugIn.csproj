@@ -130,6 +130,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DeCompactForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeCompactForm.Designer.cs">
+      <DependentUpon>DeCompactForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeCompactModule.cs" />
     <Compile Include="DeCompactPlugIn.cs" />
     <Compile Include="DeCompactPlugInCommandHandler.cs" />
@@ -186,6 +192,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DeCompactForm.resx">
+      <DependentUpon>DeCompactForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\logo.PNG" />
     <None Include="bitnumbers.pfx" />
     <None Include="DeCompactWorkflowConfig.xml" />

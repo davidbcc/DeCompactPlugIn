@@ -33,7 +33,7 @@ namespace DeCompactPlugIn
         {
             // create form if not already created or disposed
             if (_form == null || _form.IsDisposed)
-                //_form = new DeCompactWorkStepUI();
+                _form = new DeCompactForm();
 
             if (!_form.Visible)
                 PetrelSystem.ShowModeless(_form);

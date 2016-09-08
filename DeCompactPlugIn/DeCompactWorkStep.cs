@@ -5,6 +5,7 @@ using Slb.Ocean.Petrel;
 using Slb.Ocean.Petrel.UI;
 using Slb.Ocean.Petrel.Workflow;
 using Slb.Ocean.Petrel.DomainObject.PillarGrid;
+using Slb.Ocean.Petrel.DomainObject.Analysis;
 
 namespace DeCompactPlugIn
 {
@@ -92,13 +93,13 @@ namespace DeCompactPlugIn
             private int _iteration;
             private Grid _grid;
             private string _calName;
-            private double _facies;
-            private double _coal;
-            private double _silt;
-            private double _sandstone;
-            private double _mudstone;
-            private double _dirtyss;
-            private double _carbmud;
+            private Function _facies;
+            private Function _coal;
+            private Function _silt;
+            private Function _sandstone;
+            private Function _mudstone;
+            private Function _dirtyss;
+            private Function _carbmud;
             private string _name;
            
             #endregion
@@ -176,7 +177,8 @@ namespace DeCompactPlugIn
             /// <summary>
             /// Facies
             /// </summary>
-            public double Facies { 
+            public Function Facies
+            { 
                  internal get
                 {
                     return _facies;
@@ -189,7 +191,9 @@ namespace DeCompactPlugIn
             /// <summary>
             /// Coal Param
             /// </summary>
-            public double Coal {   internal get
+            public Function Coal
+            {
+                internal get
                 {
                     return _coal;
                 }
@@ -201,7 +205,7 @@ namespace DeCompactPlugIn
             /// <summary>
             /// Silt Param
             /// </summary>
-            public double Silt
+            public Function Silt
             {
                 internal get
                 {
@@ -215,7 +219,7 @@ namespace DeCompactPlugIn
             /// <summary>
             /// Sand Stone
             /// </summary>
-            public double SandStone
+            public Function SandStone
             {
                 internal get
                 {
@@ -229,7 +233,7 @@ namespace DeCompactPlugIn
             /// <summary>
             /// Mud Stone
             /// </summary>
-            public double MudStone
+            public Function MudStone
             {
                 internal get
                 {
@@ -243,7 +247,7 @@ namespace DeCompactPlugIn
             /// <summary>
             /// Dirty SS
             /// </summary>
-            public double DirtySS
+            public Function DirtySS
             {
                 internal get
                 {
@@ -257,7 +261,7 @@ namespace DeCompactPlugIn
             /// <summary>
             /// Carb Mud
             /// </summary>
-            public double CarbMud
+            public Function CarbMud
             {
                 internal get
                 {
