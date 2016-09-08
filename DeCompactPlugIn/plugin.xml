@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <InstalledPlugins xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Plugin>
-    <Name>Plugin</Name>
+    <Name>DeCompactionPlugin-BitNumbers</Name>
     <Description>The DeCompaction WorkSteps PlugIns</Description>
     <Contact>davidb@bit-numbers.com</Contact>
     <PluginTypeName>DeCompactPlugIn.Plugin, DeCompactPlugIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</PluginTypeName>

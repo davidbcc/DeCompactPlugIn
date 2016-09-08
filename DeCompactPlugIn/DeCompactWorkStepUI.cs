@@ -10,6 +10,7 @@ using Slb.Ocean.Petrel;
 using Slb.Ocean.Petrel.UI;
 using DeCompactionPlugIn.Helpers;
 using DeCompactPlugIn.model;
+using System.Collections.Generic;
 
 namespace DeCompactPlugIn
 {
@@ -39,6 +40,7 @@ namespace DeCompactPlugIn
         private Function _coal;
         private Function _dirtyss;
         private Function _carbmud;
+        private Dictionary<string,bool> _validations;
         #endregion
 
         /// <summary>
@@ -55,6 +57,8 @@ namespace DeCompactPlugIn
             this._args = args;
             this.context = context;
             UiRendering();
+
+          //TODO: Instantiate the Validations object
         }
         private void UiRendering()
         {
@@ -204,7 +208,7 @@ namespace DeCompactPlugIn
             {
 
                 var nif = CoreSystem.GetService<INameInfoFactory>(_dirtyss);
-                this.presentationBox_coal.Text = nif.GetNameInfo(_dirtyss).Name;
+                this.presentationBox_dirtyss.Text = nif.GetNameInfo(_dirtyss).Name;
                 var imgS = CoreSystem.GetService<IImageInfoFactory>(_dirtyss);
                 presentationBox_dirtyss.Image = imgS.GetImageInfo(_dirtyss).GetDisplayImage(new ImageInfoContext());
                 presentationBox_dirtyss.Tag = _dirtyss;

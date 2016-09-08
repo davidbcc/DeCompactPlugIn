@@ -55,7 +55,7 @@ namespace DeCompactPlugIn
 
         public override string Name
         {
-            get { return "Plugin"; }
+            get { return "DeCompactionPlugin-BitNumbers"; }
         }
 
         public override PluginIdentifier PluginId
