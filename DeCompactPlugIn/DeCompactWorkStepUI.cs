@@ -114,89 +114,90 @@ namespace DeCompactPlugIn
         {
             var drop = e.Data.GetData(typeof(object));
             _facies = drop as DictionaryProperty;
-            if (_facies != null)
+            if (_facies == null)
             {
-
+                PetrelLogger.WarnBox("Please select a proper facies");
+                PetrelLogger.InfoOutputWindow("Please select a proper facies");
+                return;
+            }
                 var nif = CoreSystem.GetService<INameInfoFactory>(_facies);
                 this.presentationBox_facies.Text = nif.GetNameInfo(_facies).Name;
                 var imgF = CoreSystem.GetService<IImageInfoFactory>(_facies);
                 presentationBox_facies.Image = imgF.GetImageInfo(_facies).GetDisplayImage(new ImageInfoContext());
                 presentationBox_facies.Tag = _facies;
-            }
-            else
-                PetrelLogger.WarnBox("Please select facet");
-            PetrelLogger.InfoOutputWindow("Please select facet");
+     
         }
 
         private void dropTarget_silt_DragDrop(object sender, DragEventArgs e)
         {
             var drop = e.Data.GetData(typeof(object));
             _silt = drop as Function;
-            if (_silt != null)
+            if (_silt == null)
             {
-
+                PetrelLogger.WarnBox("Please select a proper silt");
+                PetrelLogger.InfoOutputWindow("Please select a proper silt");
+                return;
+            }
                 var nif = CoreSystem.GetService<INameInfoFactory>(_silt);
                 this.presentationBox_silt.Text = nif.GetNameInfo(_silt).Name;
                 var imgS = CoreSystem.GetService<IImageInfoFactory>(_silt);
                 presentationBox_silt.Image = imgS.GetImageInfo(_silt).GetDisplayImage(new ImageInfoContext());
                 presentationBox_silt.Tag = _silt;
-            }
-            else
-                PetrelLogger.WarnBox("Please select silt function");
-            PetrelLogger.InfoOutputWindow("Please select silt function");
+
         }
 
         private void dropTarget_sandstone_DragDrop(object sender, DragEventArgs e)
         {
             var drop = e.Data.GetData(typeof(object));
             _sandstone = drop as Function;
-            if (_sandstone != null)
-            {
 
+            if (_sandstone == null)
+            {
+                PetrelLogger.WarnBox("Please select a proper sandstone");
+                PetrelLogger.InfoOutputWindow("Please select a proper sandstone");
+                return;
+            }
                 var nif = CoreSystem.GetService<INameInfoFactory>(_sandstone);
                 this.presentationBox_sandstone.Text = nif.GetNameInfo(_sandstone).Name;
                 var imgS = CoreSystem.GetService<IImageInfoFactory>(_sandstone);
                 presentationBox_sandstone.Image = imgS.GetImageInfo(_sandstone).GetDisplayImage(new ImageInfoContext());
                 presentationBox_sandstone.Tag = _sandstone;
-            }
-            else
-                PetrelLogger.WarnBox("Please select sandstone");
-            PetrelLogger.InfoOutputWindow("Please select sandstone");
+           
         }
 
         private void dropTarget_mudstone_DragDrop(object sender, DragEventArgs e)
         {
             var drop = e.Data.GetData(typeof(object));
             _mudstone = drop as Function;
-            if (_mudstone != null)
+            if (_mudstone == null)
             {
-
+                PetrelLogger.WarnBox("Please select a proper mudstone");
+                PetrelLogger.InfoOutputWindow("Please select a proper mudstone");
+                return;
+            }
                 var nif = CoreSystem.GetService<INameInfoFactory>(_mudstone);
                 this.presentationBox_mudstone.Text = nif.GetNameInfo(_mudstone).Name;
                 var imgS = CoreSystem.GetService<IImageInfoFactory>(_mudstone);
                 presentationBox_mudstone.Image = imgS.GetImageInfo(_mudstone).GetDisplayImage(new ImageInfoContext());
                 presentationBox_mudstone.Tag = _mudstone;
-            }
-            else
-                PetrelLogger.WarnBox("Please select sandstone");
-            PetrelLogger.InfoOutputWindow("Please select sandstone");
+          
         }
         private void dropTarget_coal_DragDrop(object sender, DragEventArgs e)
         {
             var drop = e.Data.GetData(typeof(object));
             _coal = drop as Function;
-            if (_coal != null)
+            if (_coal == null)
             {
-
+                PetrelLogger.WarnBox("Please select a proper coal");
+                PetrelLogger.InfoOutputWindow("Please select a proper coal");
+                return;
+            }
                 var nif = CoreSystem.GetService<INameInfoFactory>(_coal);
                 this.presentationBox_coal.Text = nif.GetNameInfo(_coal).Name;
                 var imgS = CoreSystem.GetService<IImageInfoFactory>(_coal);
                 presentationBox_coal.Image = imgS.GetImageInfo(_coal).GetDisplayImage(new ImageInfoContext());
                 presentationBox_coal.Tag = _coal;
-            }
-            else
-                PetrelLogger.WarnBox("Please select coal");
-            PetrelLogger.InfoOutputWindow("Please select coal");
+          
         }
 
 
@@ -204,36 +205,37 @@ namespace DeCompactPlugIn
         {
             var drop = e.Data.GetData(typeof(object));
             _dirtyss= drop as Function;
-            if (_dirtyss != null)
+            if (_dirtyss == null)
             {
+                PetrelLogger.WarnBox("Please select a proper dirtyss");
+                PetrelLogger.InfoOutputWindow("Please select a proper dirtyss");
+                return;
+            }
 
                 var nif = CoreSystem.GetService<INameInfoFactory>(_dirtyss);
                 this.presentationBox_dirtyss.Text = nif.GetNameInfo(_dirtyss).Name;
                 var imgS = CoreSystem.GetService<IImageInfoFactory>(_dirtyss);
                 presentationBox_dirtyss.Image = imgS.GetImageInfo(_dirtyss).GetDisplayImage(new ImageInfoContext());
                 presentationBox_dirtyss.Tag = _dirtyss;
-            }
-            else
-                PetrelLogger.WarnBox("Please select dirtyss");
-            PetrelLogger.InfoOutputWindow("Please select dirtyss");
+         
         }
 
         private void dropTarget_carbmud_DragDrop(object sender, DragEventArgs e)
         {
             var drop = e.Data.GetData(typeof(object));
             _carbmud = drop as Function;
-            if (_dirtyss != null)
+            if (_carbmud == null)
             {
-
+                PetrelLogger.WarnBox("Please select a proper carbmud ");
+                PetrelLogger.InfoOutputWindow("Please select a proper carbmud ");
+                return;
+            }
                 var nif = CoreSystem.GetService<INameInfoFactory>(_carbmud);
                 this.presentationBox_carbmud.Text = nif.GetNameInfo(_carbmud).Name;
                 var imgS = CoreSystem.GetService<IImageInfoFactory>(_carbmud);
                 presentationBox_carbmud.Image = imgS.GetImageInfo(_carbmud).GetDisplayImage(new ImageInfoContext());
                 presentationBox_carbmud.Tag = _carbmud;
-            }
-            else
-                PetrelLogger.WarnBox("Please select carbmud");
-            PetrelLogger.InfoOutputWindow("Please select carbmud");
+          
         }
 
        

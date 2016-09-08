@@ -137,13 +137,11 @@ namespace DeCompactionPlugIn.Helpers
             runner.SetInputVariableBinding(inputMudStone, args.MudStone);
             runner.SetInputVariableBinding(inputDirtySS, args.DirtySS);
             runner.SetInputVariableBinding(inputCarbMud, args.CarbMud);
-
+            runner.SetInputVariableBinding("$loops", args.iteration);
             try
             {
                 runner.Run();
-                //output = cannedWf.OutputReferenceVariables.First(); // there is only one output variable
-                //copiedObject = runner.GetValueOfOutputVariable<IIdentifiable>(output);
-                //return copiedObject;
+               
             }
            
             catch(Exception ex)

@@ -4,6 +4,8 @@ using Slb.Ocean.Petrel;
 using Slb.Ocean.Petrel.UI;
 using Slb.Ocean.Petrel.Workflow;
 using DeCompactionPlugIn.Helpers;
+using Slb.Ocean.Petrel.UI.Tools;
+using Slb.Ocean.Petrel.Commands;
 
 namespace DeCompactPlugIn
 {
@@ -69,9 +71,14 @@ namespace DeCompactPlugIn
             // TODO:  Add DeCompactModule.IntegratePresentation implementation
             
             // Add Ribbon Configuration file
-           // PetrelSystem.ConfigurationService.AddConfiguration(DeCompactPlugIn.Properties.Resources.OceanRibbonConfiguration1);
-            // Register Menu Item for commands. Will be available in Petrel Classic mode.
-           // PetrelSystem.ConfigurationService.AddConfiguration(CannedWorkflowSampleResources.CannedWorkflowSampleConfig);
+            // add a new toolbar
+            string tbkey = "DeCompactPlugIn.Toolbar";
+            PetrelToolbar toolBar = new PetrelToolbar(tbkey, "DeCompactPlugIn Toolbar");
+            //toolBar.AddTool(new PetrelCommandTool(new CommandItem(CherryClickCommandHandler.Id)));
+            PetrelSystem.ToolService.AddToolbar(toolBar);
+            PetrelMenuItem sweetsMenu = new PetrelMenuItem("$Open");
+            PetrelSystem.ToolService.AddTopLevelMenu(sweetsMenu);
+
         }
 
         /// <summary>
