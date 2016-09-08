@@ -130,6 +130,11 @@
     <Compile Include="DeCompactPlugInFactory.cs" />
     <Compile Include="DeCompactPlugInImageInfo.cs" />
     <Compile Include="DeCompactPlugInNameInfo.cs" />
+    <Compile Include="DeCompactWorkflowResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeCompactWorkflowResources.resx</DependentUpon>
+    </Compile>
     <Compile Include="DeCompactWorkStep.cs" />
     <Compile Include="DeCompactWorkStepUI.cs">
       <SubType>UserControl</SubType>
@@ -176,7 +181,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\logo.PNG" />
-    <None Include="DeCompactWorkflow1Config.xml" />
+    <None Include="DeCompactWorkflowConfig.xml" />
     <Content Include="OceanResources\OceanRibbon.xml" />
     <Content Include="OceanResources\OceanRibbonConfiguration1.xml" />
     <Content Include="OceanResources\Readme.txt" />
@@ -184,6 +189,8 @@
   <ItemGroup>
     <EmbeddedResource Include="DeCompactWorkflowResources.resx">
       <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeCompactWorkflowResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="DeCompactWorkStepUI.resx">
       <DependentUpon>DeCompactWorkStepUI.cs</DependentUpon>

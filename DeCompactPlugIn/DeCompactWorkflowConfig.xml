@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Configuration Type="Configuration.ConfigurationState" Version="1.0.0.10" Caption="OceanSDKCannedWorkflowConfig">
+<Configuration Type="Configuration.ConfigurationState" Version="1.0.0.10" Caption="DeCompactWorkflow">
   <Extensions Type="Extensibility.ExtensionCollection">
     <Workspaces.WorkspaceExtension EntityId="dda1557d-7c92-441c-93e5-d3c9bb744108" />
   </Extensions>
@@ -9,11 +9,11 @@
         <Workspaces.WorkspaceExtension EntityId="3e68fe00-ce4d-420f-bdec-de34ebf4b764" />
       </Extensions>
       <Commands Type="Commands.CommandCollection">
-        <Commands.SimpleCommand Id="Slb.OceanTraining.CannedWorkflow.OceanCopyCommandHandler">
+        <Commands.SimpleCommand Id="DeCompactPlugIn.DeCompactCommandHandler">
           <Extensions Type="Extensibility.ExtensionCollection">
             <Attributes.AttributesExtension>
               <Attributes Type="Attributes.AttributeCollection">
-                <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="Grid copy (with properties along faults)" />
+                <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="DeCompactWorkflow" />
                 <Attributes.AttributeValue AttributeId="Appearance.Image.16" ValueType="Appearance.ImageData" Value="{Uri:pack://application:,,,/Slb.Ocean.Petrel.Resources;component/images/pillargrid_16.png}" />
                 <Attributes.AttributeValue AttributeId="Appearance.Image.32" ValueType="Appearance.ImageData" Value="{Uri:pack://application:,,,/Slb.Ocean.Petrel.Resources;component/images/pillargrid_32.png}" />
                 <Attributes.AttributeValue AttributeId="Appearance.ToolStyle" ValueType="Tools.ToolStyle" Value="SmallImageAndText" />
@@ -42,7 +42,7 @@
               <Extensions Type="Extensibility.ExtensionCollection">
                 <Attributes.AttributesExtension>
                   <Attributes Type="Attributes.AttributeCollection">
-                    <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="Ocean SDK" />
+                    <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="BitNumbers" />
                   </Attributes>
                 </Attributes.AttributesExtension>
               </Extensions>
@@ -51,7 +51,7 @@
                   <Extensions Type="Extensibility.ExtensionCollection">
                     <Attributes.AttributesExtension>
                       <Attributes Type="Attributes.AttributeCollection">
-                        <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="Canned Workflow Sample" />
+                        <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="DeCompaction Plug-In" />
                       </Attributes>
                     </Attributes.AttributesExtension>
                   </Extensions>
