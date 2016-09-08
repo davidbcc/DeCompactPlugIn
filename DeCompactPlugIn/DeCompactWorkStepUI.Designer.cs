@@ -29,6 +29,26 @@ namespace DeCompactPlugIn
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipInfo toolTipInfo20 = new Slb.Ocean.Petrel.UI.Controls.ToolTipInfo();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipItem toolTipItem20 = new Slb.Ocean.Petrel.UI.Controls.ToolTipItem();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipInfo toolTipInfo19 = new Slb.Ocean.Petrel.UI.Controls.ToolTipInfo();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipItem toolTipItem19 = new Slb.Ocean.Petrel.UI.Controls.ToolTipItem();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipInfo toolTipInfo18 = new Slb.Ocean.Petrel.UI.Controls.ToolTipInfo();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipItem toolTipItem18 = new Slb.Ocean.Petrel.UI.Controls.ToolTipItem();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipInfo toolTipInfo17 = new Slb.Ocean.Petrel.UI.Controls.ToolTipInfo();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipItem toolTipItem17 = new Slb.Ocean.Petrel.UI.Controls.ToolTipItem();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipInfo toolTipInfo16 = new Slb.Ocean.Petrel.UI.Controls.ToolTipInfo();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipItem toolTipItem16 = new Slb.Ocean.Petrel.UI.Controls.ToolTipItem();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipInfo toolTipInfo15 = new Slb.Ocean.Petrel.UI.Controls.ToolTipInfo();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipItem toolTipItem15 = new Slb.Ocean.Petrel.UI.Controls.ToolTipItem();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipInfo toolTipInfo14 = new Slb.Ocean.Petrel.UI.Controls.ToolTipInfo();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipItem toolTipItem14 = new Slb.Ocean.Petrel.UI.Controls.ToolTipItem();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipInfo toolTipInfo13 = new Slb.Ocean.Petrel.UI.Controls.ToolTipInfo();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipItem toolTipItem13 = new Slb.Ocean.Petrel.UI.Controls.ToolTipItem();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipInfo toolTipInfo12 = new Slb.Ocean.Petrel.UI.Controls.ToolTipInfo();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipItem toolTipItem12 = new Slb.Ocean.Petrel.UI.Controls.ToolTipItem();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipInfo toolTipInfo11 = new Slb.Ocean.Petrel.UI.Controls.ToolTipInfo();
+            Slb.Ocean.Petrel.UI.Controls.ToolTipItem toolTipItem11 = new Slb.Ocean.Petrel.UI.Controls.ToolTipItem();
             this.tab1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.presentationBox_carbmud = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
@@ -44,16 +64,6 @@ namespace DeCompactPlugIn
             this.presentationBox_silt = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
             this.dropTarget_silt = new Slb.Ocean.Petrel.UI.DropTarget();
             this.txtnolayers = new System.Windows.Forms.TextBox();
-            this.toolTipHotspot10 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
-            this.toolTipHotspot9 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
-            this.toolTipHotspot8 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
-            this.toolTipHotspot7 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
-            this.toolTipHotspot6 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
-            this.toolTipHotspot5 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
-            this.toolTipHotspot4 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
-            this.toolTipHotspot3 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
-            this.toolTipHotspot2 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
-            this.toolTipHotspot1 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -75,8 +85,20 @@ namespace DeCompactPlugIn
             this.cancelButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
             this.OKButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
             this.applyButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
+            this.toolTipHotspot11 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
+            this.toolTipManager1 = new Slb.Ocean.Petrel.UI.Controls.ToolTipManager(this.components);
+            this.toolTipHotspot1 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
+            this.toolTipHotspot2 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
+            this.toolTipHotspot3 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
+            this.toolTipHotspot4 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
+            this.toolTipHotspot5 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
+            this.toolTipHotspot6 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
+            this.toolTipHotspot7 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
+            this.toolTipHotspot8 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
+            this.toolTipHotspot9 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
             this.tab1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.toolTipManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // tab1
@@ -91,6 +113,16 @@ namespace DeCompactPlugIn
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.toolTipHotspot9);
+            this.tabPage1.Controls.Add(this.toolTipHotspot8);
+            this.tabPage1.Controls.Add(this.toolTipHotspot7);
+            this.tabPage1.Controls.Add(this.toolTipHotspot6);
+            this.tabPage1.Controls.Add(this.toolTipHotspot5);
+            this.tabPage1.Controls.Add(this.toolTipHotspot4);
+            this.tabPage1.Controls.Add(this.toolTipHotspot3);
+            this.tabPage1.Controls.Add(this.toolTipHotspot2);
+            this.tabPage1.Controls.Add(this.toolTipHotspot1);
+            this.tabPage1.Controls.Add(this.toolTipHotspot11);
             this.tabPage1.Controls.Add(this.presentationBox_carbmud);
             this.tabPage1.Controls.Add(this.dropTarget_carbmud);
             this.tabPage1.Controls.Add(this.presentationBox_dirtyss);
@@ -104,16 +136,6 @@ namespace DeCompactPlugIn
             this.tabPage1.Controls.Add(this.presentationBox_silt);
             this.tabPage1.Controls.Add(this.dropTarget_silt);
             this.tabPage1.Controls.Add(this.txtnolayers);
-            this.tabPage1.Controls.Add(this.toolTipHotspot10);
-            this.tabPage1.Controls.Add(this.toolTipHotspot9);
-            this.tabPage1.Controls.Add(this.toolTipHotspot8);
-            this.tabPage1.Controls.Add(this.toolTipHotspot7);
-            this.tabPage1.Controls.Add(this.toolTipHotspot6);
-            this.tabPage1.Controls.Add(this.toolTipHotspot5);
-            this.tabPage1.Controls.Add(this.toolTipHotspot4);
-            this.tabPage1.Controls.Add(this.toolTipHotspot3);
-            this.tabPage1.Controls.Add(this.toolTipHotspot2);
-            this.tabPage1.Controls.Add(this.toolTipHotspot1);
             this.tabPage1.Controls.Add(this.label10);
             this.tabPage1.Controls.Add(this.label9);
             this.tabPage1.Controls.Add(this.label8);
@@ -240,77 +262,7 @@ namespace DeCompactPlugIn
             this.txtnolayers.Name = "txtnolayers";
             this.txtnolayers.Size = new System.Drawing.Size(206, 20);
             this.txtnolayers.TabIndex = 39;
-            this.txtnolayers.Text = "0";
-            // 
-            // toolTipHotspot10
-            // 
-            this.toolTipHotspot10.Location = new System.Drawing.Point(369, 289);
-            this.toolTipHotspot10.Name = "toolTipHotspot10";
-            this.toolTipHotspot10.Size = new System.Drawing.Size(20, 20);
-            this.toolTipHotspot10.TabIndex = 38;
-            // 
-            // toolTipHotspot9
-            // 
-            this.toolTipHotspot9.Location = new System.Drawing.Point(369, 255);
-            this.toolTipHotspot9.Name = "toolTipHotspot9";
-            this.toolTipHotspot9.Size = new System.Drawing.Size(20, 20);
-            this.toolTipHotspot9.TabIndex = 37;
-            // 
-            // toolTipHotspot8
-            // 
-            this.toolTipHotspot8.Location = new System.Drawing.Point(370, 228);
-            this.toolTipHotspot8.Name = "toolTipHotspot8";
-            this.toolTipHotspot8.Size = new System.Drawing.Size(20, 20);
-            this.toolTipHotspot8.TabIndex = 36;
-            // 
-            // toolTipHotspot7
-            // 
-            this.toolTipHotspot7.Location = new System.Drawing.Point(368, 201);
-            this.toolTipHotspot7.Name = "toolTipHotspot7";
-            this.toolTipHotspot7.Size = new System.Drawing.Size(20, 20);
-            this.toolTipHotspot7.TabIndex = 35;
-            // 
-            // toolTipHotspot6
-            // 
-            this.toolTipHotspot6.Location = new System.Drawing.Point(369, 174);
-            this.toolTipHotspot6.Name = "toolTipHotspot6";
-            this.toolTipHotspot6.Size = new System.Drawing.Size(20, 20);
-            this.toolTipHotspot6.TabIndex = 34;
-            // 
-            // toolTipHotspot5
-            // 
-            this.toolTipHotspot5.Location = new System.Drawing.Point(369, 145);
-            this.toolTipHotspot5.Name = "toolTipHotspot5";
-            this.toolTipHotspot5.Size = new System.Drawing.Size(20, 20);
-            this.toolTipHotspot5.TabIndex = 33;
-            // 
-            // toolTipHotspot4
-            // 
-            this.toolTipHotspot4.Location = new System.Drawing.Point(368, 116);
-            this.toolTipHotspot4.Name = "toolTipHotspot4";
-            this.toolTipHotspot4.Size = new System.Drawing.Size(20, 20);
-            this.toolTipHotspot4.TabIndex = 32;
-            // 
-            // toolTipHotspot3
-            // 
-            this.toolTipHotspot3.Location = new System.Drawing.Point(369, 90);
-            this.toolTipHotspot3.Name = "toolTipHotspot3";
-            this.toolTipHotspot3.Size = new System.Drawing.Size(20, 20);
-            this.toolTipHotspot3.TabIndex = 31;
-            // 
-            // toolTipHotspot2
-            // 
-            this.toolTipHotspot2.Location = new System.Drawing.Point(370, 60);
-            this.toolTipHotspot2.Name = "toolTipHotspot2";
-            this.toolTipHotspot2.Size = new System.Drawing.Size(20, 20);
-            this.toolTipHotspot2.TabIndex = 30;
-            // 
-            // toolTipHotspot1
-            // 
-            this.toolTipHotspot1.Location = new System.Drawing.Point(370, 27);
-            this.toolTipHotspot1.Name = "toolTipHotspot1";
-            this.toolTipHotspot1.Size = new System.Drawing.Size(20, 20);
-            this.toolTipHotspot1.TabIndex = 29;
+            this.txtnolayers.Text = "1";
             // 
             // label10
             // 
@@ -514,6 +466,116 @@ namespace DeCompactPlugIn
             this.applyButton.UseVisualStyleBackColor = false;
             this.applyButton.Click += new System.EventHandler(this.applyButton_Click);
             // 
+            // toolTipHotspot11
+            // 
+            this.toolTipHotspot11.Location = new System.Drawing.Point(368, 27);
+            this.toolTipHotspot11.Name = "toolTipHotspot11";
+            this.toolTipHotspot11.Size = new System.Drawing.Size(20, 20);
+            this.toolTipHotspot11.TabIndex = 58;
+            toolTipItem20.Text = "Grid Domain Object";
+            toolTipInfo20.Items.AddRange(new Slb.Ocean.Petrel.UI.Controls.ToolTipItemBase[] {
+            toolTipItem20});
+            this.toolTipManager1.SetToolTip(this.toolTipHotspot11, toolTipInfo20);
+            // 
+            // toolTipHotspot1
+            // 
+            this.toolTipHotspot1.Location = new System.Drawing.Point(368, 60);
+            this.toolTipHotspot1.Name = "toolTipHotspot1";
+            this.toolTipHotspot1.Size = new System.Drawing.Size(20, 20);
+            this.toolTipHotspot1.TabIndex = 59;
+            toolTipItem19.Text = "Horizon Domain Object";
+            toolTipInfo19.Items.AddRange(new Slb.Ocean.Petrel.UI.Controls.ToolTipItemBase[] {
+            toolTipItem19});
+            this.toolTipManager1.SetToolTip(this.toolTipHotspot1, toolTipInfo19);
+            // 
+            // toolTipHotspot2
+            // 
+            this.toolTipHotspot2.Location = new System.Drawing.Point(369, 91);
+            this.toolTipHotspot2.Name = "toolTipHotspot2";
+            this.toolTipHotspot2.Size = new System.Drawing.Size(20, 20);
+            this.toolTipHotspot2.TabIndex = 60;
+            toolTipItem18.Text = "Count for the iteration. Looping.";
+            toolTipInfo18.Items.AddRange(new Slb.Ocean.Petrel.UI.Controls.ToolTipItemBase[] {
+            toolTipItem18});
+            this.toolTipManager1.SetToolTip(this.toolTipHotspot2, toolTipInfo18);
+            // 
+            // toolTipHotspot3
+            // 
+            this.toolTipHotspot3.Location = new System.Drawing.Point(369, 119);
+            this.toolTipHotspot3.Name = "toolTipHotspot3";
+            this.toolTipHotspot3.Size = new System.Drawing.Size(20, 20);
+            this.toolTipHotspot3.TabIndex = 61;
+            toolTipItem17.Text = "Facies Domain Object";
+            toolTipInfo17.Items.AddRange(new Slb.Ocean.Petrel.UI.Controls.ToolTipItemBase[] {
+            toolTipItem17});
+            this.toolTipManager1.SetToolTip(this.toolTipHotspot3, toolTipInfo17);
+            // 
+            // toolTipHotspot4
+            // 
+            this.toolTipHotspot4.Location = new System.Drawing.Point(368, 147);
+            this.toolTipHotspot4.Name = "toolTipHotspot4";
+            this.toolTipHotspot4.Size = new System.Drawing.Size(20, 20);
+            this.toolTipHotspot4.TabIndex = 62;
+            toolTipItem16.Text = "Silt Domain Function";
+            toolTipInfo16.Items.AddRange(new Slb.Ocean.Petrel.UI.Controls.ToolTipItemBase[] {
+            toolTipItem16});
+            this.toolTipManager1.SetToolTip(this.toolTipHotspot4, toolTipInfo16);
+            // 
+            // toolTipHotspot5
+            // 
+            this.toolTipHotspot5.Location = new System.Drawing.Point(369, 173);
+            this.toolTipHotspot5.Name = "toolTipHotspot5";
+            this.toolTipHotspot5.Size = new System.Drawing.Size(20, 20);
+            this.toolTipHotspot5.TabIndex = 63;
+            toolTipItem15.Text = "SandStone Domain Function";
+            toolTipInfo15.Items.AddRange(new Slb.Ocean.Petrel.UI.Controls.ToolTipItemBase[] {
+            toolTipItem15});
+            this.toolTipManager1.SetToolTip(this.toolTipHotspot5, toolTipInfo15);
+            // 
+            // toolTipHotspot6
+            // 
+            this.toolTipHotspot6.Location = new System.Drawing.Point(369, 197);
+            this.toolTipHotspot6.Name = "toolTipHotspot6";
+            this.toolTipHotspot6.Size = new System.Drawing.Size(20, 20);
+            this.toolTipHotspot6.TabIndex = 64;
+            toolTipItem14.Text = "Coal Domain Function";
+            toolTipInfo14.Items.AddRange(new Slb.Ocean.Petrel.UI.Controls.ToolTipItemBase[] {
+            toolTipItem14});
+            this.toolTipManager1.SetToolTip(this.toolTipHotspot6, toolTipInfo14);
+            // 
+            // toolTipHotspot7
+            // 
+            this.toolTipHotspot7.Location = new System.Drawing.Point(369, 227);
+            this.toolTipHotspot7.Name = "toolTipHotspot7";
+            this.toolTipHotspot7.Size = new System.Drawing.Size(20, 20);
+            this.toolTipHotspot7.TabIndex = 65;
+            toolTipItem13.Text = "Mud Stone Domain Function";
+            toolTipInfo13.Items.AddRange(new Slb.Ocean.Petrel.UI.Controls.ToolTipItemBase[] {
+            toolTipItem13});
+            this.toolTipManager1.SetToolTip(this.toolTipHotspot7, toolTipInfo13);
+            // 
+            // toolTipHotspot8
+            // 
+            this.toolTipHotspot8.Location = new System.Drawing.Point(369, 253);
+            this.toolTipHotspot8.Name = "toolTipHotspot8";
+            this.toolTipHotspot8.Size = new System.Drawing.Size(20, 20);
+            this.toolTipHotspot8.TabIndex = 66;
+            toolTipItem12.Text = "DirtySS Domain Function";
+            toolTipInfo12.Items.AddRange(new Slb.Ocean.Petrel.UI.Controls.ToolTipItemBase[] {
+            toolTipItem12});
+            this.toolTipManager1.SetToolTip(this.toolTipHotspot8, toolTipInfo12);
+            // 
+            // toolTipHotspot9
+            // 
+            this.toolTipHotspot9.Location = new System.Drawing.Point(368, 286);
+            this.toolTipHotspot9.Name = "toolTipHotspot9";
+            this.toolTipHotspot9.Size = new System.Drawing.Size(20, 20);
+            this.toolTipHotspot9.TabIndex = 67;
+            toolTipItem11.Text = "Carb Mud Domain Function";
+            toolTipInfo11.Items.AddRange(new Slb.Ocean.Petrel.UI.Controls.ToolTipItemBase[] {
+            toolTipItem11});
+            this.toolTipManager1.SetToolTip(this.toolTipHotspot9, toolTipInfo11);
+            // 
             // DeCompactWorkStepUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -528,6 +590,7 @@ namespace DeCompactPlugIn
             this.tab1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.toolTipManager1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -557,16 +620,6 @@ namespace DeCompactPlugIn
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot10;
-        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot9;
-        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot8;
-        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot7;
-        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot6;
-        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot5;
-        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot4;
-        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot3;
-        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot2;
-        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot1;
         private System.Windows.Forms.TextBox txtnolayers;
         private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox_silt;
         private Slb.Ocean.Petrel.UI.DropTarget dropTarget_silt;
@@ -580,5 +633,16 @@ namespace DeCompactPlugIn
         private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox_carbmud;
         private Slb.Ocean.Petrel.UI.DropTarget dropTarget_carbmud;
         private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox_dirtyss;
+        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot11;
+        private Slb.Ocean.Petrel.UI.Controls.ToolTipManager toolTipManager1;
+        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot4;
+        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot3;
+        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot2;
+        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot1;
+        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot9;
+        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot8;
+        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot7;
+        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot6;
+        private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot5;
     }
 }
