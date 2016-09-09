@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Configuration Type="Configuration.ConfigurationState" Version="1.0.0.10" Caption="DeCompactConfig">
+  <Extensions Type="Extensibility.ExtensionCollection">
+    <Workspaces.WorkspaceExtension EntityId="491b2ecc-57f0-4f0a-baf8-e7268b15e6ab" />
+  </Extensions>
+  <Sections Type="Extesibility.ConfigurationSectionCollection">
+    <Commands.CommandSection Version="1.0.0.4">
+      <Extensions Type="Extensibility.ExtensionCollection">
+        <Workspaces.WorkspaceExtension EntityId="1074b0a3-c21b-41d2-913e-f105244892e7" />
+      </Extensions>
+      <Commands Type="Commands.CommandCollection" />
+      <CommandGroups Type="Commands.CommandGroupCollection" />
+    </Commands.CommandSection>
+    <ToolContainers.RibbonSection Version="1.0.0.9">
+      <Extensions Type="Extensibility.ExtensionCollection">
+        <Workspaces.WorkspaceExtension EntityId="78b7ab23-787c-4940-bdec-a1cde5352f4c" />
+      </Extensions>
+      <Ribbons Type="ToolContainers.RibbonCollection">
+        <ToolContainers.Ribbon Id="9f42ae22-15c5-4351-9057-5921be95969d">
+          <Extensions Type="Extensibility.ExtensionCollection">
+            <Attributes.AttributesExtension>
+              <Attributes Type="Attributes.AttributeCollection">
+                <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="Platform" />
+              </Attributes>
+            </Attributes.AttributesExtension>
+          </Extensions>
+          <Tabs Type="ToolContainers.RibbonTabCollection">
+            <ToolContainers.RibbonTab Id="85fa3b27-d28f-4e66-b7b9-72e55425ed91">
+              <Extensions Type="Extensibility.ExtensionCollection">
+                <Attributes.AttributesExtension>
+                  <Attributes Type="Attributes.AttributeCollection">
+                    <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="BitNumbers PLug-ins" />
+                    <Attributes.AttributeValue AttributeId="Appearance.Description" ValueType="System.String" Value="DeCompaction Plug-ins" />
+                  </Attributes>
+                </Attributes.AttributesExtension>
+              </Extensions>
+              <TabGroups Type="ToolContainers.RibbonTabGroupCollection">
+                <ToolContainers.RibbonTabGroup Id="f8a473b3-b34c-4b01-bebb-c8546a79b2ac">
+                  <Extensions Type="Extensibility.ExtensionCollection">
+                    <Attributes.AttributesExtension>
+                      <Attributes Type="Attributes.AttributeCollection">
+                        <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="DeCompactPlugIn" />
+                      </Attributes>
+                    </Attributes.AttributesExtension>
+                  </Extensions>
+                  <Tools Type="Tools.ToolCollection">
+                    <Tools.StateButtonTool CommandId="Core.Services.ShowHideProcessDialog" Parameter="DeCompactPlugIn">
+                      <Extensions Type="Extensibility.ExtensionCollection">
+                        <Attributes.AttributesExtension>
+                          <Attributes Type="Attributes.AttributeCollection">
+                            <Attributes.AttributeValue AttributeId="Appearance.ToolStyle" ValueType="Tools.ToolStyle" Value="LargeImageAndText" />
+                            <Attributes.AttributeValue AttributeId="Appearance.Image.16" ValueType="Appearance.ImageData" Value="{Uri:pack://application:,,,/Slb.Ocean.Petrel.Resources;component/images/pillargrid_16.png}" />
+                            <Attributes.AttributeValue AttributeId="Appearance.Image.32" ValueType="Appearance.ImageData" Value="{Uri:pack://application:,,,/Slb.Ocean.Petrel.Resources;component/images/pillargrid_32.png}" />
+                            <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="DeCompactPlugIn" />
+                            <Attributes.AttributeValue AttributeId="Appearance.Description" ValueType="System.String" Value="Pillar Grid with new geometry" />
+                            <Attributes.AttributeValue AttributeId="Appearance.ToolTipText" ValueType="System.String" Value="Pillar Grid with new geometry based on the subsidence percentage applied by the user&quot;" />
+                          </Attributes>
+                        </Attributes.AttributesExtension>
+                      </Extensions>
+                    </Tools.StateButtonTool>
+                  </Tools>
+                </ToolContainers.RibbonTabGroup>
+              </TabGroups>
+            </ToolContainers.RibbonTab>
+          </Tabs>
+          <Backstage Type="ToolContainers.RibbonBackstage">
+            <LeftTools Type="Tools.ToolCollection" />
+            <RightTools Type="Tools.ToolCollection" />
+            <FooterTools Type="Tools.ToolCollection" />
+          </Backstage>
+          <Backstage2010 Type="ToolContainers.RibbonBackstage2010">
+            <Tools Type="Tools.ToolCollection" />
+          </Backstage2010>
+          <QuickAccessToolbar Type="ToolContainers.QuickAccessToolbar">
+            <Tools Type="Tools.ToolCollection" />
+          </QuickAccessToolbar>
+          <TabToolbar Type="ToolContainers.RibbonTabToolbar">
+            <Tools Type="Tools.ToolCollection" />
+          </TabToolbar>
+        </ToolContainers.Ribbon>
+      </Ribbons>
+    </ToolContainers.RibbonSection>
+    <ToolContainers.PaletteSection Version="1.0.0.3">
+      <Extensions Type="Extensibility.ExtensionCollection">
+        <Workspaces.WorkspaceExtension EntityId="22fd4760-d86e-4bba-b1fd-39dcfad0977e" />
+      </Extensions>
+      <Palettes Type="ToolContainers.PaletteCollection" />
+    </ToolContainers.PaletteSection>
+    <ToolContainers.MiniToolbarSection Version="1.0.0.3">
+      <Extensions Type="Extensibility.ExtensionCollection">
+        <Workspaces.WorkspaceExtension EntityId="17896337-4f46-4008-a62a-31cb866f7662" />
+      </Extensions>
+      <MiniToolbars Type="ToolContainers.MiniToolbarCollection" />
+    </ToolContainers.MiniToolbarSection>
+    <Configuration.ResourceSection Version="1.0.0.7">
+      <Extensions Type="Extensibility.ExtensionCollection">
+        <Workspaces.WorkspaceExtension EntityId="96c4c135-e28e-4481-b337-8843e7e96f0e" />
+      </Extensions>
+      <Resources Type="Configuration.ResourceCollection" />
+    </Configuration.ResourceSection>
+    <Rules.RuleSection Version="1.0.0.3">
+      <Extensions Type="Extensibility.ExtensionCollection">
+        <Workspaces.WorkspaceExtension EntityId="1be18e1a-b00f-4060-8632-700cd8e737ad" />
+      </Extensions>
+      <Rules Type="Rules.RuleCollection" />
+    </Rules.RuleSection>
+  </Sections>
+</Configuration>

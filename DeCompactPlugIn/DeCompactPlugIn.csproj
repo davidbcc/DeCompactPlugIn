@@ -168,6 +168,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
@@ -190,8 +195,13 @@
     <EmbeddedResource Include="DeCompactForm.resx">
       <DependentUpon>DeCompactForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\logo.PNG" />
     <None Include="bitnumbers.pfx" />
+    <Content Include="DeCompactConfig.xml" />
     <Content Include="OceanResources\OceanRibbon.xml" />
     <Content Include="OceanResources\OceanRibbonConfiguration1.xml" />
     <Content Include="OceanResources\Readme.txt" />

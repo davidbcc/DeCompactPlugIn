@@ -72,10 +72,13 @@ namespace DeCompactPlugIn
             // TODO:  Add DeCompactModule.IntegratePresentation implementation
 
 
-            Bitmap bitmap = null;
-            PetrelMenuItem bitMenu = new PetrelMenuItem("BitNumbers");
-            PetrelSystem.ToolService.AddTopLevelMenu(bitMenu);
-            bitMenu.AddTool(new PetrelButtonTool("DeCompactWorkFlow Plug-in", bitmap,CallWindow));
+            PetrelLogger.Info("Entering IntegratePresentation method of De-Compaction");
+
+            #region Default mode - add configuration
+            PetrelSystem.ConfigurationService.AddConfiguration(global::DeCompactPlugIn.Resource.DeCompactConfig);
+            #endregion
+
+            PetrelLogger.Info("Exiting IntegratePresentation method of De-Compaction");
 
         }
         /// <summary>
