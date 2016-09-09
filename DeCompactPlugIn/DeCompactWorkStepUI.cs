@@ -276,16 +276,62 @@ namespace DeCompactPlugIn
             args.DirtySS = this._dirtyss;
             args.CarbMud = this._carbmud;
             Grid grid = presGrid.Tag as Grid;
-            if (grid != null)
+
+
+            if (_grid == null)
             {
-                CannedWorkflowHelper.Instance.RunWorkflow(args);
-               
-            }
-            else
-            {
-                PetrelLogger.WarnBox("Please provide grid to copy");
+                PetrelLogger.WarnBox("Grid cannot be null ");
+                PetrelLogger.InfoOutputWindow("grid cannot be null ");
                 return;
             }
+            if (_horizon == null)
+            {
+                PetrelLogger.WarnBox("Horizon cannot be null ");
+                PetrelLogger.InfoOutputWindow("Horizon cannot be null ");
+                return;
+            }
+            if (_coal == null)
+            {
+                PetrelLogger.WarnBox("Coal cannot be null ");
+                PetrelLogger.InfoOutputWindow("Coal cannot be null ");
+                return;
+            }
+            if (_silt == null)
+            {
+                PetrelLogger.WarnBox("Silt cannot be null ");
+                PetrelLogger.InfoOutputWindow("Silt cannot be null ");
+                return;
+            }
+            if (_sandstone == null)
+            {
+                PetrelLogger.WarnBox("SandStone cannot be null ");
+                PetrelLogger.InfoOutputWindow("SandStone cannot be null ");
+                return;
+            }
+            if (_mudstone == null)
+            {
+                PetrelLogger.WarnBox("Mud Stone cannot be null ");
+                PetrelLogger.InfoOutputWindow("Mud Stone cannot be null ");
+                return;
+            }
+            if (_dirtyss == null)
+            {
+                PetrelLogger.WarnBox("Dirty SS cannot be null ");
+                PetrelLogger.InfoOutputWindow("Dirty SS cannot be null ");
+                return;
+            }
+
+
+            if (_carbmud == null)
+            {
+                PetrelLogger.WarnBox("Carb Mud cannot be null ");
+                PetrelLogger.InfoOutputWindow("Carb Mud cannot be null ");
+                return;
+            }
+                CannedWorkflowHelper.Instance.RunWorkflow(args);
+               
+        
+          
         }
         #endregion
 
