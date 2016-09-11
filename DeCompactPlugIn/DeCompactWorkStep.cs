@@ -6,6 +6,8 @@ using Slb.Ocean.Petrel.UI;
 using Slb.Ocean.Petrel.Workflow;
 using Slb.Ocean.Petrel.DomainObject.PillarGrid;
 using Slb.Ocean.Petrel.DomainObject.Analysis;
+using System.Drawing;
+using System.Reflection;
 
 namespace DeCompactPlugIn
 {
@@ -315,14 +317,18 @@ namespace DeCompactPlugIn
                 this.ImageChanged(this, new ImageChangedEventArgs(this));
         }
 
-        public System.Drawing.Bitmap Image
+        //public System.Drawing.Bitmap Image
+        //{
+        //    get { return PetrelImages.Modules; }
+        //    private set 
+        //    {
+        //        // TODO: implement set
+        //        this.RaiseImageChanged();
+        //    }
+        //}
+        public Bitmap Image
         {
-            get { return PetrelImages.Modules; }
-            private set 
-            {
-                // TODO: implement set
-                this.RaiseImageChanged();
-            }
+            get { return new Bitmap(Assembly.GetExecutingAssembly().GetManifestResourceStream(Assembly.GetExecutingAssembly().GetName().Name + ".Resources." + "logo.bmp")); ; }
         }
         #endregion
 

@@ -58,7 +58,7 @@ namespace DeCompactPlugIn
             PetrelSystem.WorkflowEditor.Add(decompactworkstepInstance);
             m_decompactworkstepInstance = new Slb.Ocean.Petrel.Workflow.WorkstepProcessWrapper(decompactworkstepInstance);
             //PetrelSystem.ProcessDiagram.Add(m_decompactworkstepInstance, "Plug-ins");
-            PetrelSystem.ProcessDiagram.Add(m_decompactworkstepInstance, "BitNumbers Plug-ins");
+            PetrelSystem.ProcessDiagram.Add(m_decompactworkstepInstance, "University Queensland");
         }
 
         /// <summary>
@@ -185,7 +185,7 @@ namespace DeCompactPlugIn
         //}
         public string ImageResourceName
         {
-            get { return "DeCompactPlugIn.Resources.logo.PNG"; }
+            get { return "DeCompactPlugIn.Resources.logo.bmp"; }
         }
         /// <summary>
         /// A link to the publisher or null.

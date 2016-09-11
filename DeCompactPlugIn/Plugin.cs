@@ -34,7 +34,7 @@ namespace DeCompactPlugIn
 
         public override string ImageResourceName
         {
-            get { return null; }
+            get { return "DeCompactPlugIn.Resources.logo.bmp"; }
         }
 
         public override Uri PluginUri
@@ -55,7 +55,7 @@ namespace DeCompactPlugIn
 
         public override string Name
         {
-            get { return "DeCompactionPlugin-BitNumbers"; }
+            get { return "Decompaction"; }
         }
 
         public override PluginIdentifier PluginId

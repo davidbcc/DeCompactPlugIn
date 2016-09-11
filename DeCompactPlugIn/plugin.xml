@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <InstalledPlugins xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Plugin>
-    <Name>DeCompactionPlugin-BitNumbers</Name>
+    <Name>Decompaction</Name>
     <Description>The DeCompaction WorkSteps PlugIns</Description>
     <Contact>davidb@bit-numbers.com</Contact>
+    <ImageResourceName>DeCompactPlugIn.Resources.logo.bmp</ImageResourceName>
     <PluginTypeName>DeCompactPlugIn.Plugin, DeCompactPlugIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0875ec62433e0b01</PluginTypeName>
     <PluginUri>http://www.pluginuri.info/</PluginUri>
     <PluginId>://DeCompactPlugIn.Plugin/1.0.0.0</PluginId>
