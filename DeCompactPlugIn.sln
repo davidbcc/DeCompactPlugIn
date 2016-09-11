@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deployment", "Deployment\De
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "DeCompactionPlugInInstaller", "DeCompactionPlugInInstaller\DeCompactionPlugInInstaller.wixproj", "{FEDBA949-26CE-4A31-BAE6-378F177899FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeCompactionPlugInTest", "DeCompactionPlugInTest\DeCompactionPlugInTest.csproj", "{AA30B10C-45AB-4C28-BBC4-522A67A71002}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +54,16 @@ Global
 		{FEDBA949-26CE-4A31-BAE6-378F177899FA}.Release|Mixed Platforms.Build.0 = Release|x86
 		{FEDBA949-26CE-4A31-BAE6-378F177899FA}.Release|x86.ActiveCfg = Release|x86
 		{FEDBA949-26CE-4A31-BAE6-378F177899FA}.Release|x86.Build.0 = Release|x86
+		{AA30B10C-45AB-4C28-BBC4-522A67A71002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA30B10C-45AB-4C28-BBC4-522A67A71002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA30B10C-45AB-4C28-BBC4-522A67A71002}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AA30B10C-45AB-4C28-BBC4-522A67A71002}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AA30B10C-45AB-4C28-BBC4-522A67A71002}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AA30B10C-45AB-4C28-BBC4-522A67A71002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA30B10C-45AB-4C28-BBC4-522A67A71002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA30B10C-45AB-4C28-BBC4-522A67A71002}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AA30B10C-45AB-4C28-BBC4-522A67A71002}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{AA30B10C-45AB-4C28-BBC4-522A67A71002}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

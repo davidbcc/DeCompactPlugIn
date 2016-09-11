@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<update>
+  <PlatformLibraries name="PlatformLibraries" version="8" source="PlatformLibraries.xml" check_sum="5435c2722bd1cbd72761cde313dd94da" />
+  <OtherPluginLibraries name="OtherPluginLibraries" version="10" source="OtherPluginLibraries.xml" check_sum="de7c80af8ad30b454d83aaff071e0ebb" />
+  <AcceptanceChecklist name="AcceptanceChecklist" version="34" source="AcceptanceChecklist.xml" check_sum="78a2e6edf1d40294bc48a40e06c37f93" />
+</update>
