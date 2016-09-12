@@ -192,6 +192,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\logo.jpg" />
     <EmbeddedResource Include="Resources\logo.bmp" />
     <EmbeddedResource Include="DeCompactForm.resx">
       <DependentUpon>DeCompactForm.cs</DependentUpon>

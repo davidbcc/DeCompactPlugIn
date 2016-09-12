@@ -185,7 +185,7 @@ namespace DeCompactPlugIn
         //}
         public string ImageResourceName
         {
-            get { return "DeCompactPlugIn.Resources.logo.bmp"; }
+            get { return "DeCompactPlugIn.Resources.logo.jpg"; }
         }
         /// <summary>
         /// A link to the publisher or null.

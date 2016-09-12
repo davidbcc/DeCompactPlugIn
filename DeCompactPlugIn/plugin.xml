@@ -9,7 +9,7 @@
     <PluginUri>http://www.pluginuri.info/</PluginUri>
     <PluginId>://DeCompactPlugIn.Plugin/1.0.0.0</PluginId>
     <Trust PublicKeyToken="">Default</Trust>
-    <ReleaseDate>2016-09-11</ReleaseDate>
+    <ReleaseDate>2016-09-12</ReleaseDate>
     <Author>daren</Author>
     <AppVersion>2015.1</AppVersion>
     <Modules>
