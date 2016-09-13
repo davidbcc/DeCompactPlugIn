@@ -59,6 +59,8 @@ namespace DeCompactPlugIn
             m_decompactworkstepInstance = new Slb.Ocean.Petrel.Workflow.WorkstepProcessWrapper(decompactworkstepInstance);
             //PetrelSystem.ProcessDiagram.Add(m_decompactworkstepInstance, "Plug-ins");
             PetrelSystem.ProcessDiagram.Add(m_decompactworkstepInstance, "University Queensland");
+
+          
         }
 
         /// <summary>
@@ -70,15 +72,10 @@ namespace DeCompactPlugIn
         {
 
             // TODO:  Add DeCompactModule.IntegratePresentation implementation
-
-
-            PetrelLogger.Info("Entering IntegratePresentation method of De-Compaction");
-
             #region Default mode - add configuration
             PetrelSystem.ConfigurationService.AddConfiguration(global::DeCompactPlugIn.Resource.DeCompactConfig);
             #endregion
-
-            PetrelLogger.Info("Exiting IntegratePresentation method of De-Compaction");
+     
 
         }
         /// <summary>

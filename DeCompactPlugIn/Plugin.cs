@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 
 using Slb.Ocean.Core;
+using System.Reflection;
+using System.Drawing;
 
 namespace DeCompactPlugIn
 {
@@ -34,7 +36,7 @@ namespace DeCompactPlugIn
 
         public override string ImageResourceName
         {
-            get { return "DeCompactPlugIn.Resources.logo.bmp"; }
+            get { return Assembly.GetExecutingAssembly().GetName().Name + ".Resources." + "logo.bmp"; }
         }
 
         public override Uri PluginUri

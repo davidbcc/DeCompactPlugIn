@@ -42,7 +42,7 @@ namespace DeCompactionPlugIn.Helpers
         public void LoadWorkflow()
         {
             const string wfName = "decompaction";
-            const string collName = "DB";
+            const string collName = "UQ";
             // if it already exists, we will not load it
             if (FindPredefinedWorkflow(wfName, collName) != null)
             {

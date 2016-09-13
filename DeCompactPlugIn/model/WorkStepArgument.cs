@@ -68,6 +68,9 @@ namespace DeCompactPlugIn.model
 
 
         #region Constructor
+         /// <summary>
+         /// This is the public constructor
+         /// </summary>
         public WorkStepArgument()
         {
           

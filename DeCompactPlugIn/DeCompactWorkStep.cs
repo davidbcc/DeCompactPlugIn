@@ -367,7 +367,7 @@ namespace DeCompactPlugIn
             /// </summary>
             public string Name
             {
-                get { return "DeCompactionWorkSteps"; }
+                get { return "Queensland - Decompaction"; }
             }
             /// <summary>
             /// Gets the short description of DeCompactWorkStep
