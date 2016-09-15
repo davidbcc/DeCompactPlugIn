@@ -58,7 +58,7 @@ namespace DeCompactPlugIn
             PetrelSystem.WorkflowEditor.Add(decompactworkstepInstance);
             m_decompactworkstepInstance = new Slb.Ocean.Petrel.Workflow.WorkstepProcessWrapper(decompactworkstepInstance);
             //PetrelSystem.ProcessDiagram.Add(m_decompactworkstepInstance, "Plug-ins");
-            PetrelSystem.ProcessDiagram.Add(m_decompactworkstepInstance, "University Queensland");
+            PetrelSystem.ProcessDiagram.Add(m_decompactworkstepInstance, "UQ");
 
           
         }
@@ -73,10 +73,26 @@ namespace DeCompactPlugIn
 
             // TODO:  Add DeCompactModule.IntegratePresentation implementation
             #region Default mode - add configuration
-            PetrelSystem.ConfigurationService.AddConfiguration(global::DeCompactPlugIn.Resource.DeCompactConfig);
+            //PetrelSystem.ConfigurationService.AddConfiguration(global::DeCompactPlugIn.Resource.DeCompactConfig);
+            PetrelMenuItem menuItem = new PetrelMenuItem("UQ");
+            menuItem.AddTool(new PetrelSeparatorTool());
+
+            PetrelMenuItem menuItem2 = WellKnownMenus.Tools;
+            Bitmap img = null;
+            PetrelButtonTool tool = new PetrelButtonTool("UQ", img, callme);
+            PetrelSystem.ToolService.AddTopLevelMenu(menuItem);
+            menuItem2.AddTool(tool);
+            PetrelLogger.InfoOutputWindow("UQ - Menu created");
+
+
             #endregion
      
 
+        }
+
+        private void callme(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Call DeCompact Window

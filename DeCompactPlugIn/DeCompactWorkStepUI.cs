@@ -58,7 +58,6 @@ namespace DeCompactPlugIn
             this.context = context;
             UiRendering();
 
-          //TODO: Instantiate the Validations object
         }
         private void UiRendering()
         {
@@ -70,12 +69,11 @@ namespace DeCompactPlugIn
             OKButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             runButton.Image = PetrelImages.DownArrow;
             runButton.TextImageRelation = TextImageRelation.ImageBeforeText;
-            //testButton.Image = PetrelImages.OK;
-            //testButton.TextImageRelation = TextImageRelation.ImageBeforeText;
+ 
             
         }
         #region Drag Drop events handling
-        // Grid
+        // Grid drag-drop function.
         private void drop_grid_DragDrop(object sender, DragEventArgs e)
         {
 
@@ -92,7 +90,7 @@ namespace DeCompactPlugIn
             presGrid.Tag = _grid;
         }
 
-        // Horizon
+        // Horizon drag-drop function.
 
         private void drop_horizon_DragDrop(object sender, DragEventArgs e)
         {
@@ -109,7 +107,7 @@ namespace DeCompactPlugIn
             presHorizon.Image = fact.GetImageInfo(_horizon).GetDisplayImage(new ImageInfoContext());
             presHorizon.Tag = _horizon;
         }
-
+        // Facies drag-drop function.
         private void drop_facies_DragDrop(object sender, DragEventArgs e)
         {
             var drop = e.Data.GetData(typeof(object));
@@ -127,7 +125,7 @@ namespace DeCompactPlugIn
                 presentationBox_facies.Tag = _facies;
      
         }
-
+        // Silt drag-drop function.
         private void dropTarget_silt_DragDrop(object sender, DragEventArgs e)
         {
             var drop = e.Data.GetData(typeof(object));
@@ -145,7 +143,7 @@ namespace DeCompactPlugIn
                 presentationBox_silt.Tag = _silt;
 
         }
-
+        //Sandstone drag-drop function.
         private void dropTarget_sandstone_DragDrop(object sender, DragEventArgs e)
         {
             var drop = e.Data.GetData(typeof(object));
@@ -164,7 +162,7 @@ namespace DeCompactPlugIn
                 presentationBox_sandstone.Tag = _sandstone;
            
         }
-
+        // Mudstone drag-drop function.
         private void dropTarget_mudstone_DragDrop(object sender, DragEventArgs e)
         {
             var drop = e.Data.GetData(typeof(object));
@@ -182,6 +180,8 @@ namespace DeCompactPlugIn
                 presentationBox_mudstone.Tag = _mudstone;
           
         }
+
+        // Coal drag-drop function.
         private void dropTarget_coal_DragDrop(object sender, DragEventArgs e)
         {
             var drop = e.Data.GetData(typeof(object));
@@ -200,7 +200,7 @@ namespace DeCompactPlugIn
           
         }
 
-
+        // Dirty SS drag-drop function.
         private void dropTarget_dirtyss_DragDrop(object sender, DragEventArgs e)
         {
             var drop = e.Data.GetData(typeof(object));
@@ -219,7 +219,7 @@ namespace DeCompactPlugIn
                 presentationBox_dirtyss.Tag = _dirtyss;
          
         }
-
+        // Carb mud drag-drop function.
         private void dropTarget_carbmud_DragDrop(object sender, DragEventArgs e)
         {
             var drop = e.Data.GetData(typeof(object));
@@ -245,12 +245,21 @@ namespace DeCompactPlugIn
 
         
         #region buttons events handling
+        /// <summary>
+        /// Cancel Button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cancelButton_Click(object sender, EventArgs e)
         {
             var findForm = FindForm();
             if (findForm != null) findForm.Close();
         }
-        
+        /// <summary>
+        /// Ok Button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OKButton_Click(object sender, EventArgs e)
         {
             var findForm = FindForm();
@@ -260,7 +269,11 @@ namespace DeCompactPlugIn
         {
 
         }
-
+        /// <summary>
+        /// Run Button, executing the particular Worksteps.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void runButton_Click(object sender, EventArgs e)
         {
             var args = new WorkStepArgument();
@@ -290,10 +303,11 @@ namespace DeCompactPlugIn
                 PetrelLogger.InfoOutputWindow("Horizon cannot be null ");
                 return;
             }
-            if (_coal == null)
+
+            if (_facies == null)
             {
-                PetrelLogger.WarnBox("Coal cannot be null ");
-                PetrelLogger.InfoOutputWindow("Coal cannot be null ");
+                PetrelLogger.WarnBox("Facies cannot be null ");
+                PetrelLogger.InfoOutputWindow("Facies cannot be null ");
                 return;
             }
             if (_silt == null)
@@ -308,6 +322,14 @@ namespace DeCompactPlugIn
                 PetrelLogger.InfoOutputWindow("SandStone cannot be null ");
                 return;
             }
+            if (_coal == null)
+            {
+                PetrelLogger.WarnBox("Coal cannot be null ");
+                PetrelLogger.InfoOutputWindow("Coal cannot be null ");
+                return;
+            }
+          
+           
             if (_mudstone == null)
             {
                 PetrelLogger.WarnBox("Mud Stone cannot be null ");
@@ -324,7 +346,7 @@ namespace DeCompactPlugIn
 
             if (_carbmud == null)
             {
-                PetrelLogger.WarnBox("Carb Mud cannot be null ");
+           
                 PetrelLogger.InfoOutputWindow("Carb Mud cannot be null ");
                 return;
             }

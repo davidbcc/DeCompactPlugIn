@@ -55,7 +55,8 @@ namespace DeCompactionPlugIn.Helpers
                 var pluginPath = Assembly.GetAssembly(typeof (DeCompactModule)).Location;
                 var pluginDir = Path.GetDirectoryName(pluginPath);
                 if (pluginDir == null) return;
-                var predefinedWorkflowPath = Path.Combine(pluginDir, @"C:\decomp\decompaction.pet");
+                //var predefinedWorkflowPath = Path.Combine(pluginDir, @"C:\decomp\decompaction.pet");
+                var predefinedWorkflowPath = Path.Combine(pluginDir, @"C:\Users\daren\Dropbox\BitNumbers\test project\Test_project.pet");
                 // Use IWorkflowSyncService to find the workflow from given project and 
                 // copies it to current project.  
                 var ss = PetrelSystem.WorkflowSyncService;
@@ -112,7 +113,7 @@ namespace DeCompactionPlugIn.Helpers
             ReferenceVariable inputDirtySS = null;
             ReferenceVariable inputCarbMud = null;
             IIdentifiable copiedObject = null;
-            var cannedWf = FindPredefinedWorkflow("decompaction", "DB");
+            var cannedWf = FindPredefinedWorkflow("decompaction", "UQ");
             var runner = new WorkflowRunner(cannedWf);
 
 

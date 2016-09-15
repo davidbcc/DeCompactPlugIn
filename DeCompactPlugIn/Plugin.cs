@@ -31,7 +31,7 @@ namespace DeCompactPlugIn
 
         public override string Description
         {
-            get { return "The DeCompaction WorkSteps PlugIns"; }
+            get { return "Facies Decompactor"; }
         }
 
         public override string ImageResourceName
@@ -57,7 +57,7 @@ namespace DeCompactPlugIn
 
         public override string Name
         {
-            get { return "Decompaction"; }
+            get { return "Facies Decompactor"; }
         }
 
         public override PluginIdentifier PluginId
