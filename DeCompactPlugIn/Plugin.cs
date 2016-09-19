@@ -21,7 +21,7 @@ namespace DeCompactPlugIn
 
         public override string Contact
         {
-            get { return "davidb@bit-numbers.com"; }
+            get { return ""; }
         }
 
         public override IEnumerable<PluginIdentifier> Dependencies

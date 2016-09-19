@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlAutoDataSource Version="1">
+  <WellRangesArgPackDataSource droid="://WellRangesArgPackDataSource/0c4983dc-2503-4dd5-983b-54d7a831c954">
+    <Droid>://WellRangesArgPackDataSource/0c4983dc-2503-4dd5-983b-54d7a831c954</Droid>
+  </WellRangesArgPackDataSource>
+  <WellRangesArgPackDataSource droid="://WellRangesArgPackDataSource/f8e9b6bb-50cb-47a3-a059-150fd78cb342">
+    <Droid>://WellRangesArgPackDataSource/f8e9b6bb-50cb-47a3-a059-150fd78cb342</Droid>
+  </WellRangesArgPackDataSource>
+  <WellRangesArgPackDataSource droid="://WellRangesArgPackDataSource/bf16a079-0cbc-48f2-bb5d-b6fd1c2e60cc">
+    <Droid>://WellRangesArgPackDataSource/bf16a079-0cbc-48f2-bb5d-b6fd1c2e60cc</Droid>
+  </WellRangesArgPackDataSource>
+  <WellRangesArgPackDataSource droid="://WellRangesArgPackDataSource/4c34960e-66ef-49a4-a8c6-1f6c738cb046">
+    <Droid>://WellRangesArgPackDataSource/4c34960e-66ef-49a4-a8c6-1f6c738cb046</Droid>
+  </WellRangesArgPackDataSource>
+  <WellRangesArgPackDataSource droid="://WellRangesArgPackDataSource/ca0ec523-a956-4730-b28a-39a0b79ba078">
+    <Droid>://WellRangesArgPackDataSource/ca0ec523-a956-4730-b28a-39a0b79ba078</Droid>
+  </WellRangesArgPackDataSource>
+  <WellRangesArgPackDataSource droid="://WellRangesArgPackDataSource/34a0570b-2320-42b5-a0da-d878eb40f4a1">
+    <Droid>://WellRangesArgPackDataSource/34a0570b-2320-42b5-a0da-d878eb40f4a1</Droid>
+  </WellRangesArgPackDataSource>
+  <WellRangesArgPackDataSource droid="://WellRangesArgPackDataSource/548a3528-96a6-413a-a27d-958f02ee0a83">
+    <Droid>://WellRangesArgPackDataSource/548a3528-96a6-413a-a27d-958f02ee0a83</Droid>
+  </WellRangesArgPackDataSource>
+  <WellRangesArgPackDataSource droid="://WellRangesArgPackDataSource/804d34cd-d3ae-48a5-abda-01bbd7f073b9">
+    <Droid>://WellRangesArgPackDataSource/804d34cd-d3ae-48a5-abda-01bbd7f073b9</Droid>
+  </WellRangesArgPackDataSource>
+  <WellRangesArgPackDataSource droid="://WellRangesArgPackDataSource/eaa08c82-b20f-4a43-9c5e-06bff08fc737">
+    <Droid>://WellRangesArgPackDataSource/eaa08c82-b20f-4a43-9c5e-06bff08fc737</Droid>
+  </WellRangesArgPackDataSource>
+  <WellRangesArgPackDataSource droid="://WellRangesArgPackDataSource/118214b9-b83c-404a-be82-3b245198a68c">
+    <Droid>://WellRangesArgPackDataSource/118214b9-b83c-404a-be82-3b245198a68c</Droid>
+  </WellRangesArgPackDataSource>
+  <WellRangesArgPackDataSource droid="://WellRangesArgPackDataSource/45ac6c9e-34dd-4214-ae6e-d87ee98b684f">
+    <Droid>://WellRangesArgPackDataSource/45ac6c9e-34dd-4214-ae6e-d87ee98b684f</Droid>
+  </WellRangesArgPackDataSource>
+  <WellRangesArgPackDataSource droid="://WellRangesArgPackDataSource/66715b77-6c5b-4094-b7d6-1b85fc2533e8">
+    <Droid>://WellRangesArgPackDataSource/66715b77-6c5b-4094-b7d6-1b85fc2533e8</Droid>
+  </WellRangesArgPackDataSource>
+  <WellRangesArgPackDataSource droid="://WellRangesArgPackDataSource/3a7025df-5d8f-4ffd-a3dd-08d0946e0bba">
+    <Droid>://WellRangesArgPackDataSource/3a7025df-5d8f-4ffd-a3dd-08d0946e0bba</Droid>
+  </WellRangesArgPackDataSource>
+  <WellRangesArgPackDataSource droid="://WellRangesArgPackDataSource/ac7760ed-533f-4a91-99a3-97caf9d8b1aa">
+    <Droid>://WellRangesArgPackDataSource/ac7760ed-533f-4a91-99a3-97caf9d8b1aa</Droid>
+  </WellRangesArgPackDataSource>
+</XmlAutoDataSource>

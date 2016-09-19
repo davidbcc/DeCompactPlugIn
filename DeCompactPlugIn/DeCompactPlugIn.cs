@@ -20,7 +20,7 @@ namespace DeCompactPlugIn
 		public DeCompactPlugIn(object dataobj)
 		{
 			this.data = dataobj;
-			this.Text = "DeCompactPlugIn";
+			this.Text = "Facies Decompactor";
 		}
 
 		public string Text { get; set; }

@@ -3,13 +3,12 @@
   <Plugin>
     <Name>Facies Decompactor</Name>
     <Description>Facies Decompactor</Description>
-    <Contact>davidb@bit-numbers.com</Contact>
     <ImageResourceName>DeCompactPlugIn.Resources.logo.bmp</ImageResourceName>
     <PluginTypeName>DeCompactPlugIn.Plugin, DeCompactPlugIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0875ec62433e0b01</PluginTypeName>
     <PluginUri>http://www.pluginuri.info/</PluginUri>
     <PluginId>://DeCompactPlugIn.Plugin/1.0.0.0</PluginId>
     <Trust PublicKeyToken="">Default</Trust>
-    <ReleaseDate>2016-09-15</ReleaseDate>
+    <ReleaseDate>2016-09-19</ReleaseDate>
     <Author>daren</Author>
     <AppVersion>2015.1</AppVersion>
     <Modules>

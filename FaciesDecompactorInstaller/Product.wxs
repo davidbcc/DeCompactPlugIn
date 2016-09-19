@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?define manufacturer = "Hewlett-Packard Company" ?>
+<?define platformindependentname = "FaciesDecompactorInstaller" ?>
+<?define plataform = "x64" ?>
+<?define productname = "$(var.platformindependentname) ($(var.plataform))" ?>
+<?define productid = "7da8083f-4cd6-4394-a598-29e610c9affd" ?>
+<?define upgradecode = "4a50b58a-f7a0-4315-881d-308f33ed91f0" ?>
+<?define installscope = "perMachine" ?>
+<?define oceanenvvar = "OCEAN2015HOME_x64" ?>
+<?define petrelversion = "2015" ?>
+<?define plugininstallinfoguid = "56772396-d756-454f-9793-a1aa6a0bae17" ?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <!-- * Product Id  - Should change each time MSI is built. So '*' means that it will be auto-generated.
+         * UpgradeCode - GUID representing a related set of products. The upgrade code of all products that are to be detected by the FindRelatedProducts action. 
+                         The FindRelatedProducts action searches for products using criteria based upon the UpgradeCode, ProductLanguage, and ProductVersion.
+         * Version     - Windows Installer uses only the first three fields of the product version (major.minor.build). If you include a fourth field in your 
+                         product version, the installer ignores the fourth field.
+         * InstallScope - Use this attribute to specify the installation scope of this package: per-machine or per-user. This attribute's value must be one of the following:
+                          perMachine - set this value to declare that the package is a per-machine installation and requires elevated privileges to install.
+                          perUser - set this value to declare that the package is a per-user installation and does not require elevated privileges to install. 
+                                    This kind of installation shouldn't write to ProgramFiles directory. Instead it should install to %LocalAppData%\Programs\Company\Product."-->
+  <Product Id="*" Name="$(var.productname)" Language="1033" Version="1.0.0.0" Manufacturer="$(var.manufacturer)" UpgradeCode="$(var.upgradecode)">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="$(var.installscope)" Platform="$(var.plataform)" />
+
+    <!-- <MajorUpgrade DowngradeErrorMessage="A later version of [ProductName] is already installed. Setup will now exit."
+            AllowSameVersionUpgrades="no" /> -->
+
+    <Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
+
+    <!-- To get a major upgrade to work, the most important thing you’ll need is your UpgradeCode -->
+    <Property Id="PREVIOUSVERSIONSINSTALLED" Secure="yes" />
+    <Upgrade Id="$(var.upgradecode)">
+      <UpgradeVersion Minimum="1.0.0.0" Maximum="99.0.0.0" Property="PREVIOUSVERSIONSINSTALLED" IncludeMinimum="yes" IncludeMaximum="no" />
+    </Upgrade>
+
+    <Property Id="PETRELINSTALLLOCATION" Secure="yes">
+      <RegistrySearch Id="PetrelFolder" Root="HKLM" Key="SYSTEM\CurrentControlSet\Control\Session Manager\Environment" Type="raw" Name="$(var.oceanenvvar)" />
+    </Property>
+    <Condition Message="This application requires Petrel $(var.petrelversion). Please install Petrel $(var.petrelversion) then run this installer again">
+      <![CDATA[Installed OR PETRELINSTALLLOCATION]]>
+    </Condition>
+
+    <Property Id="INSTALLSCOPE" Value="$(var.installscope)" Secure="yes" />
+
+    <Feature Id="ProductFeature" Title="$(var.platformindependentname)" Level="1">
+      <ComponentGroupRef Id="PluginComponents" />
+    </Feature>
+
+    <UI>
+      <Dialog Id="ngenDialog" Width="370" Height="270" Title="$(var.productname) Setup" NoMinimize="yes">
+        <Control Id="Next" Type="PushButton" X="239" Y="243" Width="56" Height="17" Default="yes" Text="Next">
+          <Publish Event="EndDialog" Value="Return" />
+        </Control>
+        <Control Type="PushButton" Id="Back" Width="56" Height="17" X="183" Y="243" Text="Back">
+          <Publish Event="EndDialog" Value="Return" />
+        </Control>
+        <Control Type="CheckBox" Id="ngenCheck" Width="149" Height="17" X="19" Y="206" Property="USE_NGEN" CheckBoxValue="yes">
+          <Text>Plug-in Startup Optimization</Text>
+        </Control>
+        <Control Type="Text" Id="ngenText" Width="345" Height="64" X="11" Y="49" Text="The Native Image Generator (Ngen.exe) is a tool that improves the performance of managed applications. Ngen.exe creates native images, which are files containing compiled processor-specific machine code, and installs them into the native image cache on the local computer. The runtime can use native images from the cache instead of using the just-in-time (JIT) compiler to compile the original assembly.">
+        </Control>
+        <Control Type="Line" Id="ngenLine" Width="355" Height="2" X="8" Y="236" />
+        <Control Type="Text" Id="petrelOptimText" Width="345" Height="34" X="11" Y="11" Text="Select the option below if you want to use Ngen tool to get best start-up performance while loading Petrel. If you later decide not to use this tool you can repair this installation." />
+        <Control Type="Hyperlink" Id="ngenLink" Width="345" Height="12" X="11" Y="111"  >
+          <Text>For more information please follow this <![CDATA[<a href="http://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.80).aspx">link</a>]]>.</Text>
+        </Control>
+      </Dialog>
+    </UI>
+    <UI Id="WixUI_InstallDir">
+      <TextStyle Id="WixUI_Font_Normal" FaceName="Tahoma" Size="8" />
+      <TextStyle Id="WixUI_Font_Bigger" FaceName="Tahoma" Size="12" />
+      <TextStyle Id="WixUI_Font_Title" FaceName="Tahoma" Size="9" Bold="yes" />
+      <Property Id="DefaultUIFont" Value="WixUI_Font_Normal" />
+      <Property Id="WixUI_Mode" Value="InstallDir" />
+      <DialogRef Id="DiskCostDlg" />
+      <DialogRef Id="ErrorDlg" />
+      <DialogRef Id="FatalError" />
+      <DialogRef Id="FilesInUse" />
+      <DialogRef Id="MsiRMFilesInUse" />
+      <DialogRef Id="PrepareDlg" />
+      <DialogRef Id="ProgressDlg" />
+      <DialogRef Id="ResumeDlg" />
+      <DialogRef Id="UserExit" />
+      <DialogRef Id="ngenDialog" />
+      <Publish Dialog="ExitDialog" Control="Finish" Event="EndDialog" Value="Return" Order="999">1</Publish>
+      <Publish Dialog="WelcomeDlg" Control="Next" Event="NewDialog" Value="LicenseAgreementDlg">1</Publish>
+      <Publish Dialog="LicenseAgreementDlg" Control="Back" Event="NewDialog" Value="WelcomeDlg">1</Publish>
+      <Publish Dialog="LicenseAgreementDlg" Control="Next" Event="NewDialog" Value="ngenDialog">LicenseAccepted = "1"</Publish>
+      <Publish Dialog="VerifyReadyDlg" Control="Back" Event="NewDialog" Value="MaintenanceTypeDlg" Order="2">Installed</Publish>
+      <Publish Dialog="VerifyReadyDlg" Control="Back" Event="NewDialog" Value="ngenDialog" Order="1">NOT Installed</Publish>
+      <Publish Dialog="ngenDialog" Control="Back" Event="NewDialog" Value="LicenseAgreementDlg">NOT Installed</Publish>
+      <Publish Dialog="ngenDialog" Control="Back" Event="NewDialog" Value="MaintenanceTypeDlg">Installed</Publish>
+      <Publish Dialog="ngenDialog" Control="Next" Event="NewDialog" Value="VerifyReadyDlg">1</Publish>
+      <Publish Dialog="MaintenanceWelcomeDlg" Control="Next" Event="NewDialog" Value="MaintenanceTypeDlg">1</Publish>
+      <Publish Dialog="MaintenanceTypeDlg" Control="RepairButton" Event="NewDialog" Value="ngenDialog">1</Publish>
+      <Publish Dialog="MaintenanceTypeDlg" Control="RemoveButton" Event="NewDialog" Value="VerifyReadyDlg">1</Publish>
+      <Publish Dialog="MaintenanceTypeDlg" Control="Back" Event="NewDialog" Value="MaintenanceWelcomeDlg">1</Publish>
+      <Property Id="ARPNOMODIFY" Value="1" />
+    </UI>
+    <UIRef Id="WixUI_Common" />
+  </Product>
+
+  <Fragment>
+    <ComponentGroup Id="PluginComponents" Directory="INSTALLLOCATION">
+      
+            <Component Id="Deployment" Guid="ce7ad759-0cae-4148-b807-5f52218307ab">
+                <File Id="Deployment.pip" Source="../Deployment/bin/Debug/Deployment.pip" KeyPath="yes" />
+            </Component>
+    </ComponentGroup>
+  </Fragment>
+
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="PETRELINSTALLLOCATION">
+        <Directory Id="PETRELEXTENSIONLOCATION" Name="Extensions">
+          <Directory Id="PETRELINSTALLERSLOCATION" Name="Installers">
+            <Directory Id="INSTALLLOCATION" Name="$(var.platformindependentname)">
+            </Directory>
+          </Directory>
+        </Directory>
+      </Directory>
+    </Directory>
+  </Fragment>
+
+  <Fragment>
+    <!-- Installs an Ocean plugin package (pip file) -->
+    <!--Install-->
+    <CustomAction Id="Install" Return="check" Execute="deferred" BinaryKey="OceanCA_CA.dll" DllEntry="InstallPlugins" Impersonate="no" />
+    <CustomAction Id="CustomActionDataInstall" Property="Install" Value="customParameters=[PETRELINSTALLLOCATION]|[INSTALLSCOPE]|[INSTALLLOCATION]|[ProductCode]|[USE_NGEN]"/>
+
+    <!--Uninstall-->
+    <CustomAction Id="Uninstall" Return="check" Execute="deferred" BinaryKey="OceanCA_CA.dll" DllEntry="UninstallPlugins" Impersonate="no" />
+    <CustomAction Id="CustomActionDataUninstall" Property="Uninstall" Value="customParameters=[PETRELINSTALLLOCATION]|[INSTALLSCOPE]|[INSTALLLOCATION]|[ProductCode]"/>
+    <CustomAction Id="Uninstall_Rollback" Return="check" Execute="rollback" BinaryKey="OceanCA_CA.dll" DllEntry="InstallPlugins"/>
+    <CustomAction Id="CustomActionDataUninstall_Rollback" Property="Uninstall_Rollback" Value="customParameters=[PETRELINSTALLLOCATION]|[INSTALLSCOPE]|[INSTALLLOCATION]|[ProductCode]|[USE_NGEN]"/>
+
+    <!--Repair-->
+    <CustomAction Id="Uninstall_Repair" Return="check" Execute="deferred" BinaryKey="OceanCA_CA.dll" DllEntry="UninstallForRepair" Impersonate="no" />
+    <CustomAction Id="CustomActionDataUninstall_Repair" Property="Uninstall_Repair" Value="customParameters=[PETRELINSTALLLOCATION]|[INSTALLSCOPE]|[INSTALLLOCATION]|[ProductCode]"/>
+    <CustomAction Id="Install_Repair" Return="check" Execute="deferred" BinaryKey="OceanCA_CA.dll" DllEntry="InstallForRepair" Impersonate="no" />
+    <CustomAction Id="CustomActionDataInstall_Repair" Property="Install_Repair" Value="customParameters=[PETRELINSTALLLOCATION]|[INSTALLSCOPE]|[INSTALLLOCATION]|[ProductCode]|[USE_NGEN]"/>
+
+    <InstallExecuteSequence>
+      <!-- RemoveExistingProducts processes <Upgrade> elements in the current installation, matching the @Id attribute to the UpgradeCode -->
+      <RemoveExistingProducts Before="InstallInitialize" />
+
+      <Custom Action="CustomActionDataInstall" Before="Install" />
+      <Custom Action="Install" Before="InstallFinalize">(PETRELINSTALLLOCATION And Not Installed)</Custom>
+
+      <Custom Action="CustomActionDataUninstall" Before="Uninstall" />
+      <Custom Action="CustomActionDataUninstall_Rollback" Before="Uninstall_Rollback" />
+      <Custom Action="Uninstall" Before="RemoveFiles">REMOVE="ALL"</Custom>
+      <Custom Action="Uninstall_Rollback" After="Uninstall">REMOVE="ALL"</Custom>
+
+      <Custom Action="CustomActionDataUninstall_Repair" Before="Uninstall_Repair" />
+      <Custom Action="Uninstall_Repair" Before="PublishFeatures">(PETRELINSTALLLOCATION And (REINSTALL="ProductFeature" OR REINSTALL="ALL"))</Custom>
+      <Custom Action="CustomActionDataInstall_Repair" Before="Install_Repair" />
+      <Custom Action="Install_Repair" After="Uninstall_Repair">(PETRELINSTALLLOCATION And (REINSTALL="ProductFeature" OR REINSTALL="ALL"))</Custom>
+    </InstallExecuteSequence>
+    <Binary Id="OceanCA_CA.dll" SourceFile="OceanCA_CA.dll" />
+  </Fragment>
+</Wix>

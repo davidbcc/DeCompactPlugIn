@@ -27,6 +27,10 @@ namespace DeCompactionPlugIn.Helpers
         private const int GRID = 7;
         private const int HORIZON = 8;
         private const int ITERATION= 9;
+        private const int OUT_ZONES = 0;
+        private const int OUT_LAYERS = 1;
+        private const int OUT_DEPTH = 2;
+        private const int OUT_CELL_HEIGHT = 3;
         #endregion
 
         private static CannedWorkflowHelper _instance;
@@ -55,8 +59,14 @@ namespace DeCompactionPlugIn.Helpers
                 var pluginPath = Assembly.GetAssembly(typeof (DeCompactModule)).Location;
                 var pluginDir = Path.GetDirectoryName(pluginPath);
                 if (pluginDir == null) return;
-                //var predefinedWorkflowPath = Path.Combine(pluginDir, @"C:\decomp\decompaction.pet");
-                var predefinedWorkflowPath = Path.Combine(pluginDir, @"C:\Users\daren\Dropbox\BitNumbers\test project\Test_project.pet");
+                var predefinedWorkflowPath = Path.Combine(pluginDir, @"C:\decomp\decompaction.pet");
+                //var predefinedWorkflowPath = Path.Combine(pluginDir, @"ProjectFile\Test_project.pet");
+
+                PetrelLogger.InfoOutputWindow(string.Format("pluginPath:{0}", pluginPath));
+                PetrelLogger.InfoOutputWindow(string.Format("pluginDir:{0}", pluginDir));
+                PetrelLogger.InfoOutputWindow(string.Format("This is the predefined Workflow path:{0}",predefinedWorkflowPath));
+                PetrelLogger.InfoOutputWindow(string.Format("This is the predefined Workflow path:{0}", predefinedWorkflowPath));
+
                 // Use IWorkflowSyncService to find the workflow from given project and 
                 // copies it to current project.  
                 var ss = PetrelSystem.WorkflowSyncService;
@@ -103,7 +113,7 @@ namespace DeCompactionPlugIn.Helpers
             }
         
             ReferenceVariable inputGrid = null;
-            ReferenceVariable inputHorizon = null;
+         
             ReferenceVariable inputFacies= null;
             ReferenceVariable inputIteration = null;
             ReferenceVariable inputSilt = null;
@@ -113,12 +123,17 @@ namespace DeCompactionPlugIn.Helpers
             ReferenceVariable inputDirtySS = null;
             ReferenceVariable inputCarbMud = null;
             IIdentifiable copiedObject = null;
+            ReferenceVariable outputZONES = null;
+            ReferenceVariable outputLAYERS = null;
+            ReferenceVariable outputDEPTH = null;
+            ReferenceVariable outputCELL_HEIGHT = null;
+
             var cannedWf = FindPredefinedWorkflow("decompaction", "UQ");
             var runner = new WorkflowRunner(cannedWf);
 
-
+            // Input References Variables
             inputGrid = cannedWf.InputReferenceVariables.ElementAt(GRID);
-            inputHorizon = cannedWf.InputReferenceVariables.ElementAt(HORIZON);
+           // inputHorizon = cannedWf.InputReferenceVariables.ElementAt(HORIZON);
             inputFacies = cannedWf.InputReferenceVariables.ElementAt(FACIES);
             inputIteration = cannedWf.InputReferenceVariables.ElementAt(ITERATION);
             inputSilt = cannedWf.InputReferenceVariables.ElementAt(SILT);
@@ -128,8 +143,10 @@ namespace DeCompactionPlugIn.Helpers
             inputDirtySS = cannedWf.InputReferenceVariables.ElementAt(DIRTYSS);
             inputCarbMud = cannedWf.InputReferenceVariables.ElementAt(CARBMUD);
 
+
+
             runner.SetInputVariableBinding(inputGrid, args.Grid);
-            runner.SetInputVariableBinding(inputHorizon, args.Horizon);
+           // runner.SetInputVariableBinding(inputHorizon, args.Horizon);
             runner.SetInputVariableBinding(inputFacies, args.Facies);
             runner.SetInputVariableBinding(inputIteration, args.iteration);
             runner.SetInputVariableBinding(inputSilt, args.Silt);
@@ -139,6 +156,17 @@ namespace DeCompactionPlugIn.Helpers
             runner.SetInputVariableBinding(inputDirtySS, args.DirtySS);
             runner.SetInputVariableBinding(inputCarbMud, args.CarbMud);
             runner.SetInputVariableBinding("$loops", args.iteration);
+
+            ////Output Referenes Variables
+            //outputZONES = cannedWf.OutputReferenceVariables.ElementAt(OUT_ZONES);
+            //outputLAYERS = cannedWf.OutputReferenceVariables.ElementAt(OUT_LAYERS);
+            //outputDEPTH = cannedWf.OutputReferenceVariables.ElementAt(OUT_DEPTH);
+            //outputCELL_HEIGHT = cannedWf.OutputReferenceVariables.ElementAt(OUT_CELL_HEIGHT);
+            //runner.GetValueOfOutputVariable<string>(outputZONES);
+            //runner.GetValueOfOutputVariable<string>(outputLAYERS);
+            //runner.GetValueOfOutputVariable<string>(outputDEPTH);
+            //runner.GetValueOfOutputVariable<string>(outputCELL_HEIGHT);
+
             try
             {
                 runner.Run();
@@ -147,7 +175,7 @@ namespace DeCompactionPlugIn.Helpers
            
             catch(Exception ex)
             {
-                PetrelLogger.InfoOutputWindow(string.Format(" Decompaction Workflow Run error occured:{0}", ex.Message));
+ 
                 PetrelLogger.InfoOutputWindow(string.Format(" Decompaction Workflow Run error occured:{0}", ex.Message));
             }
             finally

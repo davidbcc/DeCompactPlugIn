@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<I2DW>
+  <FrameworkVersion SavedAsReferenceProject="false">2014.1</FrameworkVersion>
+  <PreviousProjectVersion>2014.1</PreviousProjectVersion>
+  <WellSectionWindows />
+  <ProjectSettings>
+    <NewWellsectionTemplateStyle>
+      <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Wellsection.Core.UI.Styles.NewWellsectionTemplateStyle&amp;id=dfdfa293-3c9b-4657-a37e-5cb90cd9f4c4</Droid>
+      <Usage>CreateNewTemplate</Usage>
+      <XSectionUsage>CreateNewXSection</XSectionUsage>
+      <TemplateName>Well section template</TemplateName>
+      <XSectionName>X-section</XSectionName>
+      <AlwaysDoThisForNewWellSections>false</AlwaysDoThisForNewWellSections>
+      <ShowSettings>false</ShowSettings>
+    </NewWellsectionTemplateStyle>
+    <WellCorrelationProcessSettingsStyle>
+      <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Wellsection.Plugin.Petrel.Styles.WellCorrelationProcessSettingsStyle&amp;id=75cd0ca9-5aee-4b4b-bd13-ce62ab2ed5df</Droid>
+      <RadiusTolerance>30</RadiusTolerance>
+      <DecimationParameter>30</DecimationParameter>
+      <CreateWindowForNewFence>true</CreateWindowForNewFence>
+    </WellCorrelationProcessSettingsStyle>
+  </ProjectSettings>
+  <WellSections />
+  <FormatTemplateCollections>
+    <FormatTemplateCollection>
+      <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplateCollection&amp;id=65b08dc2-f6bc-48c8-9abd-9435686bcc77</Droid>
+      <Name>Well section templates</Name>
+      <LastModified>09/13/2016 09:06:16</LastModified>
+      <ModifiedBy>darenjames.shields</ModifiedBy>
+      <ParentCollection>://empty/empty</ParentCollection>
+      <ChildElements>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=d3b3be5d-9a96-43e4-a097-9d9d3ead33f5</Droid>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplateCollection&amp;id=73c1049f-1701-4d2c-9d5e-73e0c54ad12b</Droid>
+      </ChildElements>
+      <Color>LightGreen</Color>
+      <Comment>Well section template collection</Comment>
+    </FormatTemplateCollection>
+    <FormatTemplateCollection>
+      <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplateCollection&amp;id=73c1049f-1701-4d2c-9d5e-73e0c54ad12b</Droid>
+      <Name>Petrel system templates</Name>
+      <LastModified>09/13/2016 09:06:16</LastModified>
+      <ModifiedBy>darenjames.shields</ModifiedBy>
+      <ParentCollection>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplateCollection&amp;id=65b08dc2-f6bc-48c8-9abd-9435686bcc77</ParentCollection>
+      <ChildElements>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=33f15a2b-b8a5-45df-b1ef-3ac8ebab4647</Droid>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=26c72707-5faa-4c79-b4a5-abef3ee6a085</Droid>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=37aba061-539b-4eae-92e5-32769f3b200c</Droid>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=b56b6028-1261-4e21-8244-a65c3d0a9a1d</Droid>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=401e8f81-e912-4890-b58b-2ea41771f915</Droid>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=888dd9f9-762d-4b7c-82d5-af80dd76fe3c</Droid>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=f6eaf00e-3cfe-4489-8a50-f47c89b5e6ef</Droid>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=f8335d4a-c418-4ada-83e3-5f588977438c</Droid>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=7e00bd80-f3a1-41cb-86a0-294840baf567</Droid>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=fe490457-522a-4b8f-8b3b-02d071b6bd40</Droid>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=56653aa7-3018-434a-b59f-aaf516cb670c</Droid>
+      </ChildElements>
+      <Color>LightGreen</Color>
+      <Comment>Well section template collection</Comment>
+    </FormatTemplateCollection>
+  </FormatTemplateCollections>
+  <TadpoleShapeColorTables>
+    <TadpoleShapeColorTableManager>
+      <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Wellsection.Plugin.Petrel.Common.Utilities.TadpoleShapeColorTableManager&amp;id=0dc5e9d3-2724-4218-9483-56c18bd422ff</Droid>
+      <PluginVersion>2011.1</PluginVersion>
+    </TadpoleShapeColorTableManager>
+  </TadpoleShapeColorTables>
+  <DefaultTemplate>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=d3b3be5d-9a96-43e4-a097-9d9d3ead33f5</DefaultTemplate>
+</I2DW>

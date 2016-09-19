@@ -1,0 +1,31 @@
+<Petrel>
+<project>
+	<name>Test_project.pet</name>
+	<Xmin>715086.31398155</Xmin>
+	<Xmax>727086.31398155</Xmax>
+	<Ymin>7003993.83013236</Ymin>
+	<Ymax>7011793.83013236</Ymax>
+	<Zmin>-957.30627441</Zmin>
+	<Zmax>5.684342e-014</Zmax>
+	<UnitXY>m</UnitXY>
+	<UnitZ>m</UnitZ>
+	<AreaUnit>m2</AreaUnit>
+	<VolumeUnit>m3</VolumeUnit>
+	<TimeUnit>ms</TimeUnit>
+	<VelocityUnit>m/s</VelocityUnit>
+	<SimulationUnitSystem>ECLIPSE-Metric</SimulationUnitSystem>
+	<TimeZone>Undefined</TimeZone>
+	<TimeZoneDst>false</TimeZoneDst>
+	<Projection>MGA94-55</Projection>
+	<Datum>MSL</Datum>
+	<SeismicReferenceDatum>244.00000000</SeismicReferenceDatum>
+	<Country></Country>
+	<Area></Area>
+	<Block></Block>
+	<License></License>
+	<Comments></Comments>
+	<CharacterSet>1252  (ANSI - Latin I)</CharacterSet>
+	<Version>2015.1 (64-bit)</Version>
+	<Build>Jun 17 2015</Build>
+</project>
+</Petrel>

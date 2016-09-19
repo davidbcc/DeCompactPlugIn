@@ -35,7 +35,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>bitnumbers.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>uq.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Slb.Ocean.Catalogs, Version=2015.3.0.0, Culture=neutral, PublicKeyToken=14ef4a483ef6a64b, processorArchitecture=MSIL">
@@ -192,6 +192,82 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ProjectFile\Test_project.ptd\OceanDataPath\16526AB2-D9CE-4219-AE9B-B233998BD32A.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\OceanExtensionData\OceanExtensionData.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\AskForAnObjectArgs.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\CrsmData\Info.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\CrsmData\Model.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\ExplData\Info.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\ExplData\Model.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\ExplGeology\Lithologies.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\FilterTrackArgPackDataSource.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\26c72707-5faa-4c79-b4a5-abef3ee6a085.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\29422872-1e2d-4562-b2e9-14ee4d6dddf8.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\332ffdea-2c2c-4534-bd8a-c3d7c927030e.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\334abf13-6bda-4b54-922d-c290a8184f5e.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\33f15a2b-b8a5-45df-b1ef-3ac8ebab4647.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\366f7217-3085-4d19-b42d-7afa3a5ee3d1.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\37aba061-539b-4eae-92e5-32769f3b200c.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\401e8f81-e912-4890-b58b-2ea41771f915.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\56653aa7-3018-434a-b59f-aaf516cb670c.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\585b7b5f-dc05-4cf3-a995-5bc0514c6225.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\5c5b6dee-ae7f-437e-83ad-2c97d92d8dfb.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\6fe745e4-e2dc-4452-8924-04e3eb7acecc.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\7e00bd80-f3a1-41cb-86a0-294840baf567.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\888dd9f9-762d-4b7c-82d5-af80dd76fe3c.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\a51eec66-b4be-4e2c-a55f-fa19818fa8d2.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\b54242bc-e608-4121-8885-281d850c15a6.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\b56b6028-1261-4e21-8244-a65c3d0a9a1d.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\c52ecd35-71c5-43dd-8df6-c69febdff948.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\d3b3be5d-9a96-43e4-a097-9d9d3ead33f5.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\e4abe589-379e-419e-bf23-06553ea5e29e.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\ed8c939b-4e1f-4470-9a9e-517094e018fd.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\f6eaf00e-3cfe-4489-8a50-f47c89b5e6ef.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\f8335d4a-c418-4ada-83e3-5f588977438c.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\fe490457-522a-4b8f-8b3b-02d071b6bd40.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Windows %28daren shields%27s conflicted copy 2016-09-16%29.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\I2DW-Windows.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\iSWT\1\Workflows.txt" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\LogConditioningSettings10.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\PaDataSource\Info.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\PaDataSource\Model.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\Pm4pData\BurialHistoryProperty.BulkData.Index.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\Pm4pData\Info.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\Pm4pData\Model.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\Pm4pData\TimeCurve.BulkData.Index.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\QI.AVO.GaCollDs %28daren shields%27s conflicted copy 2016-09-16%29.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\QI.AVO.GaCollDs.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\QR\Project.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\RDR.Advisor.ImageCapture.DomainObjects.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\RealTimeMappings %28daren shields%27s conflicted copy 2016-09-16%29.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\RealTimeMappings.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\Slb.Drilling.Visualization.RealTime.Settings %28daren shields%27s conflicted copy 2016-09-16%29.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\Slb.Drilling.Visualization.RealTime.Settings.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Drilling.PlanProcessSettings %28daren shields%27s conflicted copy 2016-09-16%29.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Drilling.PlanProcessSettings.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Drilling.RiskDepthSettings %28daren shields%27s conflicted copy 2016-09-16%29.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Drilling.RiskDepthSettings.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Drilling.RiskThemeSettings %28daren shields%27s conflicted copy 2016-09-16%29.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Drilling.RiskThemeSettings.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.UO.BBSampler.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.UO.CCSampler.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.UO.FFSampler.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.UO.Optimization.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.UO.PBSampler.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.UO.RSProxy.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.UO.UKProxy.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\SonicCalibrationWorkstepPorpertyArgs.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\SyntheticGenerationWorkstepPropertyArgs.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\WellRangesArgPackDataSource %28daren shields%27s conflicted copy 2016-09-16%29.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\WellRangesArgPackDataSource.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\ZlevelArgPack %28daren shields%27s conflicted copy 2016-09-16%29.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Ocean\ZlevelArgPack.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\Petrel.ico" />
+    <Content Include="ProjectFile\Test_project.ptd\PostNotes\postnotes %28daren shields%27s conflicted copy 2016-09-16%29.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\PostNotes\postnotes.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\project_information.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\SMD\ModelingData %28daren shields%27s conflicted copy 2016-09-16%29.xml" />
+    <Content Include="ProjectFile\Test_project.ptd\SMD\ModelingData.xml" />
     <Content Include="Resources\logo.jpg" />
     <EmbeddedResource Include="Resources\logo.bmp" />
     <EmbeddedResource Include="DeCompactForm.resx">
@@ -202,7 +278,69 @@
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\logo.PNG" />
-    <None Include="bitnumbers.pfx" />
+    <Content Include="ProjectFile\Test_project.pet" />
+    <None Include="ProjectFile\Test_project.ptd\Data.ptd" />
+    <None Include="ProjectFile\Test_project.ptd\Dbx\SynchronizationInfo.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Desktop.ini" />
+    <None Include="ProjectFile\Test_project.ptd\Docking.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Model.ptd" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\AnalyticalProductionDataSource_v1 %28daren shields%27s conflicted copy 2016-09-16%29.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\AnalyticalProductionDataSource_v1.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\ChartDataSource.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\CompletionObservedDataDataSource %28daren shields%27s conflicted copy 2016-09-16%29.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\CompletionObservedDataDataSource.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\CompletionsDataSource %28daren shields%27s conflicted copy 2016-09-16%29.dat" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\CompletionsDataSource.dat" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\CustomDataSource.dat" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\DiscreteTableDataSource.dat" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\Drilling.WellSectionTemplatesModel %28daren shields%27s conflicted copy 2016-09-16%29.bxml" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\Drilling.WellSectionTemplatesModel.bxml" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\DrillingReportGeneratorModel %28daren shields%27s conflicted copy 2016-09-16%29.bxml" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\DrillingReportGeneratorModel.bxml" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\FcmChartDataDataSource.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\FieldManagementDataSource_v4.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\fluidProperties.dat" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\GisServiceDataSource %28daren shields%27s conflicted copy 2016-09-16%29.dat" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\GisServiceDataSource.dat" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\InfrastructureInternalData %28daren shields%27s conflicted copy 2016-09-16%29.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\InfrastructureInternalData.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\iSWTWellSectionWindowSettings.dat" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\LocalReservoirSeismicDataSource.dataSource" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\LocalReservoirSeismicDataSource.settings" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\OfmConnectorDataSource_v1 %28daren shields%27s conflicted copy 2016-09-16%29.dat" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\OfmConnectorDataSource_v1.dat" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\Petrel.Geophysics.RestorationSource %28daren shields%27s conflicted copy 2016-09-16%29.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\Petrel.Geophysics.RestorationSource.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\PetrelSerializationData %28daren shields%27s conflicted copy 2016-09-16%29.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\PetrelSerializationData.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\PresentDataSource.dat" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\ProductionWellSectionWindowDataSource %28daren shields%27s conflicted copy 2016-09-16%29.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\ProductionWellSectionWindowDataSource.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\QR\Core.db" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\QR\Workstep.db" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\RDRArgumentsDataSource %28daren shields%27s conflicted copy 2016-09-16%29.dat" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\RDRArgumentsDataSource.dat" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\RDRVersion %28daren shields%27s conflicted copy 2016-09-16%29.dat" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\RDRVersion.dat" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\ReservoirGeomechanics\VisageDataSource.xbml" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\ScenarioCollectionDataSource.dat" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\ScenarioDataSource.dat" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\SimPlottingDataSource %28daren shields%27s conflicted copy 2016-09-16%29.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\SimPlottingDataSource.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Foundation.DataSources.SmartFavoritesModel.bxml" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Infrastructure %28daren shields%27s conflicted copy 2016-09-16%29.FileRegistryDataSource" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Infrastructure.FileRegistryDataSource" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Infrastructure.WindowDataSourceData %28daren shields%27s conflicted copy 2016-09-16%29.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Infrastructure.WindowDataSourceData.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.NaturalFractures.Model.bxml" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Sim.ResultsSystem.AppIntegration.ResultSystemModel.bxml" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\Slb.RE.WswSimulation.DataSource.SimulationDataSourceModel.bxml" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\Slb.Rws.Plugin.RwsDataSourceFactoryModel.bxml" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\Slb.Seis.SeismicAttributes.FunctionRepository.bin" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\SWTStructuredDataSource.879F4183-8AA8-422F-8153-73C18E3E8084Model.bxml" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\ToolsDataSourceIDModel.bxml" />
+    <None Include="ProjectFile\Test_project.ptd\Ocean\TriMeshPropertiesDataSource" />
+    <None Include="uq.pfx" />
     <EmbeddedResource Include="DeCompactConfig.xml" />
     <Content Include="OceanResources\OceanRibbon.xml" />
     <Content Include="OceanResources\OceanRibbonConfiguration1.xml" />
@@ -217,11 +355,18 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ProjectFile\Test_project.ptd\SMD\GMS\" />
+    <Folder Include="ProjectFile\Test_project.ptd\Studio\Map Service Snapshots\" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>del "$(ProjectDir)\plugin.xml"
 "%25OCEAN2015HOME%25\PluginPackager.exe" /g "$(TargetPath)" "$(ProjectDir)\plugin.xml" "%25OCEAN2015HOME_x64%25\petrel.exe"
 "%25OCEAN2015HOME%25\PluginPackager.exe" /m "$(ProjectDir)\plugin.xml" "%25OCEAN2015HOME_x64%25\petrel.exe" "$(TargetDir)"
+if not exist "$(ProjectDir)\$(OutDir)\Test_project.ptd" mkdir "$(ProjectDir)\$(OutDir)\Test_project.ptd"
+xcopy /s /e "$(ProjectDir)\ProjectFile"  "$(ProjectDir)\$(OutDir)"
+xcopy /s /e "$(ProjectDir)\ProjectFile\Test_project.ptd"  "$(ProjectDir)\$(OutDir)\Test_project.ptd"
 </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

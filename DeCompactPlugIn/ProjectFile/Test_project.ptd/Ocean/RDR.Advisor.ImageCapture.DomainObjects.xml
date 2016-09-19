@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<RDR.Advisor.ImageCaptureTool.DomainObjects xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CaptureRotationSequenceDomainObjects />
+  <CaptureSeismicIntersectionDomainObjects />
+  <CaptureGeneralIntersectionDomainObjects />
+</RDR.Advisor.ImageCaptureTool.DomainObjects>
