@@ -54,7 +54,7 @@
           <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Wellsection.Core.Styles.CurveFillStyle&amp;id=4931587a-9f61-4a10-ba00-801e93198ae4</Droid>
           <CurveFillStyleItems>
             <CurveFillStyleItem>
-              <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Wellsection.Core.Styles.CurveFillStyleItem&amp;id=c19ba3f6-105e-4412-a93a-2359d6660ee1</Droid>
+              <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Wellsection.Core.Styles.CurveFillStyleItem&amp;id=c6d4be5d-4709-4793-bb24-d1992705da13</Droid>
               <UseTag>true</UseTag>
               <Name>Color fill</Name>
               <!--This element is for internal use by I2DW only and does not represent any graphical information-->
@@ -325,7 +325,7 @@
           <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Wellsection.Core.Styles.CurveFillStyle&amp;id=3ccbe30d-badd-4557-83ab-c077939f9fcf</Droid>
           <CurveFillStyleItems>
             <CurveFillStyleItem>
-              <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Wellsection.Core.Styles.CurveFillStyleItem&amp;id=d7b2f669-2d66-4c85-89f0-cedc03e780f9</Droid>
+              <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Wellsection.Core.Styles.CurveFillStyleItem&amp;id=5819309c-0995-4542-93f0-cca1663a44d6</Droid>
               <UseTag>true</UseTag>
               <Name>Color fill</Name>
               <!--This element is for internal use by I2DW only and does not represent any graphical information-->
@@ -492,7 +492,7 @@
               <FillColorType>AsDefined</FillColorType>
               <FontType>
                 <FontType>
-                  <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Styles.FontType&amp;id=a1cd2a8e-7010-4626-8200-267f8dc5b4e1</Droid>
+                  <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Styles.FontType&amp;id=df87d6b8-cf8e-4666-b1e7-163b321f1e46</Droid>
                   <Size>4</Size>
                   <Bold>false</Bold>
                   <Italics>false</Italics>
@@ -681,7 +681,7 @@
               <FillColorType>AsDefined</FillColorType>
               <FontType>
                 <FontType>
-                  <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Styles.FontType&amp;id=e0d387b7-38e0-41e9-8744-80fb01a5d4ce</Droid>
+                  <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Styles.FontType&amp;id=6ac53963-9f0d-48eb-90b1-5502ec4d0f93</Droid>
                   <Size>4</Size>
                   <Bold>false</Bold>
                   <Italics>false</Italics>

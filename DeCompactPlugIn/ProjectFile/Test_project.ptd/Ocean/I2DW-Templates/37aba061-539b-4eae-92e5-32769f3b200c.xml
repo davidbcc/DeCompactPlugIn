@@ -271,7 +271,7 @@
           <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Wellsection.Core.Styles.CurveFillStyle&amp;id=1add1b92-4312-4ca0-a2dd-29bc374f8242</Droid>
           <CurveFillStyleItems>
             <CurveFillStyleItem>
-              <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Wellsection.Core.Styles.CurveFillStyleItem&amp;id=a5745fb8-7393-4aff-b4cb-9733982f0a4c</Droid>
+              <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Wellsection.Core.Styles.CurveFillStyleItem&amp;id=5492cda6-b992-4e24-b388-c1e0e2b2557b</Droid>
               <UseTag>true</UseTag>
               <Name>Color fill</Name>
               <!--This element is for internal use by I2DW only and does not represent any graphical information-->
@@ -307,7 +307,7 @@
               <Transparency>255</Transparency>
             </CurveFillStyleItem>
             <CurveFillStyleItem>
-              <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Wellsection.Core.Styles.CurveFillStyleItem&amp;id=202f4d42-0580-4fd7-9246-57e653762ee5</Droid>
+              <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Wellsection.Core.Styles.CurveFillStyleItem&amp;id=831f440f-a6c5-4028-a7c5-3fe233c507f4</Droid>
               <UseTag>true</UseTag>
               <Name>Color fill</Name>
               <!--This element is for internal use by I2DW only and does not represent any graphical information-->

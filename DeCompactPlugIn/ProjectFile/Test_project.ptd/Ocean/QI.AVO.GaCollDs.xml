@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <XmlAutoDataSource Version="1">
-  <Slb.Brgc.WellSectionVisuals.FormatTemplateNodes.Prestack.GatherCollectionArgPackDataSource droid="://Slb.Brgc.WellSectionVisuals.FormatTemplateNodes.Prestack.GatherCollectionArgPackDataSource/836a8378-0e8b-4e4a-8111-13e523abb4dc">
-    <Droid>://Slb.Brgc.WellSectionVisuals.FormatTemplateNodes.Prestack.GatherCollectionArgPackDataSource/836a8378-0e8b-4e4a-8111-13e523abb4dc</Droid>
+  <Slb.Brgc.WellSectionVisuals.FormatTemplateNodes.Prestack.GatherCollectionArgPackDataSource droid="://Slb.Brgc.WellSectionVisuals.FormatTemplateNodes.Prestack.GatherCollectionArgPackDataSource/b68e4ab1-f653-4899-8a53-282aa4bca363">
+    <Droid>://Slb.Brgc.WellSectionVisuals.FormatTemplateNodes.Prestack.GatherCollectionArgPackDataSource/b68e4ab1-f653-4899-8a53-282aa4bca363</Droid>
     <TraceCount>3</TraceCount>
     <WiggleAntiAliasing>True</WiggleAntiAliasing>
     <IsSynthetic>False</IsSynthetic>

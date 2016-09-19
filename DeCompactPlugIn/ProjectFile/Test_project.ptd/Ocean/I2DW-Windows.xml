@@ -54,17 +54,17 @@
         <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=7e00bd80-f3a1-41cb-86a0-294840baf567</Droid>
         <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=fe490457-522a-4b8f-8b3b-02d071b6bd40</Droid>
         <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=56653aa7-3018-434a-b59f-aaf516cb670c</Droid>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=29422872-1e2d-4562-b2e9-14ee4d6dddf8</Droid>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=332ffdea-2c2c-4534-bd8a-c3d7c927030e</Droid>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=334abf13-6bda-4b54-922d-c290a8184f5e</Droid>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=366f7217-3085-4d19-b42d-7afa3a5ee3d1</Droid>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=585b7b5f-dc05-4cf3-a995-5bc0514c6225</Droid>
         <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=5c5b6dee-ae7f-437e-83ad-2c97d92d8dfb</Droid>
         <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=6fe745e4-e2dc-4452-8924-04e3eb7acecc</Droid>
-        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=332ffdea-2c2c-4534-bd8a-c3d7c927030e</Droid>
-        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=ed8c939b-4e1f-4470-9a9e-517094e018fd</Droid>
-        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=e4abe589-379e-419e-bf23-06553ea5e29e</Droid>
-        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=585b7b5f-dc05-4cf3-a995-5bc0514c6225</Droid>
-        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=c52ecd35-71c5-43dd-8df6-c69febdff948</Droid>
-        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=334abf13-6bda-4b54-922d-c290a8184f5e</Droid>
-        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=29422872-1e2d-4562-b2e9-14ee4d6dddf8</Droid>
         <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=a51eec66-b4be-4e2c-a55f-fa19818fa8d2</Droid>
-        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=366f7217-3085-4d19-b42d-7afa3a5ee3d1</Droid>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=c52ecd35-71c5-43dd-8df6-c69febdff948</Droid>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=e4abe589-379e-419e-bf23-06553ea5e29e</Droid>
+        <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Framework.Core.Templates.FormatTemplate&amp;id=ed8c939b-4e1f-4470-9a9e-517094e018fd</Droid>
       </ChildElements>
       <Color>LightGreen</Color>
       <Comment>Well section template collection</Comment>

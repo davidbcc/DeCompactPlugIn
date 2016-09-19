@@ -364,9 +364,7 @@
     <PostBuildEvent>del "$(ProjectDir)\plugin.xml"
 "%25OCEAN2015HOME%25\PluginPackager.exe" /g "$(TargetPath)" "$(ProjectDir)\plugin.xml" "%25OCEAN2015HOME_x64%25\petrel.exe"
 "%25OCEAN2015HOME%25\PluginPackager.exe" /m "$(ProjectDir)\plugin.xml" "%25OCEAN2015HOME_x64%25\petrel.exe" "$(TargetDir)"
-if not exist "$(ProjectDir)\$(OutDir)\Test_project.ptd" mkdir "$(ProjectDir)\$(OutDir)\Test_project.ptd"
-xcopy /s /e "$(ProjectDir)\ProjectFile"  "$(ProjectDir)\$(OutDir)"
-xcopy /s /e "$(ProjectDir)\ProjectFile\Test_project.ptd"  "$(ProjectDir)\$(OutDir)\Test_project.ptd"
+
 </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

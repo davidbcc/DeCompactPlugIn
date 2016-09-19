@@ -56,16 +56,18 @@ namespace DeCompactionPlugIn.Helpers
             try
             {
                 // get workflow from the project in plugin assembly
-                var pluginPath = Assembly.GetAssembly(typeof (DeCompactModule)).Location;
-                var pluginDir = Path.GetDirectoryName(pluginPath);
+               // var pluginPath = Assembly.GetAssembly(typeof (DeCompactModule)).Location;
+               // var currentLocation = System.Environment.CurrentDirectory;
+                //var pluginDir = Path.GetDirectoryName(currentLocation);
+                var pluginDir = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
                 if (pluginDir == null) return;
-                var predefinedWorkflowPath = Path.Combine(pluginDir, @"C:\decomp\decompaction.pet");
-                //var predefinedWorkflowPath = Path.Combine(pluginDir, @"ProjectFile\Test_project.pet");
+                //var predefinedWorkflowPath = Path.Combine(pluginDir, @"C:\decomp\decompaction.pet");
+                var predefinedWorkflowPath = Path.Combine(pluginDir, @"ProjectFile\Test_project.pet");
 
-                PetrelLogger.InfoOutputWindow(string.Format("pluginPath:{0}", pluginPath));
+ 
                 PetrelLogger.InfoOutputWindow(string.Format("pluginDir:{0}", pluginDir));
                 PetrelLogger.InfoOutputWindow(string.Format("This is the predefined Workflow path:{0}",predefinedWorkflowPath));
-                PetrelLogger.InfoOutputWindow(string.Format("This is the predefined Workflow path:{0}", predefinedWorkflowPath));
+            
 
                 // Use IWorkflowSyncService to find the workflow from given project and 
                 // copies it to current project.  

@@ -88,7 +88,7 @@
           <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Wellsection.Core.Styles.CurveFillStyle&amp;id=4940fd0a-4c5c-4b0a-830c-38bed2a2de3e</Droid>
           <CurveFillStyleItems>
             <CurveFillStyleItem>
-              <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Wellsection.Core.Styles.CurveFillStyleItem&amp;id=23012351-3336-4421-984c-fd9b770a91e9</Droid>
+              <Droid>://Slb.GeoscienceWindow.Framework.Core.DataSource.CoreDataSource/Type=Slb.GeoscienceWindow.Wellsection.Core.Styles.CurveFillStyleItem&amp;id=4148d9f9-5b93-4249-b54e-6f1c32b3a17e</Droid>
               <UseTag>true</UseTag>
               <Name>Color fill</Name>
               <!--This element is for internal use by I2DW only and does not represent any graphical information-->
