@@ -1,4 +1,0 @@
-<?xml version="1.0"?>
-<PrestackDataSource Type="Slb.Ocean.OceanSdk.Samples.PreStackSample.Backend.MockBackend.MockDataSource" Version="currentVersion">
-  <Type>MockDataSource</Type>
-</PrestackDataSource>

@@ -55,20 +55,13 @@ namespace DeCompactionPlugIn.Helpers
 
             try
             {
-                // get workflow from the project in plugin assembly
-               // var pluginPath = Assembly.GetAssembly(typeof (DeCompactModule)).Location;
-               // var currentLocation = System.Environment.CurrentDirectory;
-                //var pluginDir = Path.GetDirectoryName(currentLocation);
                 var pluginDir = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
                 if (pluginDir == null) return;
-                //var predefinedWorkflowPath = Path.Combine(pluginDir, @"C:\decomp\decompaction.pet");
+                // Production - deployment
                 var predefinedWorkflowPath = Path.Combine(pluginDir, @"ProjectFile\Test_project.pet");
-
- 
+                //var predefinedWorkflowPath = Path.Combine(pluginDir, @"C:\decomp\Test_project.pet");
                 PetrelLogger.InfoOutputWindow(string.Format("pluginDir:{0}", pluginDir));
-                PetrelLogger.InfoOutputWindow(string.Format("This is the predefined Workflow path:{0}",predefinedWorkflowPath));
-            
-
+                PetrelLogger.InfoOutputWindow(string.Format("This is the predefined Workflow path:{0}", predefinedWorkflowPath));
                 // Use IWorkflowSyncService to find the workflow from given project and 
                 // copies it to current project.  
                 var ss = PetrelSystem.WorkflowSyncService;
@@ -107,7 +100,7 @@ namespace DeCompactionPlugIn.Helpers
         /// </summary>
         /// <param name="objectToCopy">Input grid to copy. This will be copied to the input reference variable in the workflow.</param>
         /// <returns>Copied grid received from the output reference variable in the workflow.</returns>
-        public object RunWorkflow(WorkStepArgument args)
+        public void RunWorkflow(WorkStepArgument args)
         {
             if(args == null)
             {
@@ -115,7 +108,6 @@ namespace DeCompactionPlugIn.Helpers
             }
         
             ReferenceVariable inputGrid = null;
-         
             ReferenceVariable inputFacies= null;
             ReferenceVariable inputIteration = null;
             ReferenceVariable inputSilt = null;
@@ -124,11 +116,11 @@ namespace DeCompactionPlugIn.Helpers
             ReferenceVariable inputMudStone = null;
             ReferenceVariable inputDirtySS = null;
             ReferenceVariable inputCarbMud = null;
-            IIdentifiable copiedObject = null;
-            ReferenceVariable outputZONES = null;
-            ReferenceVariable outputLAYERS = null;
-            ReferenceVariable outputDEPTH = null;
-            ReferenceVariable outputCELL_HEIGHT = null;
+            //IIdentifiable copiedObject = null;
+            //ReferenceVariable outputZONES = null;
+            //ReferenceVariable outputLAYERS = null;
+            //ReferenceVariable outputDEPTH = null;
+            //ReferenceVariable outputCELL_HEIGHT = null;
 
             var cannedWf = FindPredefinedWorkflow("decompaction", "UQ");
             var runner = new WorkflowRunner(cannedWf);
@@ -182,9 +174,9 @@ namespace DeCompactionPlugIn.Helpers
             }
             finally
             {
-                copiedObject = null;
+                //copiedObject = null;
             }
-            return copiedObject;
+            //return copiedObject;
         }
     }
 }
