@@ -351,7 +351,7 @@ namespace DeCompactPlugIn
             this.txtnolayers.Name = "txtnolayers";
             this.txtnolayers.Size = new System.Drawing.Size(206, 20);
             this.txtnolayers.TabIndex = 39;
-            this.txtnolayers.Text = "30";
+            this.txtnolayers.Text = "1";
             // 
             // label10
             // 
