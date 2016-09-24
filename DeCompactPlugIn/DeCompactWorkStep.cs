@@ -91,17 +91,29 @@ namespace DeCompactPlugIn
         public class Arguments : DescribedArgumentsByReflection
         {
             #region private variables
+            [NonSerialized]
             private Horizon _horizon;
+            [NonSerialized]
             private int _iteration;
+            [NonSerialized]
             private Grid _grid;
+            [NonSerialized]
             private string _calName;
+            [NonSerialized]
             private Function _facies;
+            [NonSerialized]
             private Function _coal;
+            [NonSerialized]
             private Function _silt;
+            [NonSerialized]
             private Function _sandstone;
+            [NonSerialized]
             private Function _mudstone;
+            [NonSerialized]
             private Function _dirtyss;
+            [NonSerialized]
             private Function _carbmud;
+            [NonSerialized]
             private string _name;
            
             #endregion
@@ -113,182 +125,65 @@ namespace DeCompactPlugIn
 
             public Arguments(IDataSourceManager dataSourceManager)
             {
+                this._iteration = 1;
             }
 
             #region Properties - Input Arguments
             /// <summary>
-            /// Grid Property
+            /// Grid Property. Identifiable object.
             /// </summary>
-            [Description("Grid Input", " Input Grid Property")]
-            public Grid Grid
-            {
-                internal get
-                {
-                    return _grid;
-                }
-                set
-                {
-                    _grid = value;
-                }
-            }
-
+            [Description("The Grid", "The Grid Object")]
+            public Grid Grid { get; set; }
             /// <summary>
-            /// Horizon. Input value
+            /// Horizontal Property. Identifiable object.
             /// </summary>
-            [Description("Horizon Input","Horizon")]
-            public Horizon Horizon{
-                internal get
-                {
-                    return this._horizon;
-                }
-                set
-                {
-                    _horizon = value;
-                }
-            }
-
-            /// <summary>
-            /// Iteration x times
-            /// </summary>
-            public int Interation
-            {
-                internal get
-                {
-                    return _iteration;
-                }
-                set
-                {
-                   _iteration = value;
-                }
-            }
-            /// <summary>
-            /// Calculator Name. Output Value
-            /// </summary>
-            public string CalName
-            {
-                 get
-                {
-                    return _calName;
-                }
-                internal set
-                {
-                    _calName= value;
-                }
-            }
-
+             [Description("The Horizon Object", "The Horizon Object")]
+            public Horizon Horizon { get; set; }
             /// <summary>
             /// Facies
             /// </summary>
-            public Function Facies
-            { 
-                 internal get
-                {
-                    return _facies;
-                }
-                 set
-                {
-                    _facies= value;
-                }
-            }
+            [Description("The Facies Dictionary Property", "The Facies Dictionary Property")]
+            public DictionaryProperty Facies { get; set; }
             /// <summary>
-            /// Coal Param
+            /// Silt
             /// </summary>
-            public Function Coal
-            {
-                internal get
-                {
-                    return _coal;
-                }
-                 set
-                {
-                    _coal= value;
-                }
-            }
+            [Description("The Silt Function", "The Silt Function")]
+            public Function Silt { get; set; }
             /// <summary>
-            /// Silt Param
+            /// Coal
             /// </summary>
-            public Function Silt
-            {
-                internal get
-                {
-                    return _silt;
-                }
-                set
-                {
-                    _silt = value;
-                }
-            }
+             [Description("The Coal Function", "The Coal Function")]
+            public Function Coal { get; set; }
             /// <summary>
             /// Sand Stone
             /// </summary>
-            public Function SandStone
-            {
-                internal get
-                {
-                    return _sandstone;
-                }
-                set
-                {
-                    _sandstone = value;
-                }
-            }
+             [Description("The Sandstone Function", "The Sandstone Function")]
+            public Function SandStone { get; set; }
             /// <summary>
             /// Mud Stone
             /// </summary>
-            public Function MudStone
-            {
-                internal get
-                {
-                    return _mudstone;
-                }
-                set
-                {
-                    _mudstone = value;
-                }
-            }
+             [Description("The Mudstone Function", "The Mudstone Function")]
+            public Function MudStone { get; set; }
             /// <summary>
             /// Dirty SS
             /// </summary>
-            public Function DirtySS
-            {
-                internal get
-                {
-                    return _dirtyss;
-                }
-                set
-                {
-                    _dirtyss = value;
-                }
-            }
+             [Description("The Silt Function", "The Silt Function")]
+            public Function DirtySS { get; set; }
             /// <summary>
             /// Carb Mud
             /// </summary>
-            public Function CarbMud
-            {
-                internal get
-                {
-                    return _carbmud;
-                }
-                set
-                {
-                    _carbmud = value;
-                }
-            }
+             [Description("The Carbmud Function", "The Carbmud Function")]
+            public Function CarbMud { get; set; }
 
             /// <summary>
-            /// Output variable Name
+            /// Iteration Looping
             /// </summary>
-            public string Name
-            {
-                 get
-                {
-                    return _name;
-                }
-                internal set
-                {
-                    _name = value;
-                }
-            }
+            [Description("This is the number of Iteration", "Default set to 1")]
+            public int iteration { get; set; }
+            /// <summary>
+            /// Name , Output value
+            /// </summary>
+            public string Name { get; set; }
             #endregion
         }
     

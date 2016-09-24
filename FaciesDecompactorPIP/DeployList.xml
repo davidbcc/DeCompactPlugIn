@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OceanDeployList>
+  <CopyList>
+    <Project source="../DeCompactPlugIn/DeCompactPlugIn.csproj" />
+    <File source="../../../../../../../decomp/Test_project.pet">
+      <Target path=".\ProjectFile\Test_project.pet" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Data.ptd">
+      <Target path=".\ProjectFile\Test_project.ptd\Data.ptd" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Desktop.ini">
+      <Target path=".\ProjectFile\Test_project.ptd\Desktop.ini" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Docking.bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Docking.bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Model.ptd">
+      <Target path=".\ProjectFile\Test_project.ptd\Model.ptd" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Petrel.ico">
+      <Target path=".\ProjectFile\Test_project.ptd\Petrel.ico" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/project_information.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\project_information.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Dbx/SynchronizationInfo.bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Dbx\SynchronizationInfo.bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/AnalyticalProductionDataSource_v1 (daren shields's conflicted copy 2016-09-16).bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\AnalyticalProductionDataSource_v1 (daren shields's conflicted copy 2016-09-16).bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/AnalyticalProductionDataSource_v1.bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\AnalyticalProductionDataSource_v1.bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/AskForAnObjectArgs.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\AskForAnObjectArgs.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/ChartDataSource.bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\ChartDataSource.bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/CompletionObservedDataDataSource (daren shields's conflicted copy 2016-09-16).bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\CompletionObservedDataDataSource (daren shields's conflicted copy 2016-09-16).bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/CompletionObservedDataDataSource.bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\CompletionObservedDataDataSource.bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/CompletionsDataSource (daren shields's conflicted copy 2016-09-16).dat">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\CompletionsDataSource (daren shields's conflicted copy 2016-09-16).dat" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/CompletionsDataSource.dat">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\CompletionsDataSource.dat" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/CustomDataSource.dat">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\CustomDataSource.dat" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/DiscreteTableDataSource.dat">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\DiscreteTableDataSource.dat" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Drilling.WellSectionTemplatesModel (daren shields's conflicted copy 2016-09-16).bxml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Drilling.WellSectionTemplatesModel (daren shields's conflicted copy 2016-09-16).bxml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Drilling.WellSectionTemplatesModel.bxml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Drilling.WellSectionTemplatesModel.bxml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/DrillingReportGeneratorModel (daren shields's conflicted copy 2016-09-16).bxml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\DrillingReportGeneratorModel (daren shields's conflicted copy 2016-09-16).bxml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/DrillingReportGeneratorModel.bxml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\DrillingReportGeneratorModel.bxml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/FcmChartDataDataSource.bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\FcmChartDataDataSource.bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/FieldManagementDataSource_v4.bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\FieldManagementDataSource_v4.bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/FilterTrackArgPackDataSource.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\FilterTrackArgPackDataSource.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/fluidProperties.dat">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\fluidProperties.dat" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/GisServiceDataSource (daren shields's conflicted copy 2016-09-16).dat">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\GisServiceDataSource (daren shields's conflicted copy 2016-09-16).dat" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/GisServiceDataSource.dat">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\GisServiceDataSource.dat" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Windows (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Windows (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Windows.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Windows.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/InfrastructureInternalData (daren shields's conflicted copy 2016-09-16).bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\InfrastructureInternalData (daren shields's conflicted copy 2016-09-16).bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/InfrastructureInternalData.bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\InfrastructureInternalData.bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/iSWTWellSectionWindowSettings.dat">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\iSWTWellSectionWindowSettings.dat" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/LocalReservoirSeismicDataSource.dataSource">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\LocalReservoirSeismicDataSource.dataSource" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/LocalReservoirSeismicDataSource.settings">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\LocalReservoirSeismicDataSource.settings" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/LogConditioningSettings10.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\LogConditioningSettings10.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/OfmConnectorDataSource_v1 (daren shields's conflicted copy 2016-09-16).dat">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\OfmConnectorDataSource_v1 (daren shields's conflicted copy 2016-09-16).dat" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/OfmConnectorDataSource_v1.dat">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\OfmConnectorDataSource_v1.dat" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Petrel.Geophysics.RestorationSource (daren shields's conflicted copy 2016-09-16).bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Petrel.Geophysics.RestorationSource (daren shields's conflicted copy 2016-09-16).bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Petrel.Geophysics.RestorationSource.bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Petrel.Geophysics.RestorationSource.bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/PetrelSerializationData (daren shields's conflicted copy 2016-09-16).bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\PetrelSerializationData (daren shields's conflicted copy 2016-09-16).bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/PetrelSerializationData.bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\PetrelSerializationData.bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/PresentDataSource.dat">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\PresentDataSource.dat" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/ProductionWellSectionWindowDataSource (daren shields's conflicted copy 2016-09-16).bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\ProductionWellSectionWindowDataSource (daren shields's conflicted copy 2016-09-16).bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/ProductionWellSectionWindowDataSource.bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\ProductionWellSectionWindowDataSource.bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/QI.AVO.GaCollDs (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\QI.AVO.GaCollDs (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/QI.AVO.GaCollDs.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\QI.AVO.GaCollDs.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/RDR.Advisor.ImageCapture.DomainObjects.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\RDR.Advisor.ImageCapture.DomainObjects.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/RDRArgumentsDataSource (daren shields's conflicted copy 2016-09-16).dat">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\RDRArgumentsDataSource (daren shields's conflicted copy 2016-09-16).dat" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/RDRArgumentsDataSource.dat">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\RDRArgumentsDataSource.dat" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/RDRVersion (daren shields's conflicted copy 2016-09-16).dat">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\RDRVersion (daren shields's conflicted copy 2016-09-16).dat" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/RDRVersion.dat">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\RDRVersion.dat" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/RealTimeMappings (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\RealTimeMappings (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/RealTimeMappings.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\RealTimeMappings.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/ScenarioCollectionDataSource.dat">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\ScenarioCollectionDataSource.dat" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/ScenarioDataSource.dat">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\ScenarioDataSource.dat" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/SimPlottingDataSource (daren shields's conflicted copy 2016-09-16).bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\SimPlottingDataSource (daren shields's conflicted copy 2016-09-16).bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/SimPlottingDataSource.bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\SimPlottingDataSource.bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Drilling.Visualization.RealTime.Settings (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Drilling.Visualization.RealTime.Settings (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Drilling.Visualization.RealTime.Settings.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Drilling.Visualization.RealTime.Settings.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.Drilling.PlanProcessSettings (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Drilling.PlanProcessSettings (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.Drilling.PlanProcessSettings.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Drilling.PlanProcessSettings.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.Drilling.RiskDepthSettings (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Drilling.RiskDepthSettings (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.Drilling.RiskDepthSettings.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Drilling.RiskDepthSettings.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.Drilling.RiskThemeSettings (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Drilling.RiskThemeSettings (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.Drilling.RiskThemeSettings.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Drilling.RiskThemeSettings.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.Foundation.DataSources.SmartFavoritesModel.bxml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Foundation.DataSources.SmartFavoritesModel.bxml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.Infrastructure (daren shields's conflicted copy 2016-09-16).FileRegistryDataSource">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Infrastructure (daren shields's conflicted copy 2016-09-16).FileRegistryDataSource" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.Infrastructure.FileRegistryDataSource">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Infrastructure.FileRegistryDataSource" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.Infrastructure.WindowDataSourceData (daren shields's conflicted copy 2016-09-16).bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Infrastructure.WindowDataSourceData (daren shields's conflicted copy 2016-09-16).bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.Infrastructure.WindowDataSourceData.bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Infrastructure.WindowDataSourceData.bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.NaturalFractures.Model.bxml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.NaturalFractures.Model.bxml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.Sim.ResultsSystem.AppIntegration.ResultSystemModel.bxml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.Sim.ResultsSystem.AppIntegration.ResultSystemModel.bxml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.UO.BBSampler.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.UO.BBSampler.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.UO.CCSampler.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.UO.CCSampler.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.UO.FFSampler.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.UO.FFSampler.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.UO.Optimization.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.UO.Optimization.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.UO.PBSampler.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.UO.PBSampler.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.UO.RSProxy.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.UO.RSProxy.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Petrel.UO.UKProxy.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Petrel.UO.UKProxy.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.RE.WswSimulation.DataSource.SimulationDataSourceModel.bxml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.RE.WswSimulation.DataSource.SimulationDataSourceModel.bxml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Rws.Plugin.RwsDataSourceFactoryModel.bxml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Rws.Plugin.RwsDataSourceFactoryModel.bxml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Slb.Seis.SeismicAttributes.FunctionRepository.bin">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Slb.Seis.SeismicAttributes.FunctionRepository.bin" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/SonicCalibrationWorkstepPorpertyArgs.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\SonicCalibrationWorkstepPorpertyArgs.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/SWTStructuredDataSource.879F4183-8AA8-422F-8153-73C18E3E8084Model.bxml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\SWTStructuredDataSource.879F4183-8AA8-422F-8153-73C18E3E8084Model.bxml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/SyntheticGenerationWorkstepPropertyArgs.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\SyntheticGenerationWorkstepPropertyArgs.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/ToolsDataSourceIDModel.bxml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\ToolsDataSourceIDModel.bxml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/TriMeshPropertiesDataSource">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\TriMeshPropertiesDataSource" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/WellRangesArgPackDataSource (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\WellRangesArgPackDataSource (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/WellRangesArgPackDataSource.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\WellRangesArgPackDataSource.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/ZlevelArgPack (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\ZlevelArgPack (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/ZlevelArgPack.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\ZlevelArgPack.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/CrsmData/Info.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\CrsmData\Info.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/CrsmData/Model.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\CrsmData\Model.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/ExplData/Info.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\ExplData\Info.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/ExplData/Model.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\ExplData\Model.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/ExplGeology/Lithologies.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\ExplGeology\Lithologies.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/37aba061-539b-4eae-92e5-32769f3b200c.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\37aba061-539b-4eae-92e5-32769f3b200c.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/332ffdea-2c2c-4534-bd8a-c3d7c927030e.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\332ffdea-2c2c-4534-bd8a-c3d7c927030e.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/334abf13-6bda-4b54-922d-c290a8184f5e.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\334abf13-6bda-4b54-922d-c290a8184f5e.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/366f7217-3085-4d19-b42d-7afa3a5ee3d1.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\366f7217-3085-4d19-b42d-7afa3a5ee3d1.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/401e8f81-e912-4890-b58b-2ea41771f915.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\401e8f81-e912-4890-b58b-2ea41771f915.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/585b7b5f-dc05-4cf3-a995-5bc0514c6225.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\585b7b5f-dc05-4cf3-a995-5bc0514c6225.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/888dd9f9-762d-4b7c-82d5-af80dd76fe3c.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\888dd9f9-762d-4b7c-82d5-af80dd76fe3c.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/56653aa7-3018-434a-b59f-aaf516cb670c.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\56653aa7-3018-434a-b59f-aaf516cb670c.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/29422872-1e2d-4562-b2e9-14ee4d6dddf8.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\29422872-1e2d-4562-b2e9-14ee4d6dddf8.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/a51eec66-b4be-4e2c-a55f-fa19818fa8d2.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\a51eec66-b4be-4e2c-a55f-fa19818fa8d2.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/b56b6028-1261-4e21-8244-a65c3d0a9a1d.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\b56b6028-1261-4e21-8244-a65c3d0a9a1d.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/b54242bc-e608-4121-8885-281d850c15a6.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\b54242bc-e608-4121-8885-281d850c15a6.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/c52ecd35-71c5-43dd-8df6-c69febdff948.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\c52ecd35-71c5-43dd-8df6-c69febdff948.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/d3b3be5d-9a96-43e4-a097-9d9d3ead33f5.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\d3b3be5d-9a96-43e4-a097-9d9d3ead33f5.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/e4abe589-379e-419e-bf23-06553ea5e29e.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\e4abe589-379e-419e-bf23-06553ea5e29e.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/ed8c939b-4e1f-4470-9a9e-517094e018fd.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\ed8c939b-4e1f-4470-9a9e-517094e018fd.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/f6eaf00e-3cfe-4489-8a50-f47c89b5e6ef.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\f6eaf00e-3cfe-4489-8a50-f47c89b5e6ef.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/f8335d4a-c418-4ada-83e3-5f588977438c.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\f8335d4a-c418-4ada-83e3-5f588977438c.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/fe490457-522a-4b8f-8b3b-02d071b6bd40.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\fe490457-522a-4b8f-8b3b-02d071b6bd40.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/5c5b6dee-ae7f-437e-83ad-2c97d92d8dfb.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\5c5b6dee-ae7f-437e-83ad-2c97d92d8dfb.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/6fe745e4-e2dc-4452-8924-04e3eb7acecc.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\6fe745e4-e2dc-4452-8924-04e3eb7acecc.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/7e00bd80-f3a1-41cb-86a0-294840baf567.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\7e00bd80-f3a1-41cb-86a0-294840baf567.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/26c72707-5faa-4c79-b4a5-abef3ee6a085.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\26c72707-5faa-4c79-b4a5-abef3ee6a085.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/I2DW-Templates/33f15a2b-b8a5-45df-b1ef-3ac8ebab4647.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\I2DW-Templates\33f15a2b-b8a5-45df-b1ef-3ac8ebab4647.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/iSWT/1/Workflows.txt">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\iSWT\1\Workflows.txt" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/PaDataSource/Info.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\PaDataSource\Info.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/PaDataSource/Model.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\PaDataSource\Model.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Pm4pData/BurialHistoryProperty.BulkData.Index.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Pm4pData\BurialHistoryProperty.BulkData.Index.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Pm4pData/Info.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Pm4pData\Info.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Pm4pData/Model.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Pm4pData\Model.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/Pm4pData/TimeCurve.BulkData.Index.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\Pm4pData\TimeCurve.BulkData.Index.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/QR/Core.db">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\QR\Core.db" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/QR/Project.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\QR\Project.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/QR/Workstep.db">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\QR\Workstep.db" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/Ocean/ReservoirGeomechanics/VisageDataSource.xbml">
+      <Target path=".\ProjectFile\Test_project.ptd\Ocean\ReservoirGeomechanics\VisageDataSource.xbml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/OceanDataPath/16526AB2-D9CE-4219-AE9B-B233998BD32A.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\OceanDataPath\16526AB2-D9CE-4219-AE9B-B233998BD32A.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/OceanExtensionData/OceanExtensionData.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\OceanExtensionData\OceanExtensionData.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/PostNotes/postnotes.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\PostNotes\postnotes.xml" />
+    </File>
+    <File source="../../../../../../../decomp/Test_project.ptd/SMD/ModelingData.xml">
+      <Target path=".\ProjectFile\Test_project.ptd\SMD\ModelingData.xml" />
+    </File>
+  </CopyList>
+</OceanDeployList>

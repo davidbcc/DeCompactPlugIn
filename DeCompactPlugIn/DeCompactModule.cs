@@ -112,7 +112,7 @@ namespace DeCompactPlugIn
         {
 
             // TODO:  Add Workspace Opened eventhandler implementation
-            CannedWorkflowHelper.Instance.LoadWorkflow();
+            //CannedWorkflowHelper.Instance.LoadWorkflow();
         }
 
         /// <summary>

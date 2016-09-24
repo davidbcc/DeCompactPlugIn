@@ -7,6 +7,7 @@ using Slb.Ocean.Petrel;
 using Slb.Ocean.Petrel.Workflow;
 using DeCompactPlugIn;
 using DeCompactPlugIn.model;
+using System.Collections.Generic;
 
 namespace DeCompactionPlugIn.Helpers
 {
@@ -15,7 +16,7 @@ namespace DeCompactionPlugIn.Helpers
     /// </summary>
     public class CannedWorkflowHelper
     {
-
+        IEnumerable<Workflow> _workflowList;
         #region constant values
         private const int FACIES = 0;
         private const int COAL = 1;
@@ -30,6 +31,8 @@ namespace DeCompactionPlugIn.Helpers
         private const int OUT_ZONES = 0;
         private const int OUT_LAYERS = 1;
         private const int OUT_DEPTH = 2;
+        private const string wfName = "decompaction";
+        private const string collName = "UQ";
         private const int OUT_CELL_HEIGHT = 3;
         #endregion
 
@@ -43,10 +46,10 @@ namespace DeCompactionPlugIn.Helpers
         /// <summary>
         ///     Finds and copies the workflow into the project, if it does not already exist
         /// </summary>
-        public void LoadWorkflow()
+        private void LoadWorkflow()
         {
-            const string wfName = "decompaction";
-            const string collName = "UQ";
+        
+           
             // if it already exists, we will not load it
             if (FindPredefinedWorkflow(wfName, collName) != null)
             {
@@ -55,25 +58,32 @@ namespace DeCompactionPlugIn.Helpers
 
             try
             {
+
+                PetrelLogger.InfoOutputWindow("Original Workflow loading..");
+                
                 var pluginDir = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
                 if (pluginDir == null) return;
                 // Production - deployment
-                var predefinedWorkflowPath = Path.Combine(pluginDir, @"ProjectFile\Test_project.pet");
-                //var predefinedWorkflowPath = Path.Combine(pluginDir, @"C:\decomp\Test_project.pet");
+                //var predefinedWorkflowPath = Path.Combine(pluginDir, @"ProjectFile\Test_project.pet");
+                var predefinedWorkflowPath = Path.Combine(pluginDir, @"C:\decomp\Test_project.pet");
+                
                 PetrelLogger.InfoOutputWindow(string.Format("pluginDir:{0}", pluginDir));
                 PetrelLogger.InfoOutputWindow(string.Format("This is the predefined Workflow path:{0}", predefinedWorkflowPath));
                 // Use IWorkflowSyncService to find the workflow from given project and 
                 // copies it to current project.  
-                var ss = PetrelSystem.WorkflowSyncService;
-                var loadedWorkflows =
-                    ss.CopyWorkflowsFromProject(predefinedWorkflowPath, new string[1] {wfName},
-                        CopyMode.OverwriteIfExists);
+              
+               PetrelSystem.WorkflowSyncService.CopyWorkflowsFromProject(predefinedWorkflowPath, new string[1] { wfName }, CopyMode.OverwriteIfExists
+                        );
             }
             catch (Exception e)
             {
                 PetrelLogger.InfoOutputWindow(
                     @"Warning: The workflow project could not be loaded. Please make sure it was unzipped in the [ProjectDir]\bin\Debug\ before compiling the plug-in");
                 PetrelLogger.InfoOutputWindow(e.Message);
+            }
+            finally
+            {
+                PetrelLogger.InfoOutputWindow("Original Workflw loaded successfully..");
             }
         }
 
@@ -102,11 +112,16 @@ namespace DeCompactionPlugIn.Helpers
         /// <returns>Copied grid received from the output reference variable in the workflow.</returns>
         public void RunWorkflow(WorkStepArgument args)
         {
+            PetrelLogger.InfoOutputWindow("Start Running Workflow");
+            LoadWorkflow();
             if(args == null)
             {
                 PetrelLogger.InfoOutputWindow("Arguments cannot be NULL");
             }
-        
+
+            System.Windows.Forms.Cursor current = System.Windows.Forms.Cursor.Current;
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
+
             ReferenceVariable inputGrid = null;
             ReferenceVariable inputFacies= null;
             ReferenceVariable inputIteration = null;
@@ -116,11 +131,7 @@ namespace DeCompactionPlugIn.Helpers
             ReferenceVariable inputMudStone = null;
             ReferenceVariable inputDirtySS = null;
             ReferenceVariable inputCarbMud = null;
-            //IIdentifiable copiedObject = null;
-            //ReferenceVariable outputZONES = null;
-            //ReferenceVariable outputLAYERS = null;
-            //ReferenceVariable outputDEPTH = null;
-            //ReferenceVariable outputCELL_HEIGHT = null;
+         
 
             var cannedWf = FindPredefinedWorkflow("decompaction", "UQ");
             var runner = new WorkflowRunner(cannedWf);
@@ -142,24 +153,15 @@ namespace DeCompactionPlugIn.Helpers
             runner.SetInputVariableBinding(inputGrid, args.Grid);
            // runner.SetInputVariableBinding(inputHorizon, args.Horizon);
             runner.SetInputVariableBinding(inputFacies, args.Facies);
-            runner.SetInputVariableBinding(inputIteration, args.iteration);
             runner.SetInputVariableBinding(inputSilt, args.Silt);
             runner.SetInputVariableBinding(inputCoal, args.Coal);
             runner.SetInputVariableBinding(inputSandStone, args.SandStone);
             runner.SetInputVariableBinding(inputMudStone, args.MudStone);
             runner.SetInputVariableBinding(inputDirtySS, args.DirtySS);
             runner.SetInputVariableBinding(inputCarbMud, args.CarbMud);
-            runner.SetInputVariableBinding("$loops", args.iteration);
+            runner.SetInputVariableBinding<int>("$iteration", args.iteration);
 
-            ////Output Referenes Variables
-            //outputZONES = cannedWf.OutputReferenceVariables.ElementAt(OUT_ZONES);
-            //outputLAYERS = cannedWf.OutputReferenceVariables.ElementAt(OUT_LAYERS);
-            //outputDEPTH = cannedWf.OutputReferenceVariables.ElementAt(OUT_DEPTH);
-            //outputCELL_HEIGHT = cannedWf.OutputReferenceVariables.ElementAt(OUT_CELL_HEIGHT);
-            //runner.GetValueOfOutputVariable<string>(outputZONES);
-            //runner.GetValueOfOutputVariable<string>(outputLAYERS);
-            //runner.GetValueOfOutputVariable<string>(outputDEPTH);
-            //runner.GetValueOfOutputVariable<string>(outputCELL_HEIGHT);
+            PetrelLogger.InfoOutputWindow("Input Parameters loaded successfully.");
 
             try
             {
@@ -174,9 +176,29 @@ namespace DeCompactionPlugIn.Helpers
             }
             finally
             {
-                //copiedObject = null;
+
+                try
+                {
+                    PetrelLogger.InfoOutputWindow("Fake workflow loading started....");
+                    var pluginDir = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+                    var predefinedFakeWorkflowPath = Path.Combine(pluginDir, @"C:\decompfake\Test_project.pet");
+                    PetrelSystem.WorkflowSyncService.CopyWorkflowsFromProject(predefinedFakeWorkflowPath, new string[1] { wfName }, CopyMode.OverwriteIfExists
+                       );
+              
+
+                }
+                catch (Exception ex)
+                {
+
+                    PetrelLogger.InfoOutputWindow(string.Format(" Copy Fake Workflow failed:{0}", ex.Message));
+                }
+                finally
+                {
+                    System.Windows.Forms.Cursor.Current = current;
+                    PetrelLogger.InfoOutputWindow("Fake workflow loading completed...");
+                }
             }
-            //return copiedObject;
+            
         }
     }
 }

@@ -273,7 +273,7 @@ namespace DeCompactPlugIn
             args.Facies = _facies;
             args.Grid = _grid;
           
-            args.iteration = txtnolayers.Text;
+            args.iteration = Int32.Parse(txtnolayers.Text.ToString());
             args.Coal = this._coal;
             args.Silt = this._silt;
             args.SandStone = this._sandstone;

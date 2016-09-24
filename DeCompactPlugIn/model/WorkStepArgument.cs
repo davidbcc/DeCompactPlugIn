@@ -60,7 +60,7 @@ namespace DeCompactPlugIn.model
         /// <summary>
         /// Iteration Looping
         /// </summary>
-        public string iteration { get; set; }
+        public int iteration { get; set; }
         /// <summary>
         /// Name , Output value
         /// </summary>
