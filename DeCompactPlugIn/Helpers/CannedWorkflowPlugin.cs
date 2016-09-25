@@ -64,8 +64,8 @@ namespace DeCompactionPlugIn.Helpers
                 var pluginDir = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
                 if (pluginDir == null) return;
                 // Production - deployment
-                //var predefinedWorkflowPath = Path.Combine(pluginDir, @"ProjectFile\Test_project.pet");
-                var predefinedWorkflowPath = Path.Combine(pluginDir, @"C:\decomp\Test_project.pet");
+                var predefinedWorkflowPath = Path.Combine(pluginDir, @"ProjectFile\decompact\Test_project.pet");
+               // var predefinedWorkflowPath = Path.Combine(pluginDir, @"C:\decomp\Test_project.pet");
                 
                 PetrelLogger.InfoOutputWindow(string.Format("pluginDir:{0}", pluginDir));
                 PetrelLogger.InfoOutputWindow(string.Format("This is the predefined Workflow path:{0}", predefinedWorkflowPath));
@@ -181,7 +181,8 @@ namespace DeCompactionPlugIn.Helpers
                 {
                     PetrelLogger.InfoOutputWindow("Fake workflow loading started....");
                     var pluginDir = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-                    var predefinedFakeWorkflowPath = Path.Combine(pluginDir, @"C:\decompfake\Test_project.pet");
+                   // var predefinedFakeWorkflowPath = Path.Combine(pluginDir, @"C:\decompfake\Test_project.pet");
+                    var predefinedFakeWorkflowPath = Path.Combine(pluginDir, @"ProjectFile\decompactFake\Test_project.pet");
                     PetrelSystem.WorkflowSyncService.CopyWorkflowsFromProject(predefinedFakeWorkflowPath, new string[1] { wfName }, CopyMode.OverwriteIfExists
                        );
               

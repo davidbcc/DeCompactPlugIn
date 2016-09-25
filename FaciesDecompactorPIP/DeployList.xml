@@ -410,5 +410,455 @@
     <File source="../../../../../../../decomp/Test_project.ptd/SMD/ModelingData.xml">
       <Target path=".\ProjectFile\decompact\Test_project.ptd\SMD\ModelingData.xml" />
     </File>
+    <File source="../../../../../../../decompfake/Test_Project.pet">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.pet" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Data.ptd">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Data.ptd" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Desktop.ini">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Desktop.ini" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Docking.bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Docking.bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Model.ptd">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Model.ptd" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Petrel.ico">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Petrel.ico" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/project_information.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\project_information.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Dbx/SynchronizationInfo.bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Dbx\SynchronizationInfo.bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/AnalyticalProductionDataSource_v1 (daren shields's conflicted copy 2016-09-16).bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\AnalyticalProductionDataSource_v1 (daren shields's conflicted copy 2016-09-16).bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/AnalyticalProductionDataSource_v1.bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\AnalyticalProductionDataSource_v1.bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/AskForAnObjectArgs.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\AskForAnObjectArgs.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/ChartDataSource.bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\ChartDataSource.bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/CompletionObservedDataDataSource (daren shields's conflicted copy 2016-09-16).bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\CompletionObservedDataDataSource (daren shields's conflicted copy 2016-09-16).bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/CompletionObservedDataDataSource.bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\CompletionObservedDataDataSource.bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/CompletionsDataSource (daren shields's conflicted copy 2016-09-16).dat">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\CompletionsDataSource (daren shields's conflicted copy 2016-09-16).dat" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/CompletionsDataSource.dat">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\CompletionsDataSource.dat" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/CustomDataSource.dat">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\CustomDataSource.dat" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/DiscreteTableDataSource.dat">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\DiscreteTableDataSource.dat" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Drilling.WellSectionTemplatesModel (daren shields's conflicted copy 2016-09-16).bxml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Drilling.WellSectionTemplatesModel (daren shields's conflicted copy 2016-09-16).bxml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Drilling.WellSectionTemplatesModel.bxml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Drilling.WellSectionTemplatesModel.bxml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/DrillingReportGeneratorModel (daren shields's conflicted copy 2016-09-16).bxml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\DrillingReportGeneratorModel (daren shields's conflicted copy 2016-09-16).bxml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/DrillingReportGeneratorModel.bxml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\DrillingReportGeneratorModel.bxml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/FcmChartDataDataSource.bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\FcmChartDataDataSource.bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/FieldManagementDataSource_v4.bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\FieldManagementDataSource_v4.bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/FilterTrackArgPackDataSource.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\FilterTrackArgPackDataSource.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/fluidProperties.dat">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\fluidProperties.dat" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/GisServiceDataSource (daren shields's conflicted copy 2016-09-16).dat">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\GisServiceDataSource (daren shields's conflicted copy 2016-09-16).dat" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/GisServiceDataSource.dat">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\GisServiceDataSource.dat" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Windows (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Windows (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Windows.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Windows.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/InfrastructureInternalData (daren shields's conflicted copy 2016-09-16).bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\InfrastructureInternalData (daren shields's conflicted copy 2016-09-16).bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/InfrastructureInternalData.bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\InfrastructureInternalData.bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/iSWTWellSectionWindowSettings.dat">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\iSWTWellSectionWindowSettings.dat" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/LocalReservoirSeismicDataSource.dataSource">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\LocalReservoirSeismicDataSource.dataSource" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/LocalReservoirSeismicDataSource.settings">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\LocalReservoirSeismicDataSource.settings" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/LogConditioningSettings10.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\LogConditioningSettings10.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/OfmConnectorDataSource_v1 (daren shields's conflicted copy 2016-09-16).dat">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\OfmConnectorDataSource_v1 (daren shields's conflicted copy 2016-09-16).dat" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/OfmConnectorDataSource_v1.dat">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\OfmConnectorDataSource_v1.dat" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Petrel.Geophysics.RestorationSource (daren shields's conflicted copy 2016-09-16).bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Petrel.Geophysics.RestorationSource (daren shields's conflicted copy 2016-09-16).bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Petrel.Geophysics.RestorationSource.bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Petrel.Geophysics.RestorationSource.bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/PetrelSerializationData (daren shields's conflicted copy 2016-09-16).bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\PetrelSerializationData (daren shields's conflicted copy 2016-09-16).bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/PetrelSerializationData.bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\PetrelSerializationData.bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/PresentDataSource.dat">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\PresentDataSource.dat" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/ProductionWellSectionWindowDataSource (daren shields's conflicted copy 2016-09-16).bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\ProductionWellSectionWindowDataSource (daren shields's conflicted copy 2016-09-16).bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/ProductionWellSectionWindowDataSource.bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\ProductionWellSectionWindowDataSource.bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/QI.AVO.GaCollDs (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\QI.AVO.GaCollDs (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/QI.AVO.GaCollDs.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\QI.AVO.GaCollDs.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/RDR.Advisor.ImageCapture.DomainObjects.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\RDR.Advisor.ImageCapture.DomainObjects.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/RDRArgumentsDataSource (daren shields's conflicted copy 2016-09-16).dat">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\RDRArgumentsDataSource (daren shields's conflicted copy 2016-09-16).dat" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/RDRArgumentsDataSource.dat">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\RDRArgumentsDataSource.dat" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/RDRVersion (daren shields's conflicted copy 2016-09-16).dat">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\RDRVersion (daren shields's conflicted copy 2016-09-16).dat" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/RDRVersion.dat">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\RDRVersion.dat" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/RealTimeMappings (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\RealTimeMappings (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/RealTimeMappings.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\RealTimeMappings.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/ScenarioCollectionDataSource.dat">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\ScenarioCollectionDataSource.dat" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/ScenarioDataSource.dat">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\ScenarioDataSource.dat" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/SimPlottingDataSource (daren shields's conflicted copy 2016-09-16).bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\SimPlottingDataSource (daren shields's conflicted copy 2016-09-16).bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/SimPlottingDataSource.bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\SimPlottingDataSource.bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Drilling.Visualization.RealTime.Settings (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Drilling.Visualization.RealTime.Settings (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Drilling.Visualization.RealTime.Settings.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Drilling.Visualization.RealTime.Settings.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.Drilling.PlanProcessSettings (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.Drilling.PlanProcessSettings (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.Drilling.PlanProcessSettings.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.Drilling.PlanProcessSettings.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.Drilling.RiskDepthSettings (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.Drilling.RiskDepthSettings (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.Drilling.RiskDepthSettings.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.Drilling.RiskDepthSettings.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.Drilling.RiskThemeSettings (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.Drilling.RiskThemeSettings (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.Drilling.RiskThemeSettings.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.Drilling.RiskThemeSettings.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.Foundation.DataSources.SmartFavoritesModel.bxml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.Foundation.DataSources.SmartFavoritesModel.bxml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.Infrastructure (daren shields's conflicted copy 2016-09-16).FileRegistryDataSource">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.Infrastructure (daren shields's conflicted copy 2016-09-16).FileRegistryDataSource" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.Infrastructure.FileRegistryDataSource">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.Infrastructure.FileRegistryDataSource" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.Infrastructure.WindowDataSourceData (daren shields's conflicted copy 2016-09-16).bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.Infrastructure.WindowDataSourceData (daren shields's conflicted copy 2016-09-16).bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.Infrastructure.WindowDataSourceData.bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.Infrastructure.WindowDataSourceData.bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.NaturalFractures.Model.bxml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.NaturalFractures.Model.bxml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.Sim.ResultsSystem.AppIntegration.ResultSystemModel.bxml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.Sim.ResultsSystem.AppIntegration.ResultSystemModel.bxml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.UO.BBSampler.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.UO.BBSampler.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.UO.CCSampler.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.UO.CCSampler.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.UO.FFSampler.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.UO.FFSampler.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.UO.Optimization.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.UO.Optimization.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.UO.PBSampler.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.UO.PBSampler.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.UO.RSProxy.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.UO.RSProxy.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Petrel.UO.UKProxy.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Petrel.UO.UKProxy.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.RE.WswSimulation.DataSource.SimulationDataSourceModel.bxml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.RE.WswSimulation.DataSource.SimulationDataSourceModel.bxml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Rws.Plugin.RwsDataSourceFactoryModel.bxml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Rws.Plugin.RwsDataSourceFactoryModel.bxml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Slb.Seis.SeismicAttributes.FunctionRepository.bin">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Slb.Seis.SeismicAttributes.FunctionRepository.bin" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/SonicCalibrationWorkstepPorpertyArgs.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\SonicCalibrationWorkstepPorpertyArgs.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/SWTStructuredDataSource.879F4183-8AA8-422F-8153-73C18E3E8084Model.bxml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\SWTStructuredDataSource.879F4183-8AA8-422F-8153-73C18E3E8084Model.bxml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/SyntheticGenerationWorkstepPropertyArgs.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\SyntheticGenerationWorkstepPropertyArgs.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/ToolsDataSourceIDModel.bxml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\ToolsDataSourceIDModel.bxml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/TriMeshPropertiesDataSource">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\TriMeshPropertiesDataSource" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/WellRangesArgPackDataSource (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\WellRangesArgPackDataSource (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/WellRangesArgPackDataSource.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\WellRangesArgPackDataSource.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/ZlevelArgPack (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\ZlevelArgPack (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/ZlevelArgPack.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\ZlevelArgPack.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/CrsmData/Info.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\CrsmData\Info.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/CrsmData/Model.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\CrsmData\Model.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/ExplData/Info.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\ExplData\Info.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/ExplData/Model.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\ExplData\Model.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/ExplGeology/Lithologies.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\ExplGeology\Lithologies.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/0a45e27e-297d-48a3-9db2-9aedec09a72d.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\0a45e27e-297d-48a3-9db2-9aedec09a72d.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/0c7fb85d-5623-4664-8aa2-3afd02e4d00c.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\0c7fb85d-5623-4664-8aa2-3afd02e4d00c.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/0e45eb57-3542-4af8-9e59-95ee80a8667e.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\0e45eb57-3542-4af8-9e59-95ee80a8667e.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/1b5fea3d-368c-41d7-99d4-959e61646652.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\1b5fea3d-368c-41d7-99d4-959e61646652.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/3ac9c392-1328-46ee-a2f2-774b05a5cfa0.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\3ac9c392-1328-46ee-a2f2-774b05a5cfa0.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/3bdce299-42ef-430e-8d96-4d9b0fe0ebba.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\3bdce299-42ef-430e-8d96-4d9b0fe0ebba.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/5c5b6dee-ae7f-437e-83ad-2c97d92d8dfb.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\5c5b6dee-ae7f-437e-83ad-2c97d92d8dfb.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/6fe745e4-e2dc-4452-8924-04e3eb7acecc.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\6fe745e4-e2dc-4452-8924-04e3eb7acecc.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/7e00bd80-f3a1-41cb-86a0-294840baf567.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\7e00bd80-f3a1-41cb-86a0-294840baf567.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/8f2ff43d-195d-4057-b78f-0ea78948a767.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\8f2ff43d-195d-4057-b78f-0ea78948a767.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/9a825a48-6843-42d4-b63f-d4f05f8f7174.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\9a825a48-6843-42d4-b63f-d4f05f8f7174.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/26c72707-5faa-4c79-b4a5-abef3ee6a085.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\26c72707-5faa-4c79-b4a5-abef3ee6a085.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/33f15a2b-b8a5-45df-b1ef-3ac8ebab4647.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\33f15a2b-b8a5-45df-b1ef-3ac8ebab4647.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/37aba061-539b-4eae-92e5-32769f3b200c.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\37aba061-539b-4eae-92e5-32769f3b200c.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/332ffdea-2c2c-4534-bd8a-c3d7c927030e.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\332ffdea-2c2c-4534-bd8a-c3d7c927030e.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/334abf13-6bda-4b54-922d-c290a8184f5e.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\334abf13-6bda-4b54-922d-c290a8184f5e.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/366f7217-3085-4d19-b42d-7afa3a5ee3d1.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\366f7217-3085-4d19-b42d-7afa3a5ee3d1.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/401e8f81-e912-4890-b58b-2ea41771f915.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\401e8f81-e912-4890-b58b-2ea41771f915.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/585b7b5f-dc05-4cf3-a995-5bc0514c6225.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\585b7b5f-dc05-4cf3-a995-5bc0514c6225.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/888dd9f9-762d-4b7c-82d5-af80dd76fe3c.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\888dd9f9-762d-4b7c-82d5-af80dd76fe3c.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/2313c638-4257-4183-899b-b45e22b74b16.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\2313c638-4257-4183-899b-b45e22b74b16.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/52930a31-3804-42f9-beb5-4bd0409978d9.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\52930a31-3804-42f9-beb5-4bd0409978d9.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/56653aa7-3018-434a-b59f-aaf516cb670c.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\56653aa7-3018-434a-b59f-aaf516cb670c.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/03988891-b0b7-4617-a2e7-397afaddac35.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\03988891-b0b7-4617-a2e7-397afaddac35.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/29422872-1e2d-4562-b2e9-14ee4d6dddf8.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\29422872-1e2d-4562-b2e9-14ee4d6dddf8.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/a51eec66-b4be-4e2c-a55f-fa19818fa8d2.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\a51eec66-b4be-4e2c-a55f-fa19818fa8d2.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/b56b6028-1261-4e21-8244-a65c3d0a9a1d.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\b56b6028-1261-4e21-8244-a65c3d0a9a1d.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/b54242bc-e608-4121-8885-281d850c15a6.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\b54242bc-e608-4121-8885-281d850c15a6.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/c52ecd35-71c5-43dd-8df6-c69febdff948.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\c52ecd35-71c5-43dd-8df6-c69febdff948.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/d3b3be5d-9a96-43e4-a097-9d9d3ead33f5.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\d3b3be5d-9a96-43e4-a097-9d9d3ead33f5.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/e4abe589-379e-419e-bf23-06553ea5e29e.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\e4abe589-379e-419e-bf23-06553ea5e29e.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/eb71f9aa-3527-47d3-8876-062fd0ef4b90.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\eb71f9aa-3527-47d3-8876-062fd0ef4b90.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/ed8c939b-4e1f-4470-9a9e-517094e018fd.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\ed8c939b-4e1f-4470-9a9e-517094e018fd.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/f6eaf00e-3cfe-4489-8a50-f47c89b5e6ef.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\f6eaf00e-3cfe-4489-8a50-f47c89b5e6ef.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/f8335d4a-c418-4ada-83e3-5f588977438c.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\f8335d4a-c418-4ada-83e3-5f588977438c.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/I2DW-Templates/fe490457-522a-4b8f-8b3b-02d071b6bd40.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\I2DW-Templates\fe490457-522a-4b8f-8b3b-02d071b6bd40.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/iSWT/1/Workflows.txt">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\iSWT\1\Workflows.txt" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/PaDataSource/Info.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\PaDataSource\Info.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/PaDataSource/Model.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\PaDataSource\Model.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Pm4pData/BurialHistoryProperty.BulkData.Index.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Pm4pData\BurialHistoryProperty.BulkData.Index.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Pm4pData/Info.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Pm4pData\Info.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Pm4pData/Model.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Pm4pData\Model.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/Pm4pData/TimeCurve.BulkData.Index.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\Pm4pData\TimeCurve.BulkData.Index.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/QR/Core.db">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\QR\Core.db" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/QR/Project.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\QR\Project.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/QR/Workstep.db">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\QR\Workstep.db" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/Ocean/ReservoirGeomechanics/VisageDataSource.xbml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\Ocean\ReservoirGeomechanics\VisageDataSource.xbml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/OceanDataPath/16526AB2-D9CE-4219-AE9B-B233998BD32A.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\OceanDataPath\16526AB2-D9CE-4219-AE9B-B233998BD32A.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/OceanExtensionData/OceanExtensionData.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\OceanExtensionData\OceanExtensionData.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/PostNotes/postnotes (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\PostNotes\postnotes (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/PostNotes/postnotes.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\PostNotes\postnotes.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/SMD/ModelingData.xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\SMD\ModelingData.xml" />
+    </File>
+    <File source="../../../../../../../decompfake/Test_Project.ptd/SMD/ModelingData (daren shields's conflicted copy 2016-09-16).xml">
+      <Target path=".\ProjectFile\decompactFake\Test_Project.ptd\SMD\ModelingData (daren shields's conflicted copy 2016-09-16).xml" />
+    </File>
   </CopyList>
 </OceanDeployList>
