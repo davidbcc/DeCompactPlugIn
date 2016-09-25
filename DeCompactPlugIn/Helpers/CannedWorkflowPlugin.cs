@@ -51,10 +51,10 @@ namespace DeCompactionPlugIn.Helpers
         
            
             // if it already exists, we will not load it
-            if (FindPredefinedWorkflow(wfName, collName) != null)
-            {
-                return;
-            }
+            //if (FindPredefinedWorkflow(wfName, collName) != null)
+            //{
+            //    return;
+            //}
 
             try
             {
