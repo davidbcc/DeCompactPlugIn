@@ -130,12 +130,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DeCompactForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DeCompactForm.Designer.cs">
-      <DependentUpon>DeCompactForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="DeCompactModule.cs" />
     <Compile Include="DeCompactPlugIn.cs" />
     <Compile Include="DeCompactPlugInCommandHandler.cs" />
@@ -150,7 +144,6 @@
       <DependentUpon>DeCompactWorkStepUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\CannedWorkflowPlugin.cs" />
-    <Compile Include="Helpers\GridHelper.cs" />
     <Compile Include="MainWindow.cs" />
     <Compile Include="MainWindowImageInfo.cs" />
     <Compile Include="MainWindowNameInfo.cs" />
@@ -194,9 +187,6 @@
   <ItemGroup>
     <Content Include="Resources\logo.jpg" />
     <EmbeddedResource Include="Resources\logo.bmp" />
-    <EmbeddedResource Include="DeCompactForm.resx">
-      <DependentUpon>DeCompactForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Resource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>

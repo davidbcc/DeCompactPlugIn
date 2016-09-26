@@ -31,14 +31,6 @@ namespace DeCompactPlugIn
         /// <param name="context">System context</param>
         public override void Execute(Context context)
         {
-            // create form if not already created or disposed
-            if (_form == null || _form.IsDisposed)
-                _form = new DeCompactForm();
-
-            if (!_form.Visible)
-                PetrelSystem.ShowModeless(_form);
-            else
-                _form.Hide();
         }
     }
 }
