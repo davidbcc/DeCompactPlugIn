@@ -135,6 +135,7 @@ namespace DeCompactPlugIn
 
         }
         //Sandstone drag-drop function.
+        // Facies 1 
         private void dropTarget_sandstone_DragDrop(object sender, DragEventArgs e)
         {
             var drop = e.Data.GetData(typeof(object));

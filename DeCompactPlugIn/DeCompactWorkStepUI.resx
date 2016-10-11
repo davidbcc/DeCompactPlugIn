@@ -120,4 +120,16 @@
   <metadata name="toolTipManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="toolTipItem10.Text" xml:space="preserve">
+    <value>Facies Decompactor is a Petrel 2015 plugin which can be used to decompact 3D facies models.  
+
+The iterative routine translates a grid at depth (layer-by-layer) to a reference datum (i.e. sea level).  
+
+Upon translation the thickness of strata are converted from their thickness in-situ to their decompacted thickness according to their translated depth relative to the pre-selected datum.
+
+Lithology specific compaction curves describing how thickness (% of original thickness) varies with depth (meters TVD) are used.  Templates of these are contained within the accompanying test project (test.pet). 
+
+For support or feedback please contact Daren Shields at daren.shields@uq.net.au
+</value>
+  </data>
 </root>
