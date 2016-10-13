@@ -47,9 +47,9 @@ namespace DeCompactPlugIn
             Slb.Ocean.Petrel.UI.Controls.ToolTipItem toolTipItem8 = new Slb.Ocean.Petrel.UI.Controls.ToolTipItem();
             Slb.Ocean.Petrel.UI.Controls.ToolTipInfo toolTipInfo9 = new Slb.Ocean.Petrel.UI.Controls.ToolTipInfo();
             Slb.Ocean.Petrel.UI.Controls.ToolTipItem toolTipItem9 = new Slb.Ocean.Petrel.UI.Controls.ToolTipItem();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeCompactWorkStepUI));
             Slb.Ocean.Petrel.UI.Controls.ToolTipInfo toolTipInfo10 = new Slb.Ocean.Petrel.UI.Controls.ToolTipInfo();
             Slb.Ocean.Petrel.UI.Controls.ToolTipItem toolTipItem10 = new Slb.Ocean.Petrel.UI.Controls.ToolTipItem();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeCompactWorkStepUI));
             this.tab1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.toolTipHotspot9 = new Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot(this.components);
@@ -87,15 +87,17 @@ namespace DeCompactPlugIn
             this.presGrid = new Slb.Ocean.Petrel.UI.Controls.PresentationBox();
             this.drop_grid = new Slb.Ocean.Petrel.UI.DropTarget();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.runButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
             this.cancelButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
             this.OKButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
             this.applyButton = new Slb.Ocean.Petrel.UI.Controls.BasicButton();
             this.toolTipManager1 = new Slb.Ocean.Petrel.UI.Controls.ToolTipManager(this.components);
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tab1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.toolTipManager1)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab1
@@ -318,7 +320,7 @@ namespace DeCompactPlugIn
             // 
             // presentationBox_sandstone
             // 
-            this.presentationBox_sandstone.Location = new System.Drawing.Point(157, 165);
+            this.presentationBox_sandstone.Location = new System.Drawing.Point(158, 111);
             this.presentationBox_sandstone.Name = "presentationBox_sandstone";
             this.presentationBox_sandstone.Size = new System.Drawing.Size(206, 22);
             this.presentationBox_sandstone.TabIndex = 49;
@@ -334,7 +336,7 @@ namespace DeCompactPlugIn
             // 
             // presentationBox_silt
             // 
-            this.presentationBox_silt.Location = new System.Drawing.Point(158, 112);
+            this.presentationBox_silt.Location = new System.Drawing.Point(158, 164);
             this.presentationBox_silt.Name = "presentationBox_silt";
             this.presentationBox_silt.Size = new System.Drawing.Size(206, 22);
             this.presentationBox_silt.TabIndex = 47;
@@ -478,20 +480,6 @@ namespace DeCompactPlugIn
             this.label1.TabIndex = 0;
             this.label1.Text = "Grid:";
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(642, 318);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Hints";
-            toolTipItem10.Text = resources.GetString("toolTipItem10.Text");
-            toolTipInfo10.Items.AddRange(new Slb.Ocean.Petrel.UI.Controls.ToolTipItemBase[] {
-            toolTipItem10});
-            this.toolTipManager1.SetToolTip(this.tabPage2, toolTipInfo10);
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
             // runButton
             // 
             this.runButton.BackColor = System.Drawing.Color.White;
@@ -536,6 +524,30 @@ namespace DeCompactPlugIn
             this.applyButton.UseVisualStyleBackColor = false;
             this.applyButton.Click += new System.EventHandler(this.applyButton_Click);
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(0, 3);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(639, 312);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.richTextBox1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(642, 318);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Hints";
+            toolTipItem10.Text = resources.GetString("toolTipItem10.Text");
+            toolTipInfo10.Items.AddRange(new Slb.Ocean.Petrel.UI.Controls.ToolTipItemBase[] {
+            toolTipItem10});
+            this.toolTipManager1.SetToolTip(this.tabPage2, toolTipInfo10);
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // DeCompactWorkStepUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -551,6 +563,7 @@ namespace DeCompactPlugIn
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.toolTipManager1)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -559,7 +572,6 @@ namespace DeCompactPlugIn
 
         private System.Windows.Forms.TabControl tab1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label1;
         private Slb.Ocean.Petrel.UI.Controls.BasicButton runButton;
         private Slb.Ocean.Petrel.UI.Controls.PresentationBox presentationBox_facies;
@@ -600,5 +612,7 @@ namespace DeCompactPlugIn
         private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot7;
         private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot6;
         private Slb.Ocean.Petrel.UI.Controls.ToolTipHotspot toolTipHotspot5;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

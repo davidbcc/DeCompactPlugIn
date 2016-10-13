@@ -4,18 +4,18 @@
     <Name>Facies Decompactor</Name>
     <Description>Facies Decompactor</Description>
     <ImageResourceName>DeCompactPlugIn.Resources.logo.bmp</ImageResourceName>
-    <PluginTypeName>DeCompactPlugIn.Plugin, DeCompactPlugIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0875ec62433e0b01</PluginTypeName>
+    <PluginTypeName>DeCompactPlugIn.Plugin, DeCompactPlugIn, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0875ec62433e0b01</PluginTypeName>
     <PluginUri>http://www.pluginuri.info/</PluginUri>
-    <PluginId>://DeCompactPlugIn.Plugin/1.0.0.0</PluginId>
+    <PluginId>://DeCompactPlugIn.Plugin/2.0.0.0</PluginId>
     <Trust PublicKeyToken="">Default</Trust>
-    <ReleaseDate>2016-10-11</ReleaseDate>
+    <ReleaseDate>2016-10-13</ReleaseDate>
     <Author>daren</Author>
     <AppVersion>2015.1</AppVersion>
     <Modules>
-      <Module TypeName="DeCompactPlugIn.DeCompactModule, DeCompactPlugIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0875ec62433e0b01" />
+      <Module TypeName="DeCompactPlugIn.DeCompactModule, DeCompactPlugIn, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0875ec62433e0b01" />
     </Modules>
     <Assemblies>
-      <Assembly Name="DeCompactPlugIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0875ec62433e0b01" />
+      <Assembly Name="DeCompactPlugIn, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0875ec62433e0b01" />
     </Assemblies>
     <assemblyBinding />
     <StartMode>Startup</StartMode>

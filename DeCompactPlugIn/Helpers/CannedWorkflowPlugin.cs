@@ -65,7 +65,7 @@ namespace DeCompactionPlugIn.Helpers
                 if (pluginDir == null) return;
                 // Production - deployment
                 var predefinedWorkflowPath = Path.Combine(pluginDir, @"ProjectFile\decompact\Test_project.pet");
-               // var predefinedWorkflowPath = Path.Combine(pluginDir, @"C:\decomp\Test_project.pet");
+               // var predefinedWorkflowPath = Path.Combine(pluginDir, @"C:\updateddecompact\Test_project.pet");
                 
                 //PetrelLogger.InfoOutputWindow(string.Format("pluginDir:{0}", pluginDir));
                 //PetrelLogger.InfoOutputWindow(string.Format("This is the predefined Workflow path:{0}", predefinedWorkflowPath));
@@ -131,14 +131,13 @@ namespace DeCompactionPlugIn.Helpers
             ReferenceVariable inputMudStone = null;
             ReferenceVariable inputDirtySS = null;
             ReferenceVariable inputCarbMud = null;
-         
+
 
             var cannedWf = FindPredefinedWorkflow("decompaction", "UQ");
             var runner = new WorkflowRunner(cannedWf);
 
             // Input References Variables
             inputGrid = cannedWf.InputReferenceVariables.ElementAt(GRID);
-           // inputHorizon = cannedWf.InputReferenceVariables.ElementAt(HORIZON);
             inputFacies = cannedWf.InputReferenceVariables.ElementAt(FACIES);
             inputIteration = cannedWf.InputReferenceVariables.ElementAt(ITERATION);
             inputSilt = cannedWf.InputReferenceVariables.ElementAt(SILT);
@@ -151,7 +150,6 @@ namespace DeCompactionPlugIn.Helpers
 
 
             runner.SetInputVariableBinding(inputGrid, args.Grid);
-           // runner.SetInputVariableBinding(inputHorizon, args.Horizon);
             runner.SetInputVariableBinding(inputFacies, args.Facies);
             runner.SetInputVariableBinding(inputSilt, args.Silt);
             runner.SetInputVariableBinding(inputCoal, args.Coal);
@@ -173,6 +171,7 @@ namespace DeCompactionPlugIn.Helpers
             {
  
                 PetrelLogger.InfoOutputWindow(string.Format(" Decompaction Workflow Run error occured:{0}", ex.Message));
+                
             }
             finally
             {
@@ -181,7 +180,7 @@ namespace DeCompactionPlugIn.Helpers
                 {
                     PetrelLogger.InfoOutputWindow("Fake workflow loading started....");
                     var pluginDir = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-                   // var predefinedFakeWorkflowPath = Path.Combine(pluginDir, @"C:\decompfake\Test_project.pet");
+                   //var predefinedFakeWorkflowPath = Path.Combine(pluginDir, @"C:\decompfake\Test_project.pet");
                     var predefinedFakeWorkflowPath = Path.Combine(pluginDir, @"ProjectFile\decompactFake\Test_project.pet");
                     PetrelSystem.WorkflowSyncService.CopyWorkflowsFromProject(predefinedFakeWorkflowPath, new string[1] { wfName }, CopyMode.OverwriteIfExists
                        );
